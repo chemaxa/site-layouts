@@ -67,7 +67,7 @@ $(document).ready(function () {
                 self.trigger("reset");
             }, 1000);
         });
-        return false;
+
     });
 
     // Топ фон табы 
