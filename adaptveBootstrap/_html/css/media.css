@@ -64,6 +64,12 @@
         font-size: 38px;
         line-height: 42px;
     }
+    .s_contacts h2 {
+        margin-bottom: 20px;
+    }
+    .s_contacts .tabs. .tab {
+        padding: 0 20px;
+    }
 }
 /* Custom, iPhone Retina */
 

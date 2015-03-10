@@ -7,19 +7,20 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  -webkit-font-smoothing: antialised; }
+  -webkit-font-smoothing: antialised;
+  -webkit-font-smoothing-overflow-x: hidden; }
 
-/* line 19, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 20, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 body input:focus:required:invalid, body textarea:focus:required:invalid {
   color: red;
   color-box-shadow: #9b1818 0 0 0 2px;
   color-border-color: #9b1818; }
 
-/* line 25, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 26, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 body input:required:valid, body textarea:required:valid {
   color: green; }
 
-/* line 28, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 29, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 h1 {
   color: #fff;
   font-size: 60px;
@@ -28,14 +29,14 @@ h1 {
   font-family: "CleanvertisingLight", sans-serif;
   margin: 0; }
 
-/* line 36, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
-section {
+/* line 37, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+section, footer {
   padding: 60px 0 70px; }
-  /* line 39, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
-  section.s_dark h2, section.s_dark h3, section.s_dark p {
+  /* line 40, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  section.s_dark h2, section.s_dark h3, section.s_dark p, footer.s_dark h2, footer.s_dark h3, footer.s_dark p {
     color: #fff; }
-  /* line 41, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
-  section h2 {
+  /* line 42, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  section h2, footer h2 {
     color: #003469;
     font-size: 50px;
     line-height: 56px;
@@ -45,11 +46,11 @@ section {
     margin-top: 0px;
     font-weight: normal; }
 
-/* line 51, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 52, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .hidden {
   display: none; }
 
-/* line 54, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 55, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 header {
   min-height: 640px;
   background-image: url('../img/top_bg.jpg');
@@ -59,69 +60,67 @@ header {
   padding-top: 32px;
   padding-bottom: 40px; }
 
-/* line 63, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 64, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .logo {
   font-size: 40px;
   font-family: "RobotoBold", sans-serif;
   font-weight: bold; }
 
-/* line 69, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
-.top_phone {
+/* line 70, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+.top_phone, .bottom_phone {
   text-align: right; }
 
-/* line 71, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
-.top_phone .wrapper .tab {
+/* line 74, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+.top_phone .wrapper .tab, .bottom_phone .wrapper .tab {
   cursor: pointer;
   text-transform: uppercase; }
-
-/* line 74, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
-.top_phone .wrapper .active {
+/* line 77, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+.top_phone .active, .bottom_phone .active {
   text-decoration: underline; }
-
-/* line 76, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
-.top_phone .tab_item {
+/* line 80, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+.top_phone .tab_item, .bottom_phone .tab_item {
   font-size: 35px;
   font-family: "RobotoBold", sans-serif; }
 
-/* line 80, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 84, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .top_header {
   margin-top: 70px; }
-  /* line 82, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 86, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .top_header h2 {
     margin: 20px 0 0;
     font-size: 36px;
     font-family: "CleanvertisingLight", sans-serif;
     font-weight: bold; }
 
-/* line 88, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 92, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .tab_item {
   display: none; }
 
-/* line 90, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 94, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .tab_item:first-child {
   display: block; }
 
-/* line 93, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 97, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .tabs_header {
   margin-top: 50px; }
-  /* line 96, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 100, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .tabs_header ul, .tabs_header li {
     list-style-type: none;
     padding: 0px;
     margin: 0px; }
-  /* line 100, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 104, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .tabs_header li {
     padding-left: 40px;
     position: relative;
     margin-bottom: 12px; }
-  /* line 104, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 108, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .tabs_header i {
     position: absolute;
     left: 0px;
     top: 0px;
     line-height: 26px;
     color: #6f6a67; }
-  /* line 111, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 115, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .tabs_header .tabs .tab {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.25);
@@ -132,11 +131,11 @@ header {
     font-family: "RobotoBold", sans-serif;
     font-weight: bold;
     transition: all 0.2s ease; }
-    /* line 121, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+    /* line 125, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
     .tabs_header .tabs .tab.active {
       background-color: rgba(255, 255, 255, 0.6);
       color: #000; }
-  /* line 124, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 128, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .tabs_header .tab_content {
     padding: 12px 18px 20px;
     background-color: rgba(255, 255, 255, 0.6);
@@ -145,11 +144,11 @@ header {
     font-family: "RobotoBold", sans-serif;
     font-size: 18px; }
 
-/* line 131, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 135, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .button_wrap {
   text-align: right; }
 
-/* line 133, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 137, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .button {
   display: inline-block;
   cursor: pointer;
@@ -164,23 +163,23 @@ header {
   border-radius: 3px;
   font-size: 16px;
   font-family: "RobotoBold", sans-serif; }
-  /* line 147, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 151, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .button.btn_red {
     background-color: #9b1818; }
-  /* line 149, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 153, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .button.btn_green {
     background-color: #67bc5c; }
-  /* line 151, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 155, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .button.btn_white {
     background-color: #fff;
     color: #000; }
 
-/* line 154, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 158, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 a.button {
   color: #fff;
   text-decoration: none; }
 
-/* line 157, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 161, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_tizers {
   background-color: #c6d8ee;
   background-image: linear-gradient(#c6d8ee, #e8eff7);
@@ -188,106 +187,106 @@ a.button {
   font-family: "CleanvertisingLight", sans-serif;
   text-transform: uppercase;
   padding: 35px 0px 0px; }
-  /* line 163, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 167, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .s_tizers span {
     font-size: 14px;
     display: block; }
-  /* line 167, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 171, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .s_tizers strong {
     font-weight: normal;
     font-size: 23px;
     display: block; }
-  /* line 172, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 176, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .s_tizers .row > div {
     margin-bottom: 35px; }
 
-/* line 175, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 179, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .tiz_img, .tiz_descr {
   display: inline-block;
   vertical-align: bottom; }
 
-/* line 180, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 184, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .tiz_img i {
   font-size: 70px;
   line-height: 60px;
   margin-right: 5px; }
 
-/* line 187, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 191, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_tizers .row > div:nth-child(1) i {
   font-family: "RobotoRegular", sans-serif;
   letter-spacing: -12px;
   margin-right: 15px;
   line-height: 60px; }
-/* line 192, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 196, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_tizers .row > div:nth-child(1) strong {
   font-size: 25px;
   line-height: 28px;
   font-weight: normal; }
-/* line 196, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 200, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_tizers .row > div:nth-child(1) span {
   font-size: 19px;
   line-height: 24px; }
-/* line 200, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 204, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_tizers .row > div:nth-child(2) strong {
   font-size: 25px;
   line-height: 28px; }
-/* line 203, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 207, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_tizers .row > div:nth-child(2) span {
   font-size: 14px;
   line-height: 24px; }
-/* line 206, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 210, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_tizers .row > div:nth-child(2) i {
   position: relative;
   bottom: -3px; }
-/* line 210, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 214, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_tizers .row > div:nth-child(3) strong {
   line-height: 28px;
   font-size: 23px; }
-/* line 213, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 217, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_tizers .row > div:nth-child(3) span {
   line-height: 20px; }
-/* line 216, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 220, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_tizers .row > div:nth-child(4) span {
   font-size: 13px;
   line-height: 12px; }
-/* line 219, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 223, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_tizers .row > div:nth-child(4) strong {
   line-height: 34px;
   font-size: 22px; }
-/* line 222, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 226, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_tizers .row > div:nth-child(4) i {
   line-height: 54px; }
 
-/* line 225, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 229, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 p strong {
   font-family: "RobotoBold", sans-serif;
   font-weight: normal; }
 
-/* line 228, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 232, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .profi_left {
   color: #9b1818; }
-  /* line 230, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 234, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .profi_left i {
     font-size: 100px;
     line-height: 110px; }
 
-/* line 234, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 238, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .profi_right h3 {
   display: inline-block;
   color: #9b1818;
   font-size: 28px;
   margin: 0; }
-/* line 239, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 243, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .profi_right p {
   margin-top: 5px; }
 
-/* line 241, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 245, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 form {
   background-color: #f7f7f7;
   padding: 25px 30px;
   border: #67bc5c solid 5px;
   border-radius: 5px; }
-  /* line 246, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 250, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   form h2 {
     font-family: "RobotoBold", sans-serif;
     text-transform: uppercase;
@@ -296,13 +295,13 @@ form {
     color: #333;
     line-height: 22px;
     margin-bottom: 30px; }
-  /* line 254, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 258, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   form label {
     display: block;
     color: #666;
     font-size: 14px;
     margin-bottom: 15px; }
-  /* line 259, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 263, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   form input, form select {
     display: block;
     line-height: 40px;
@@ -313,12 +312,12 @@ form {
     text-indent: 10px;
     font-size: 20px;
     margin-top: 3px; }
-    /* line 269, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+    /* line 273, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
     form input:focus, form select:focus {
       box-shadow: #67bc5c 0 0 0 2px;
       border-radius: 3px;
       border-color: #67bc5c; }
-  /* line 273, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 277, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   form select {
     background-image: url('../img/arrow.svg');
     background-position: right center;
@@ -326,12 +325,12 @@ form {
     -moz-appearance: none;
     -webkit-appearance: none;
     width: 100%; }
-  /* line 282, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 286, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   form .button_wrap {
     text-align: center;
     margin: 30px 0 10px; }
 
-/* line 286, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 290, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_review {
   background-image: url('../img/middle_bg.jpg');
   background-attachment: fixed;
@@ -339,11 +338,11 @@ form {
   background-size: cover;
   background-color: #24201e; }
 
-/* line 292, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 296, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .review_item {
   color: #fff;
   text-align: center; }
-  /* line 295, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 299, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .review_item h4 {
     font-family: "Times New Roman", serif;
     font-style: italic;
@@ -351,16 +350,16 @@ form {
     font-weight: normal;
     margin-top: 20px;
     margin-bottom: 20px; }
-  /* line 302, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 306, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .review_item p {
     margin: 30px auto 0;
     display: inline-block;
     float: none;
     font-size: 15px; }
-  /* line 307, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 311, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .review_item .image_wrap {
     text-align: center; }
-    /* line 309, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+    /* line 313, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
     .review_item .image_wrap img {
       width: 165px;
       height: 165px;
@@ -368,14 +367,14 @@ form {
       border-radius: 50%;
       border: #585a5b 10px solid; }
 
-/* line 315, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 319, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .hr {
   width: 80px;
   height: 1px;
   background-color: #CEA380;
   margin: auto; }
 
-/* line 321, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 325, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .owl-nav div {
   position: absolute;
   top: 20px;
@@ -383,20 +382,20 @@ form {
   width: 37px;
   height: 140px;
   background-image: url('../img/s_arrows.png'); }
-  /* line 328, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 332, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .owl-nav div:hover {
     opacity: 1; }
-  /* line 330, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 334, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .owl-nav div.owl-next {
     right: 0;
     background-position: top right; }
 
-/* line 333, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 337, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .owl-dots {
   width: 100%;
   margin-top: 20px;
   text-align: center; }
-  /* line 337, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  /* line 341, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .owl-dots .owl-dot {
     width: 14px;
     height: 14px;
@@ -405,17 +404,101 @@ form {
     margin: 0 4px;
     border-radius: 50%;
     opacity: 0.5; }
-    /* line 345, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+    /* line 349, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
     .owl-dots .owl-dot.active {
       opacity: 0.8; }
 
-/* line 347, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+/* line 351, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
 .s_back {
   background-image: url("../img/red_bg.jpg");
-  background-position: top center; }
-  /* line 350, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  background-position: top center;
+  text-align: center;
+  padding: 40px 0; }
+  /* line 356, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
   .s_back h3 {
     margin-top: 0;
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 26px; }
+    font-size: 26px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.13);
+    padding: 20px 0; }
+  /* line 364, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  .s_back .button {
+    margin: auto; }
+
+/* line 366, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+.s_contacts {
+  text-align: center;
+  padding-bottom: 0; }
+  /* line 369, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  .s_contacts .wrapper {
+    margin-top: 15px;
+    font-size: 18px; }
+  /* line 373, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  .s_contacts h2 {
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    color: #000;
+    display: inline-block; }
+  /* line 380, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  .s_contacts .tabs {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 20px; }
+    /* line 385, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+    .s_contacts .tabs .tab {
+      float: left;
+      padding: 0 60px;
+      line-height: 38px;
+      color: #9b1818;
+      border: #9b1818 solid 5px; }
+      /* line 391, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+      .s_contacts .tabs .tab:first-child {
+        border-radius: 3px 0 0 3px; }
+      /* line 393, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+      .s_contacts .tabs .tab:last-child {
+        border-radius: 0 3px 3px 0; }
+      /* line 395, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+      .s_contacts .tabs .tab.active {
+        background-color: #9b1818;
+        color: #fff; }
+
+/* line 399, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+.map {
+  margin-top: 20px;
+  min-height: 480px;
+  background-color: #e1d6b0; }
+
+/* line 404, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+footer h2 {
+  color: #000;
+  margin-bottom: 30px; }
+/* line 407, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+footer p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0; }
+/* line 411, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+footer .button_wrap {
+  text-align: center;
+  margin-top: 20px; }
+
+/* line 414, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+.bottom_phone {
+  text-align: center;
+  color: #9b1818;
+  margin-top: 60px; }
+
+/* line 419, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+#hidden_form {
+  margin: auto;
+  max-width: 420px;
+  position: relative; }
+  /* line 423, C:/GitHub/site-layouts/adaptveBootstrap/_html/css/sass/main.sass */
+  #hidden_form h2 {
+    text-align: center;
+    font-weight: normal; }

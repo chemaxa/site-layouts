@@ -14,6 +14,7 @@ body
 	position: relative
 	line-height: 1.6
 	-webkit-font-smoothing: antialised
+    overflow-x: hidden
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -33,7 +34,7 @@ h1
     font-family: "CleanvertisingLight", sans-serif
     margin: 0
     
-section
+section, footer
     padding: 60px 0 70px
     &.s_dark 
         h2,h3,p
@@ -66,16 +67,19 @@ header
     font-weight: bold
     
     
-.top_phone
+.top_phone, .bottom_phone
     text-align: right
-.top_phone .wrapper .tab
-    cursor: pointer
-    text-transform: uppercase
-.top_phone .wrapper .active  
-    text-decoration: underline
-.top_phone .tab_item 
-    font-size: 35px
-    font-family: "RobotoBold", sans-serif
+.top_phone, .bottom_phone
+    .wrapper 
+        .tab
+            cursor: pointer
+            text-transform: uppercase
+    .active  
+        text-decoration: underline
+    
+    .tab_item 
+        font-size: 35px
+        font-family: "RobotoBold", sans-serif
     
 .top_header 
     margin-top: 70px
@@ -348,8 +352,76 @@ form
 .s_back
     background-image: url("../img/red_bg.jpg")
     background-position: top center
+    text-align: center
+    padding: 40px 0
     h3
         margin-top: 0
         text-transform: uppercase
         font-weight: normal
         font-size: 26px
+        text-align: center
+        background-color: rgba(255,255,255,.13)
+        padding: 20px 0
+    .button
+        margin: auto
+.s_contacts
+    text-align: center
+    padding-bottom: 0
+    .wrapper
+        margin-top: 15px
+        font-size: 18px
+        
+    h2
+        height: 45px
+        line-height: 45px
+        margin-bottom: 0
+        vertical-align: middle
+        color: #000
+        display: inline-block
+    .tabs
+        display: inline-block
+        height: 45px
+        line-height: 45px
+        margin-left: 20px
+        .tab
+            float: left
+            padding: 0 60px
+            line-height: 38px
+            color: $red-color
+            border: $red-color solid 5px
+            &:first-child
+                border-radius: 3px 0 0 3px
+            &:last-child
+                border-radius: 0 3px 3px 0
+            &.active
+                background-color: $red-color
+                color: #fff
+                
+.map
+    margin-top: 20px
+    min-height: 480px
+    background-color: #e1d6b0
+footer
+    h2
+        color: #000        
+        margin-bottom: 30px
+    p
+        font-size: 18px
+        text-align: center
+        margin-top: 0
+    .button_wrap
+        text-align: center
+        margin-top: 20px
+.bottom_phone
+    text-align: center
+    color: $red-color
+    margin-top: 60px
+    
+#hidden_form
+    margin: auto
+    max-width: 420px
+    position: relative
+    h2
+        text-align: center
+        font-weight: normal
+        
