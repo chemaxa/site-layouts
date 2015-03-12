@@ -1,4 +1,7 @@
 @import "bourbon/bourbon"
+$w: 100px
+$h:  10px
+
 
 body
 	font-family: "Raleway", sans-serif
@@ -18,3 +21,111 @@ body textarea:required:valid
 
 .hidden
 	display: none
+section
+	.main-head
+	position: relative
+.main_head
+	min-height: 620px
+	padding-top: 20px
+
+.loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+.logo_wrap
+	float: left
+svg
+	height: 60px
+	width: 60px
+	z-index: 100
+	position: relative
+
+.toggle_menu
+	width: 60px
+	height: 60px
+	float: right
+	position: relative
+	z-index: 100
+	border: none
+
+.sandwich
+	width: $w
+	height: $h
+	position: absolute
+	top:0
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+
+
+
+
+.sw-topper
+	position: relative
+	top: 0
+	width: $w
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none;
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+
+	/* transition-delay: 0.2s, 0s; */
+
+
+
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2
+
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+sandwich
+	&:active
+		.sw-topper
+			top: 15px
+			transform: rotate(140deg)
+		.sw-bottom
+			top: 5px
+			transform: rotate(-140deg)
+		.sw-footer
+			opacity: 0
+			top: 0
+			transform: rotate(180deg)

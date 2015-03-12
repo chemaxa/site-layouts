@@ -17,14 +17,4 @@ p {
 .color_border {
   border-color: #FF6347; }
 
-.main_color_bg {
-  background-color: #222; }
-
-svg {
-  height: 80px;
-  width: 80px;
-  z-index: 100;
-  position: relative; }
-
-path {
-  fill: #222; }
+/*# sourceMappingURL=tomato.css.map */

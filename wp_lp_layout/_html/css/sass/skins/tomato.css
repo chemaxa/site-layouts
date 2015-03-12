@@ -1,0 +1,41 @@
+/* line 12, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+body {
+  color: #222;
+  letter-spacing: 1px; }
+
+/* line 16, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+a {
+  color: #FF6347; }
+
+/* line 19, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+p {
+  color: #888; }
+
+/* line 22, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+.color_element {
+  color: #FF6347; }
+
+/* line 24, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+.color_bg {
+  background-color: #FF6347; }
+
+/* line 26, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+.color_border {
+  border-color: #FF6347; }
+
+/* line 29, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+.main_color_bg {
+  background-color: #222; }
+
+/* line 32, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+svg {
+  height: 80px;
+  width: 80px;
+  z-index: 100;
+  position: relative; }
+
+/* line 37, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+path {
+  fill: #222; }
+
+/*# sourceMappingURL=tomato.css.map */
