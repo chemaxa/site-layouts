@@ -38,4 +38,12 @@ svg {
 path {
   fill: #222; }
 
+/* line 41, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+.top_menu a:hover {
+  color: #FF6347;
+  background-color: rgba(255, 255, 255, 0.05); }
+/* line 44, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+.top_menu a {
+  letter-spacing: 2px; }
+
 /*# sourceMappingURL=tomato.css.map */

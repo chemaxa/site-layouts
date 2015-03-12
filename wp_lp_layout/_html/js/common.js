@@ -10,11 +10,15 @@ $(document).ready(function () {
 	})
 
 	// Sandwich Menu
-	$(".sandwich, .menu_item").click(function () {
+	$(".toggle_menu, .menu_item").click(function () {
 		$(".sandwich").toggleClass("active");
 	});
 
-	//data-parallax="scroll" data-image-src="img/bg.jpg" data-z-index="1"
+	$(".toggle_menu").click(function () {
+		$(".top_menu").fadeToggle(700);
+	});
+
+
 
 	//Preloader
 	$(window).load(function () {

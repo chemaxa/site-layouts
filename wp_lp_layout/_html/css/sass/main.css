@@ -1,4 +1,4 @@
-/* line 6, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+/* line 5, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
 body {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
@@ -8,15 +8,15 @@ body {
   line-height: 1.42857;
   -webkit-font-smoothing: antialised; }
 
-/* line 16, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+/* line 15, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
 body input:focus:required:invalid, body textarea:focus:required:invalid {
   color: red; }
 
-/* line 19, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+/* line 18, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
 body input:required:valid, body textarea:required:valid {
   color: green; }
 
-/* line 22, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+/* line 21, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
 .hidden {
   display: none; }
 
@@ -66,74 +66,103 @@ svg {
   z-index: 100;
   position: relative; }
 
-/* line 63, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+/* line 66, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
 .toggle_menu {
   width: 60px;
   height: 60px;
   float: right;
   position: relative;
   z-index: 100;
-  border: none; }
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: block; }
 
-/* line 71, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+/* line 76, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
 .sandwich {
-  width: 100px;
-  height: 10px;
+  width: 50px;
+  height: 5px;
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 30px;
   left: 0;
   right: 0;
-  margin: auto; }
+  margin: auto;
+  z-index: 200; }
 
-/* line 84, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+/* line 88, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
 .sw-topper {
   position: relative;
   top: 0;
-  width: 100px;
-  height: 10px;
+  width: 50px;
+  height: 5px;
   background: white;
   border: none;
   border-radius: 4px 4px 4px 4px;
-  transition: transform 0.5s, top 0.2s;
-  /* transition-delay: 0.2s, 0s; */ }
+  transition: transform 0.5s, top 0.2s; }
 
-/* line 98, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+/* line 99, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
 .sw-bottom {
   position: relative;
-  width: 100px;
-  height: 10px;
-  top: 20px;
+  width: 50px;
+  height: 5px;
+  top: 10px;
   background: white;
   border: none;
   border-radius: 4px 4px 4px 4px;
   transition: transform 0.5s, top 0.2s;
   transition-delay: 0.2s, 0s; }
 
-/* line 110, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+/* line 111, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
 .sw-footer {
   position: relative;
-  width: 100px;
-  height: 10px;
-  top: 40px;
+  width: 50px;
+  height: 5px;
+  top: 20px;
   background: white;
   border: none;
   border-radius: 4px 4px 4px 4px;
   transition: all 0.5s;
   transition-delay: 0.1s; }
 
-/* line 122, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
-sandwich:active .sw-topper {
-  top: 15px;
+/* line 123, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+.sandwich.active .sw-topper {
+  top: 13px;
   transform: rotate(140deg); }
-/* line 125, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
-sandwich:active .sw-bottom {
-  top: 5px;
+/* line 126, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+.sandwich.active .sw-bottom {
+  top: 8px;
   transform: rotate(-140deg); }
-/* line 128, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
-sandwich:active .sw-footer {
+/* line 129, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+.sandwich.active .sw-footer {
   opacity: 0;
   top: 0;
   transform: rotate(180deg); }
+
+/* line 134, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+.top_menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 50;
+  right: 0;
+  top: 0;
+  display: none; }
+  /* line 143, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  .top_menu ul, .top_menu li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  /* line 147, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  .top_menu ul {
+    margin-top: 180px;
+    text-align: center; }
+  /* line 150, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  .top_menu a {
+    color: #fff;
+    display: block;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 13px; }
 
 /*# sourceMappingURL=main.css.map */
