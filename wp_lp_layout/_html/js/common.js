@@ -2,22 +2,18 @@ $(document).ready(function () {
 
 	//Resize Bg
 	function wResize() {
-		$(".main_head").css("height", $(window).height())
-	};
+		$(".main_head").css("height", $(window).height());
+	}
 	wResize();
 	$(window).resize(function () {
 		wResize();
-	})
+	});
 
 	// Sandwich Menu
-	$(".toggle_menu, .menu_item").click(function () {
+	$(".toggle_menu, .top_menu a").click(function () {
 		$(".sandwich").toggleClass("active");
+		$(".top_menu").fadeToggle(750);
 	});
-
-	$(".toggle_menu").click(function () {
-		$(".top_menu").fadeToggle(700);
-	});
-
 
 
 	//Preloader

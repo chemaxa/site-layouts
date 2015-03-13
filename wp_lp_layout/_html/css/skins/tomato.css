@@ -20,6 +20,17 @@ p {
 .main_color_bg {
   background-color: #222; }
 
+.bg_light {
+  background-color: #FAFAFA; }
+
+.bg_dark {
+  background-color: #222;
+  color: #fff; }
+  .bg_dark .s_descr:after {
+    background-color: #fff; }
+  .bg_dark a {
+    color: #fff; }
+
 svg {
   height: 80px;
   width: 80px;
@@ -27,10 +38,26 @@ svg {
   position: relative; }
 
 path {
-  fill: #222; }
+  fill: #FAFAFA; }
+
+circle {
+  fill: #FAFAFA; }
 
 .top_menu a:hover {
   color: #FF6347;
-  background-color: rgba(255, 255, 255, 0.05); }
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 0.3s 0.1s ease;
+          transition: all 0.3s 0.1s ease; }
+.top_menu a:not(:hover) {
+  -webkit-transition: all 0.3s 0.1s ease;
+          transition: all 0.3s 0.1s ease; }
 .top_menu a {
   letter-spacing: 2px; }
+
+.top_text p {
+  letter-spacing: 3px; }
+
+.s_descr {
+  letter-spacing: 5px; }
+  .s_descr:after {
+    background-color: #222; }

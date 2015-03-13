@@ -28,18 +28,47 @@ p
 
 .main_color_bg
 	background-color: $main_color
+.bg_light
+	background-color: $bg_light
+.bg_dark
+	background-color: $main_color
+	color: #fff
+	.s_descr:after
+		background-color: #fff
+	a
+		color: #fff
 
+// LOGO
 svg
 	height: 80px
 	width: 80px
 	z-index: 100
 	position: relative
 path
-	fill: $main_color
+	fill: $bg_light
+circle
+	fill: $bg_light
 
+// TOP MENU
 .top_menu
 	a:hover
 		color: $color
-		background-color: rgba(255,255,255,.05)
+		background-color: rgba(255,255,255,.1)
+		transition: all 0.3s 0.1s ease
+	a:not(:hover)
+		transition: all 0.3s 0.1s ease
 	a
 		+kerning(2)
+// NAME BLOCK
+.top_text
+	h1
+		//color: $bg_light
+	p
+		+kerning(3)
+
+// Section About
+.s_descr
+	+kerning(5)
+	&:after
+		background-color: $main_color
+		
