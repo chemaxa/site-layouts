@@ -61,3 +61,7 @@ circle {
   letter-spacing: 5px; }
   .s_descr:after {
     background-color: #222; }
+
+.main_footer {
+  color: #888;
+  letter-spacing: 0px; }

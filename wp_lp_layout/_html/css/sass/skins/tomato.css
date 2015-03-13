@@ -80,4 +80,9 @@ circle {
   .s_descr:after {
     background-color: #222; }
 
+/* line 70, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+.main_footer {
+  color: #888;
+  letter-spacing: 0px; }
+
 /*# sourceMappingURL=tomato.css.map */

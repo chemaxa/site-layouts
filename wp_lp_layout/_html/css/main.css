@@ -192,7 +192,7 @@ svg {
 
 section {
   position: relative;
-  padding: 70px 0 80px; }
+  padding: 70px 0 90px; }
   section h2 {
     text-align: center;
     font-size: 24px;
@@ -215,3 +215,8 @@ section {
       left: 50%;
       margin-left: -75px;
       margin-top: 60px; }
+
+.main_footer {
+  padding: 50px 0;
+  font-size: 13px;
+  font-weight: 400; }
