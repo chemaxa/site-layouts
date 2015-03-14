@@ -91,12 +91,26 @@ circle {
 .s_about li {
   color: #888; }
 
-/* line 79, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+/* line 80, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+#resume .section_content h3 {
+  color: #222;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 600; }
+/* line 86, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+#resume .section_content .resume_item .year {
+  background-color: #FF6347;
+  color: #fff; }
+/* line 89, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+#resume .section_content .resume_item .resume_description {
+  letter-spacing: 1px; }
+
+/* line 92, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
 .main_footer {
   color: #888;
   letter-spacing: 0px; }
 
-/* line 84, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+/* line 97, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
 section h3 {
   letter-spacing: 3px;
   color: #888; }

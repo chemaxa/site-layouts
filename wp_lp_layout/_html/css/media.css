@@ -4,10 +4,21 @@
 @media only screen and (max-width: 1200px) {}
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+	.personal_last_block {
+		margin-top: 35px;
+	}
+}
 /* Small Devices, Tablets */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+	#resume .left,
+	#resume .left h3,
+	#resume .resume_icon {
+		text-align: left;
+		margin-bottom: 10px;
+	}
+}
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width: 480px) {

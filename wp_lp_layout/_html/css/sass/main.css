@@ -279,14 +279,68 @@ section {
 /* line 265, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
 .person {
   text-align: center;
-  margin-bottom: 30px; }
+  margin-bottom: 35px; }
   /* line 268, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
   .person img {
     max-width: 220px;
     display: inline-block;
     border-radius: 50%; }
 
-/* line 274, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+/* line 275, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+#resume .left {
+  text-align: right;
+  border-right: #d2d2d2 1px solid; }
+  /* line 278, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  #resume .left h3 {
+    text-align: right; }
+  /* line 280, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  #resume .left .resume_description strong {
+    margin-left: 10px; }
+/* line 282, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+#resume .right {
+  text-align: left; }
+  /* line 284, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  #resume .right h3 {
+    text-align: left; }
+  /* line 286, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  #resume .right .resume_description strong {
+    margin-right: 10px; }
+/* line 289, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+#resume h3 {
+  margin-top: 30px; }
+/* line 291, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+#resume .resume_icon {
+  font-size: 40px;
+  margin-bottom: 35px; }
+/* line 295, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+#resume .resume_item {
+  margin-bottom: 35px; }
+  /* line 297, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  #resume .resume_item p {
+    margin-top: 10px; }
+  /* line 299, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  #resume .resume_item .year {
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-style: italic; }
+  /* line 305, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  #resume .resume_item:last-child {
+    margin-bottom: 0; }
+    /* line 307, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+    #resume .resume_item:last-child p {
+      margin-bottom: 0; }
+  /* line 309, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  #resume .resume_item .resume_description {
+    font-style: italic; }
+    /* line 312, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+    #resume .resume_item .resume_description strong {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-style: normal; }
+
+/* line 319, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
 .main_footer {
   padding: 50px 0;
   font-size: 13px;

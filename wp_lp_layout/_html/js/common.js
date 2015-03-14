@@ -32,9 +32,9 @@ $(window).load(function () {
 	$(".top_text p, .section_header, .top_menu ul").animated("fadeInUp", "fadeInDown");
 
 	// ANIMATION SEction About
-	$(".animation_2").animated("fadeInLeft", "fadeOutLeft");
+	$(".animation_2, .left .resume_item").animated("fadeInLeft", "fadeOutLeft");
 	$(".animation_1").animated("flipInY", "flipOutY");
-	$(".animation_3").animated("fadeInRight", "fadeOutRight");
+	$(".animation_3, .right .resume_item").animated("fadeInRight", "fadeOutRight");
 
 
 
