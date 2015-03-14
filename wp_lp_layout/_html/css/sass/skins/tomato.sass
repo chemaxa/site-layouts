@@ -71,8 +71,24 @@ circle
 	+kerning(5)
 	&:after
 		background-color: $main_color
+.section_content
+	p:nth-child(even)
+		color: $color
+	.about_name
+		+kerning(2)
+
+.s_about li
+	color: $text-color
+		
 
 // FOOTER
 .main_footer
 	color: $text_color
 	+kerning(0)
+
+// ALL SECTIONS
+section
+	h3
+		+kerning(3)
+		color: $text_color
+

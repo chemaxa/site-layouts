@@ -81,8 +81,24 @@ circle {
     background-color: #222; }
 
 /* line 70, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+.section_content p:nth-child(even) {
+  color: #FF6347; }
+/* line 72, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+.section_content .about_name {
+  letter-spacing: 2px; }
+
+/* line 75, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+.s_about li {
+  color: #888; }
+
+/* line 79, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
 .main_footer {
   color: #888;
   letter-spacing: 0px; }
+
+/* line 84, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+section h3 {
+  letter-spacing: 3px;
+  color: #888; }
 
 /*# sourceMappingURL=tomato.css.map */

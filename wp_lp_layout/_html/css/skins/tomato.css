@@ -62,6 +62,18 @@ circle {
   .s_descr:after {
     background-color: #222; }
 
+.section_content p:nth-child(even) {
+  color: #FF6347; }
+.section_content .about_name {
+  letter-spacing: 2px; }
+
+.s_about li {
+  color: #888; }
+
 .main_footer {
   color: #888;
   letter-spacing: 0px; }
+
+section h3 {
+  letter-spacing: 3px;
+  color: #888; }
