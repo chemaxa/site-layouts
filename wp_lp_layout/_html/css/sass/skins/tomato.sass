@@ -67,18 +67,19 @@ circle
 		+kerning(3)
 
 // ABOUT SECTION
-.s_descr
-	+kerning(5)
-	&:after
-		background-color: $main_color
-.section_content
-	p:nth-child(even)
-		color: $color
-	.about_name
-		+kerning(2)
+#about
+	.s_descr
+		+kerning(5)
+		&:after
+			background-color: $main_color
+	.section_content
+		p:nth-child(even)
+			color: $color
+		.about_name
+			+kerning(2)
 
-.s_about li
-	color: $text-color
+	.s_about li
+		color: $text-color
 		
 // RESUME SECTION
 #resume 
@@ -95,6 +96,19 @@ circle
 			.resume_description
 				+kerning(1)
 
+// PORTFOLIO SECTION
+#portfolio
+	.section_content
+		li
+			+kerning(2)
+			color: $text_color
+			&.active
+				color: #fff
+				border-bottom: 1px solid $color
+		.item_cont
+			a
+				border: $color 1px solid
+				color: $color
 // FOOTER
 .main_footer
 	color: $text_color
