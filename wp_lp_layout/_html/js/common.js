@@ -41,8 +41,11 @@ $(document).ready(function () {
 	$(".mix").each(function (i) {
 		$(this).find(".item_descr").attr("id", "work_" + i);
 		$(this).find("a").attr("href", "#work_" + i);
-		console.log(i);
 	});
+
+	// Contacts Section Validation form
+	$("input").jqBootstrapValidation();
+	$(".top_menu a").mPageScroll2id();
 });
 
 //Preloader

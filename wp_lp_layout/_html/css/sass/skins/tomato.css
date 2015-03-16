@@ -119,20 +119,39 @@ circle {
 /* line 107, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
 #contacts .contact_box i {
   color: #FF6347; }
+/* line 110, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+#contacts form .help-block {
+  color: #FF6347; }
+/* line 112, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+#contacts form input:focus, #contacts form textarea:focus {
+  border: 1px solid #FF6347; }
+/* line 114, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+#contacts form input, #contacts form textarea {
+  letter-spacing: 2px; }
+/* line 116, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+#contacts form button {
+  background-color: #FF6347;
+  border: none;
+  color: #fff;
+  letter-spacing: 2px; }
+/* line 121, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+#contacts form .form-group {
+  letter-spacing: 2px;
+  color: #888; }
 
-/* line 109, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+/* line 124, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
 .main_footer {
   color: #888;
   letter-spacing: 0px; }
-  /* line 112, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+  /* line 127, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
   .main_footer a {
     color: #FF6347; }
 
-/* line 116, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+/* line 131, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
 section h3 {
   letter-spacing: 3px;
   color: #888; }
-/* line 120, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+/* line 135, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
 section .s_descr:after {
   background-color: #222; }
 

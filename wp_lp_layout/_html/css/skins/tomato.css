@@ -91,6 +91,20 @@ circle {
 
 #contacts .contact_box i {
   color: #FF6347; }
+#contacts form .help-block {
+  color: #FF6347; }
+#contacts form input:focus, #contacts form textarea:focus {
+  border: 1px solid #FF6347; }
+#contacts form input, #contacts form textarea {
+  letter-spacing: 2px; }
+#contacts form button {
+  background-color: #FF6347;
+  border: none;
+  color: #fff;
+  letter-spacing: 2px; }
+#contacts form .form-group {
+  letter-spacing: 2px;
+  color: #888; }
 
 .main_footer {
   color: #888;

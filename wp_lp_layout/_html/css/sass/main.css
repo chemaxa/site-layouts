@@ -432,17 +432,41 @@ section {
   /* line 397, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
   #contacts .contact_box i {
     font-size: 30px; }
+/* line 400, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+#contacts form button {
+  padding: 0 20px;
+  line-height: 40px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: block;
+  margin-top: 10px;
+  float: right; }
+/* line 409, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+#contacts form .form-group {
+  margin-bottom: 20px;
+  display: block; }
+  /* line 412, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  #contacts form .form-group input, #contacts form .form-group textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    line-height: 40px;
+    text-indent: 15px;
+    font-size: 12px;
+    background-color: transparent; }
 
-/* line 407, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+/* line 425, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
 .main_footer {
   padding: 50px 0;
   font-size: 13px;
   font-weight: 400; }
-  /* line 411, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  /* line 429, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
   .main_footer .social_wrap {
     float: right;
     margin: -10px; }
-  /* line 414, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
+  /* line 432, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/main.sass */
   .main_footer a {
     line-height: 0; }
 

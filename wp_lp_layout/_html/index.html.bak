@@ -356,7 +356,7 @@
 		<div class="section_content">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 col-sm-6">
+					<div class="col-md-6">
 						<div class="contact_box">
 							<i class="icon-basic-geolocalize-05"></i>
 							<h3>Адрес:</h3>
@@ -374,22 +374,22 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-6">
-						<form action="http://formspree.io/chemaxa@gmail.com" class="main_form" novalidate target="_blank" method="post">
+					<div class="col-md-6">
+						<form action="" novalidate="" class="main_form">
 							<label class="form-group">
-								<span class="color_element">*</span> Ваше имя:
-								<input type="text" name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required />
-								<span class="help-block text-danger"></span>
+								<span class="color_element">*</span>Ваше имя:
+								<input type="text" name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required/>
+								<span class="help-block"></span>
 							</label>
 							<label class="form-group">
-								<span class="color_element">*</span> Ваш E-mail:
-								<input type="email" name="email" placeholder="Ваш E-mail" data-validation-required-message="Не корректно введен E-mail" required />
-								<span class="help-block text-danger"></span>
+								<span class="color_element">*</span>Ваш email:
+								<input type="email" name="email" placeholder="Ваш email" data-validation-required-message="Вы не ввели email" data-validation-email-message="E-mail некорректен" required/>
+								<span class="help-block"></span>
 							</label>
 							<label class="form-group">
 								<span class="color_element">*</span> Ваше сообщение:
-								<textarea name="message" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea>
-								<span class="help-block text-danger"></span>
+								<textarea name="message" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required aria-invalid="false"></textarea>
+								<span class="help-block"></span>
 							</label>
 							<button>Отправить</button>
 						</form>

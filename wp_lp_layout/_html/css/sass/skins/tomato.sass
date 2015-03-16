@@ -114,6 +114,22 @@ circle
 	.contact_box
 		i
 			color: $color
+	form
+		.help-block
+			color: $color
+		input:focus,textarea:focus
+			border: 1px solid $color
+		input,textarea
+			+kerning(2)
+		button
+			background-color: $color
+			border: none
+			color: #fff
+			+kerning(2)
+	
+		.form-group
+			+kerning(2)
+			color: $text_color
 // FOOTER
 .main_footer
 	color: $text_color

@@ -371,6 +371,27 @@ section {
     margin-top: 5px; }
   #contacts .contact_box i {
     font-size: 30px; }
+#contacts form button {
+  padding: 0 20px;
+  line-height: 40px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: block;
+  margin-top: 10px;
+  float: right; }
+#contacts form .form-group {
+  margin-bottom: 20px;
+  display: block; }
+  #contacts form .form-group input, #contacts form .form-group textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    line-height: 40px;
+    text-indent: 15px;
+    font-size: 12px;
+    background-color: transparent; }
 
 .main_footer {
   padding: 50px 0;
