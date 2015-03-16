@@ -27,7 +27,6 @@ $(document).ready(function () {
 	// Magnific POPUP Portfolio Section
 	$('.popup_item').magnificPopup({
 		type: 'inline'
-			//closeMarkup: '<div class="mfp-close" style="top: 0px; right: 0px; height: 30px; width:30px;border: 1px solid black;border-radius: 50%;">x</div>'
 	});
 
 	// Portfolio Section setting li active class
@@ -38,7 +37,12 @@ $(document).ready(function () {
 
 
 	// Portfolio section Set ID's
-	$(".portfolio_table").each(function () {});
+
+	$(".mix").each(function (i) {
+		$(this).find(".item_descr").attr("id", "work_" + i);
+		$(this).find("a").attr("href", "#work_" + i);
+		console.log(i);
+	});
 });
 
 //Preloader
@@ -50,9 +54,9 @@ $(window).load(function () {
 	$(".top_text p, .section_header, .top_menu ul").animated("fadeInUp", "fadeInDown");
 
 	// ANIMATION SEction About
-	$(".animation_2, .left .resume_item").animated("fadeInLeft", "fadeOutLeft");
-	$(".animation_1").animated("flipInY", "flipOutY");
-	$(".animation_3, .right .resume_item").animated("fadeInRight", "fadeOutRight");
+	//$(".animation_2,.animation_3").animated("fadeInUp", "");
+	//$(".animation_1").animated("flipInY", "flipOutY");
+	//$(".animation_3,  .right .resume_item").animated("slideInRight", "");
 
 
 

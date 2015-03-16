@@ -89,10 +89,17 @@ circle {
   border: #FF6347 1px solid;
   color: #FF6347; }
 
+#contacts .contact_box i {
+  color: #FF6347; }
+
 .main_footer {
   color: #888;
   letter-spacing: 0px; }
+  .main_footer a {
+    color: #FF6347; }
 
 section h3 {
   letter-spacing: 3px;
   color: #888; }
+section .s_descr:after {
+  background-color: #222; }

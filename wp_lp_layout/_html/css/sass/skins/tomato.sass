@@ -109,14 +109,23 @@ circle
 			a
 				border: $color 1px solid
 				color: $color
+// CONTACTS SECTION
+#contacts
+	.contact_box
+		i
+			color: $color
 // FOOTER
 .main_footer
 	color: $text_color
 	+kerning(0)
+	a
+		color: $color
 
 // ALL SECTIONS
 section
 	h3
 		+kerning(3)
 		color: $text_color
-
+	.s_descr
+		&:after
+			background-color: $main_color

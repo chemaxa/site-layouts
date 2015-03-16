@@ -116,14 +116,24 @@ circle {
   border: #FF6347 1px solid;
   color: #FF6347; }
 
-/* line 105, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+/* line 107, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+#contacts .contact_box i {
+  color: #FF6347; }
+
+/* line 109, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
 .main_footer {
   color: #888;
   letter-spacing: 0px; }
+  /* line 112, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+  .main_footer a {
+    color: #FF6347; }
 
-/* line 110, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+/* line 116, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
 section h3 {
   letter-spacing: 3px;
   color: #888; }
+/* line 120, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/tomato.sass */
+section .s_descr:after {
+  background-color: #222; }
 
 /*# sourceMappingURL=tomato.css.map */

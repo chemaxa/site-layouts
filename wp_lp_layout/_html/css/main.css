@@ -5,7 +5,9 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.42857;
-  -webkit-font-smoothing: antialised; }
+  -webkit-font-smoothing: antialised;
+  overflow-x: hidden;
+  width: 100%; }
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -350,14 +352,32 @@ section {
     margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: 400;
-    margin-top: 20px; }
+    margin-top: 25px;
+    padding-top: 25px; }
   .item_descr p {
     margin-top: 0; }
   .item_descr img {
     width: 100%;
-    margin-top: 20px; }
+    margin-top: 10px; }
+
+#contacts .contact_box {
+  margin-bottom: 30px; }
+  #contacts .contact_box h3 {
+    text-align: left;
+    color: #000;
+    margin-bottom: 0;
+    font-size: 14px; }
+  #contacts .contact_box p {
+    margin-top: 5px; }
+  #contacts .contact_box i {
+    font-size: 30px; }
 
 .main_footer {
   padding: 50px 0;
   font-size: 13px;
   font-weight: 400; }
+  .main_footer .social_wrap {
+    float: right;
+    margin: -10px; }
+  .main_footer a {
+    line-height: 0; }
