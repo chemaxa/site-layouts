@@ -376,7 +376,8 @@ section {
   padding: 0; }
   /* line 357, sass/main.sass */
   #portfolio .section_content .portfolio_table .mix img {
-    width: 100%; }
+    width: 100%;
+  	height: auto;}
   /* line 359, sass/main.sass */
   #portfolio .section_content .portfolio_table .mix .item_cont {
     position: absolute;

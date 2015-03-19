@@ -27,7 +27,7 @@
 	<div class="loader">
 		<div class="loader_inner"></div>
 	</div>
-	<header class="main_head  main_color_bg" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" data-z-index="1">
+	<header class="main_head  main_color_bg" data-parallax="scroll" data-image-src="<?php echo get_background_image();?>" data-z-index="1"> 
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">

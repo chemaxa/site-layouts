@@ -23,3 +23,5 @@ function logo_widget_init() {
 add_action( 'widgets_init', 'logo_widget_init' );
 require_once ( get_stylesheet_directory() . '/theme-options.php' );
 add_theme_support( 'post-thumbnails' ); 
+remove_filter('term_description','wpautop');
+add_theme_support( 'custom-background' );

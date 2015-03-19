@@ -1,10 +1,11 @@
 <footer class="main_footer bg_dark">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">&copy; 2015 Шкарбалюк Максим
+			<div class="col-md-12">&copy;
+				<?php echo date( 'Y'). ' '; echo get_bloginfo( 'name' ); ?>
 				<div class="social_wrap">
 					<ul>
-						<?php if ( have_posts() ) : query_posts( 'cat=3'); while (have_posts()) : the_post(); ?>
+						<?php $idObj=get_category_by_slug( 'portfolio'); $id=$idObj->term_id; if ( have_posts() ) : query_posts( 'cat='.$id); while (have_posts()) : the_post(); ?>
 						<li><a href="<?php echo get_post_meta($post->ID, 'soc_url', true); ?>" target="_blank" title="<?php the_title(); ?>"><i class="fa <?php echo get_post_meta($post->ID, 'fonts_awesome', true); ?>"></i></a>
 						</li>
 						<? endwhile; endif; wp_reset_query(); ?>

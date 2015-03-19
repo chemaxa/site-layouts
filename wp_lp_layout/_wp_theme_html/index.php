@@ -3,10 +3,10 @@
 
 <section id="about" class="s_about bg_light">
 	<div class="section_header">
-		<h2><?php echo get_cat_name(1) ?></h2>
+		<h2><?php $idObj = get_category_by_slug('about'); $id = $idObj->term_id;echo get_cat_name($id) ?></h2>
 		<div class="s_descr_wrap">
 			<div class="s_descr">
-				<?php echo category_description(1); ?> </div>
+				<?php $idObj=get_category_by_slug( 'about'); $id=$idObj->term_id; echo category_description($id); ?> </div>
 		</div>
 	</div>
 	<div class="section_content">
@@ -20,7 +20,7 @@
 						<?php if ( has_post_thumbnail( ) )?>
 
 						<?php $large_url=wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );?>
-						<a href=" <?php echo $large_url[0]?>" class="popup">
+						<a href="<?php echo $large_url[0]?>" class="popup">
 							<?php the_post_thumbnail(array(200, 200)); ?>
 						</a>
 					</div>
@@ -62,71 +62,53 @@
 
 <section id="resume" class="s_resume">
 	<div class="section_header">
-		<h2><?php echo get_cat_name(4) ?></h2>
+		<h2><?php $idObj = get_category_by_slug('resume'); $id = $idObj->term_id; echo get_cat_name($id) ?></h2>
 		<div class="s_descr_wrap">
 			<div class="s_descr">
-				<?php echo category_description(4); ?> </div>
+				<?php $idObj=get_category_by_slug( 'resume'); $id=$idObj->term_id; echo category_description($id); ?> </div>
+
 		</div>
 	</div>
 	<div class="section_content">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-sm-6 left">
-					<h3>Работа</h3>
+					<h3><?php $idObj = get_category_by_slug('resume'); $id = $idObj->term_id;  echo get_cat_name($id) ?></h3>
+
 					<div class="resume_icon"><i class="icon-basic-case"></i>
 					</div>
-					<div class="resume_item">
-						<div class="year">2005-2015</div>
-						<div class="resume_description">ООО "РОга и копыта" <strong>Программист</strong>
-						</div>
-						<p>
-							Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-					</div>
+
+					<?php $idObj=get_category_by_slug( 'resume'); $id=$idObj->term_id; if ( have_posts() ) : query_posts( 'cat='.$id); while (have_posts()) : the_post(); ?>
 
 					<div class="resume_item">
-						<div class="year">2005-2015</div>
-						<div class="resume_description">ООО "РОга и копыта" <strong>Программист</strong>
+						<div class="year">
+							<?php echo get_post_meta($post->ID, 'year', true); ?></div>
+						<div class="resume_description">
+							<?php echo get_post_meta($post->ID, 'work_place', true); ?> <strong><?php the_title(); ?></strong>
 						</div>
-						<p>
-							Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+						<?php echo the_content(); ?>
 					</div>
-					<div class="resume_item">
-						<div class="year">2005-2015</div>
-						<div class="resume_description">ООО "РОга и копыта" <strong>Программист</strong>
-						</div>
-						<p>
-							Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-					</div>
+					<? endwhile; endif; wp_reset_query(); ?>
+
 
 				</div>
 
 				<div class="col-md-6 col-sm-6 right">
-					<h3>Учеба</h3>
+					<h3><?php $idObj = get_category_by_slug('resume'); $id = $idObj->term_id; echo get_cat_name($id) ?></h3>
 					<div class="resume_icon"><i class="icon-basic-book-pen"></i>
 					</div>
 
+					<?php if ( have_posts() ) : query_posts( 'cat='.$id); while (have_posts()) : the_post(); ?>
 					<div class="resume_item">
-						<div class="year">2005-2015</div>
-						<div class="resume_description">ООО "РОга и копыта" <strong>Программист</strong>
+						<div class="year">
+							<?php echo get_post_meta($post->ID, 'year', true); ?></div>
+						<div class="resume_description">
+							<?php echo get_post_meta($post->ID, 'work_place', true); ?> <strong><?php the_title(); ?></strong>
 						</div>
-						<p>
-							Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+						<?php echo the_content(); ?>
 					</div>
+					<? endwhile; endif; wp_reset_query(); ?>
 
-					<div class="resume_item">
-						<div class="year">2005-2015</div>
-						<div class="resume_description">ООО "РОга и копыта" <strong>Программист</strong>
-						</div>
-						<p>
-							Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-					</div>
-					<div class="resume_item">
-						<div class="year">2005-2015</div>
-						<div class="resume_description">ООО "РОга и копыта" <strong>Программист</strong>
-						</div>
-						<p>
-							Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -135,9 +117,12 @@
 
 <section id="portfolio" class="s_portfolio bg_dark">
 	<div class="section_header">
-		<h2>Портфолио</h2>
+		<h2><?php $idObj = get_category_by_slug('portfolio'); $id = $idObj->term_id;  echo get_cat_name($id) ?></h2>
 		<div class="s_descr_wrap">
-			<div class="s_descr">Мои работы</div>
+			<div class="s_descr">
+				<?php $idObj=get_category_by_slug( 'portfolio'); $id=$idObj->term_id; echo category_description($id); ?>
+
+			</div>
 		</div>
 	</div>
 	<div class="section_content">
@@ -147,126 +132,39 @@
 
 				<ul>
 					<li class="filter active" data-filter="all">Все работы</li>
-					<li class="filter" data-filter=".category-1">Сайты</li>
-					<li class="filter" data-filter=".category-2">Логотипы</li>
-					<li class="filter" data-filter=".category-3">Айдентика</li>
+					<li class="filter" data-filter=".sites">Сайты</li>
+					<li class="filter" data-filter=".identy">Айдентика</li>
+					<li class="filter" data-filter=".logos">Логотипы</li>
 				</ul>
 
 				<div class="portfolio_table">
-					<div class="mix col-md-3 col-sm-6 col-xs-12 category-1"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/1.jpg" alt="Alt">
+
+					<?php $idObj=get_category_by_slug( 'portfolio'); $id=$idObj->term_id; if ( have_posts() ) : query_posts( 'cat='.$id); while (have_posts()) : the_post(); $tags=wp_get_post_tags($post->ID); if ($tags) { foreach($tags as $tag) { ?>
+
+
+					<div class="mix col-md-3 col-sm-6 col-xs-12 <?php echo ' '.$tag->name;	}}?>">
+						<?php the_post_thumbnail(array(800, 600)); ?>
 						<div class="item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
+							<h3><?php the_title(); ?></h3>
+							<p>
+								<?php $content=get_extended($post->post_content); echo $content['main'];?></p>
+
+
 							<a href="#" class="popup_item">Посмотреть</a>
 						</div>
 						<div class="hidden">
 							<div class="item_descr" id="work_1">
-								<h3>Заголовок работы</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vero ratione maiores, eius fugit consequuntur rerum in culpa molestias inventore illo, nostrum maxime sequi, accusamus mollitia quam obcaecati reprehenderit optio!</p><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/1.jpg" alt="Alt">
+								<h3><?php the_title(); ?></h3>
+								<p>
+									<?php echo $content[ 'main'].$content[ 'extended']; ?>
+								</p>
+								<?php $large_url=wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );?>
+								<img src="<?php echo $large_url[0]?>" alt="<?php the_title(); ?>">
 							</div>
 						</div>
 					</div>
 
-
-					<div class="mix col-md-3 col-sm-6 col-xs-12 category-1"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/2.jpg" alt="Alt">
-						<div class="item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#" class="popup_item">Посмотреть</a>
-						</div>
-						<div class="hidden">
-							<div class="item_descr">
-								<h3>Заголовок работы</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vero ratione maiores, eius fugit consequuntur rerum in culpa molestias inventore illo, nostrum maxime sequi, accusamus mollitia quam obcaecati reprehenderit optio!</p><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/2.jpg" alt="Alt">
-							</div>
-						</div>
-					</div>
-
-					<div class="mix col-md-3 col-sm-6 col-xs-12 category-1"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/3.jpg" alt="Alt">
-						<div class="item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#" class="popup_item">Посмотреть</a>
-						</div>
-						<div class="hidden">
-							<div class="item_descr">
-								<h3>Заголовок работы</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vero ratione maiores, eius fugit consequuntur rerum in culpa molestias inventore illo, nostrum maxime sequi, accusamus mollitia quam obcaecati reprehenderit optio!</p><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/3.jpg" alt="Alt">
-							</div>
-						</div>
-					</div>
-
-					<div class="mix col-md-3 col-sm-6 col-xs-12 category-2"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/4.jpg" alt="Alt">
-						<div class="item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#" class="popup_item">Посмотреть</a>
-						</div>
-						<div class="hidden">
-							<div class="item_descr">
-								<h3>Заголовок работы</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vero ratione maiores, eius fugit consequuntur rerum in culpa molestias inventore illo, nostrum maxime sequi, accusamus mollitia quam obcaecati reprehenderit optio!</p><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/4.jpg" alt="Alt">
-							</div>
-						</div>
-					</div>
-
-					<div class="mix col-md-3 col-sm-6 col-xs-12 category-2"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/5.jpg" alt="Alt">
-						<div class="item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#" class="popup_item">Посмотреть</a>
-						</div>
-						<div class="hidden">
-							<div class="item_descr">
-								<h3>Заголовок работы</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vero ratione maiores, eius fugit consequuntur rerum in culpa molestias inventore illo, nostrum maxime sequi, accusamus mollitia quam obcaecati reprehenderit optio!</p><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/5.jpg" alt="Alt">
-							</div>
-						</div>
-					</div>
-
-					<div class="mix col-md-3 col-sm-6 col-xs-12 category-2"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/6.jpg" alt="Alt">
-						<div class="item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#" class="popup_item">Посмотреть</a>
-						</div>
-						<div class="hidden">
-							<div class="item_descr">
-								<h3>Заголовок работы</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vero ratione maiores, eius fugit consequuntur rerum in culpa molestias inventore illo, nostrum maxime sequi, accusamus mollitia quam obcaecati reprehenderit optio!</p><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/6.jpg" alt="Alt">
-							</div>
-						</div>
-					</div>
-
-					<div class="mix col-md-3 col-sm-6 col-xs-12 category-3"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/4.jpg" alt="Alt">
-						<div class="item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#" class="popup_item">Посмотреть</a>
-						</div>
-						<div class="hidden">
-							<div class="item_descr">
-								<h3>Заголовок работы</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vero ratione maiores, eius fugit consequuntur rerum in culpa molestias inventore illo, nostrum maxime sequi, accusamus mollitia quam obcaecati reprehenderit optio!</p><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/4.jpg" alt="Alt">
-							</div>
-						</div>
-					</div>
-
-					<div class="mix col-md-3 col-sm-6 col-xs-12 category-3"><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/6.jpg" alt="Alt">
-						<div class="item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#" class="popup_item">Посмотреть</a>
-						</div>
-						<div class="hidden">
-							<div class="item_descr">
-								<h3>Заголовок работы</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vero ratione maiores, eius fugit consequuntur rerum in culpa molestias inventore illo, nostrum maxime sequi, accusamus mollitia quam obcaecati reprehenderit optio!</p><img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-images/6.jpg" alt="Alt">
-							</div>
-						</div>
-					</div>
-
-
+					<? endwhile; endif; wp_reset_query(); ?>
 
 				</div>
 			</div>
@@ -276,9 +174,11 @@
 
 <section id="contacts" class="s_contacts bg_light">
 	<div class="section_header">
-		<h2>Контакты</h2>
+		<h2><?php  $idObj=get_category_by_slug( 'contacts'); $id=$idObj->term_id; echo get_cat_name($id) ?></h2>
 		<div class="s_descr_wrap">
-			<div class="s_descr">Свяжитесь со мной</div>
+			<div class="s_descr">
+				<?php $idObj=get_category_by_slug( 'contacts'); $id=$idObj->term_id; echo category_description($id) ?>
+			</div>
 		</div>
 	</div>
 	<div class="section_content">
@@ -288,17 +188,26 @@
 					<div class="contact_box">
 						<i class="icon-basic-geolocalize-05"></i>
 						<h3>Адрес:</h3>
-						<p>Санкт-Петербург, Луначарского 76к2</p>
+						<p>
+							<?php $options=get_option( 'sample_theme_options'); echo $options[ 'adress']; ?>
+						</p>
 					</div>
 					<div class="contact_box">
 						<i class="icon-basic-smartphone"></i>
 						<h3>Телефон:</h3>
-						<p>+7 (999) 110-02-22</p>
+						<p>
+							<?php $options=get_option( 'sample_theme_options'); echo $options[ 'phone']; ?>
+						</p>
 					</div>
 					<div class="contact_box">
 						<i class="icon-basic-webpage-img-txt"></i>
 						<h3>Веб-сайт:</h3>
-						<p><a href="http://chemaxa.ru" target="_blank">http://chemaxa.ru</a>
+						<p>
+							<a href="<?php
+						$options = get_option('sample_theme_options');
+						echo $options['site']; ?>" target="_blank">
+								<?php $options=get_option( 'sample_theme_options'); echo $options[ 'site']; ?>
+							</a>
 						</p>
 					</div>
 				</div>
