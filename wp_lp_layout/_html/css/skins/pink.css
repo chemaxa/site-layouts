@@ -1,158 +1,158 @@
-/* line 12, ../sass/skins/tomato.sass */
+/* line 12, ../sass/skins/pink.sass */
 body {
   color: #222;
   letter-spacing: 1px; }
 
-/* line 16, ../sass/skins/tomato.sass */
+/* line 16, ../sass/skins/pink.sass */
 a {
-  color: #FF6347; }
+  color: #D60270; }
 
-/* line 19, ../sass/skins/tomato.sass */
+/* line 19, ../sass/skins/pink.sass */
 p {
   color: #888; }
 
-/* line 22, ../sass/skins/tomato.sass */
+/* line 22, ../sass/skins/pink.sass */
 .color_element {
-  color: #FF6347; }
+  color: #D60270; }
 
-/* line 24, ../sass/skins/tomato.sass */
+/* line 24, ../sass/skins/pink.sass */
 .color_bg {
-  background-color: #FF6347; }
+  background-color: #D60270; }
 
-/* line 26, ../sass/skins/tomato.sass */
+/* line 26, ../sass/skins/pink.sass */
 .color_border {
-  border-color: #FF6347; }
+  border-color: #D60270; }
 
-/* line 29, ../sass/skins/tomato.sass */
+/* line 29, ../sass/skins/pink.sass */
 .main_color_bg {
   background-color: #222; }
 
-/* line 31, ../sass/skins/tomato.sass */
+/* line 31, ../sass/skins/pink.sass */
 .bg_light {
   background-color: #FAFAFA; }
 
-/* line 33, ../sass/skins/tomato.sass */
+/* line 33, ../sass/skins/pink.sass */
 .bg_dark {
   background-color: #222;
   color: #fff; }
-  /* line 36, ../sass/skins/tomato.sass */
+  /* line 36, ../sass/skins/pink.sass */
   .bg_dark .s_descr:after {
     background-color: #fff; }
-  /* line 38, ../sass/skins/tomato.sass */
+  /* line 38, ../sass/skins/pink.sass */
   .bg_dark a {
     color: #fff; }
 
-/* line 42, ../sass/skins/tomato.sass */
+/* line 42, ../sass/skins/pink.sass */
 svg {
   height: 80px;
   width: 80px;
   z-index: 100;
   position: relative; }
 
-/* line 47, ../sass/skins/tomato.sass */
+/* line 47, ../sass/skins/pink.sass */
 path {
   fill: #FAFAFA; }
 
-/* line 49, ../sass/skins/tomato.sass */
+/* line 49, ../sass/skins/pink.sass */
 circle {
   fill: #FAFAFA; }
 
-/* line 54, ../sass/skins/tomato.sass */
+/* line 54, ../sass/skins/pink.sass */
 .top_menu a:hover {
-  color: #FF6347;
+  color: #D60270;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: all 0.3s 0.1s ease;
           transition: all 0.3s 0.1s ease; }
-/* line 58, ../sass/skins/tomato.sass */
+/* line 58, ../sass/skins/pink.sass */
 .top_menu a:not(:hover) {
   -webkit-transition: all 0.3s 0.1s ease;
           transition: all 0.3s 0.1s ease; }
-/* line 60, ../sass/skins/tomato.sass */
+/* line 60, ../sass/skins/pink.sass */
 .top_menu a {
   letter-spacing: 2px; }
 
-/* line 66, ../sass/skins/tomato.sass */
+/* line 66, ../sass/skins/pink.sass */
 .top_text p {
   letter-spacing: 3px; }
 
-/* line 71, ../sass/skins/tomato.sass */
+/* line 71, ../sass/skins/pink.sass */
 #about .s_descr {
   letter-spacing: 5px; }
-  /* line 73, ../sass/skins/tomato.sass */
+  /* line 73, ../sass/skins/pink.sass */
   #about .s_descr:after {
     background-color: #222; }
-/* line 76, ../sass/skins/tomato.sass */
+/* line 76, ../sass/skins/pink.sass */
 #about .section_content p:nth-child(even) {
-  color: #FF6347; }
-/* line 78, ../sass/skins/tomato.sass */
+  color: #D60270; }
+/* line 78, ../sass/skins/pink.sass */
 #about .section_content .about_name {
   letter-spacing: 2px; }
-/* line 81, ../sass/skins/tomato.sass */
+/* line 81, ../sass/skins/pink.sass */
 #about .s_about li {
   color: #888; }
 
-/* line 87, ../sass/skins/tomato.sass */
+/* line 87, ../sass/skins/pink.sass */
 #resume .section_content h3 {
   color: #222;
   letter-spacing: 2px;
   font-size: 16px;
   font-weight: 600; }
-/* line 93, ../sass/skins/tomato.sass */
+/* line 93, ../sass/skins/pink.sass */
 #resume .section_content .resume_item .year {
-  background-color: #FF6347;
+  background-color: #D60270;
   color: #fff; }
-/* line 96, ../sass/skins/tomato.sass */
+/* line 96, ../sass/skins/pink.sass */
 #resume .section_content .resume_item .resume_description {
   letter-spacing: 1px; }
 
-/* line 102, ../sass/skins/tomato.sass */
+/* line 102, ../sass/skins/pink.sass */
 #portfolio .section_content li {
   letter-spacing: 2px;
   color: #888; }
-  /* line 105, ../sass/skins/tomato.sass */
+  /* line 105, ../sass/skins/pink.sass */
   #portfolio .section_content li.active {
     color: #fff;
-    border-bottom: 1px solid #FF6347; }
-/* line 109, ../sass/skins/tomato.sass */
+    border-bottom: 1px solid #D60270; }
+/* line 109, ../sass/skins/pink.sass */
 #portfolio .section_content .item_cont a {
-  border: #FF6347 1px solid;
-  color: #FF6347; }
+  border: #D60270 1px solid;
+  color: #D60270; }
 
-/* line 115, ../sass/skins/tomato.sass */
+/* line 115, ../sass/skins/pink.sass */
 #contacts .contact_box i {
-  color: #FF6347; }
-/* line 118, ../sass/skins/tomato.sass */
+  color: #D60270; }
+/* line 118, ../sass/skins/pink.sass */
 #contacts form .help-block {
-  color: #FF6347; }
-/* line 120, ../sass/skins/tomato.sass */
+  color: #D60270; }
+/* line 120, ../sass/skins/pink.sass */
 #contacts form input:focus, #contacts form textarea:focus {
-  border: 1px solid #FF6347; }
-/* line 122, ../sass/skins/tomato.sass */
+  border: 1px solid #D60270; }
+/* line 122, ../sass/skins/pink.sass */
 #contacts form input, #contacts form textarea {
   letter-spacing: 2px; }
-/* line 124, ../sass/skins/tomato.sass */
+/* line 124, ../sass/skins/pink.sass */
 #contacts form button {
-  background-color: #FF6347;
+  background-color: #D60270;
   border: none;
   color: #fff;
   letter-spacing: 2px; }
-/* line 130, ../sass/skins/tomato.sass */
+/* line 130, ../sass/skins/pink.sass */
 #contacts form .form-group {
   letter-spacing: 2px;
   color: #888; }
 
-/* line 134, ../sass/skins/tomato.sass */
+/* line 134, ../sass/skins/pink.sass */
 .main_footer {
   color: #888;
   letter-spacing: 0px; }
-  /* line 137, ../sass/skins/tomato.sass */
+  /* line 137, ../sass/skins/pink.sass */
   .main_footer a {
-    color: #FF6347; }
+    color: #D60270; }
 
-/* line 142, ../sass/skins/tomato.sass */
+/* line 142, ../sass/skins/pink.sass */
 section h3 {
   letter-spacing: 3px;
   color: #888; }
-/* line 146, ../sass/skins/tomato.sass */
+/* line 146, ../sass/skins/pink.sass */
 section .s_descr:after {
   background-color: #222; }

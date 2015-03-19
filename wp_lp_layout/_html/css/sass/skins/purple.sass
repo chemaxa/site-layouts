@@ -1,0 +1,147 @@
+@import "../bourbon/bourbon"
+
+
+$color: #8238A7 //Theme skin
+$text_color: #888
+$main_color: #222
+$bg_light: #FAFAFA
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	color: $color
+
+p
+	color: $text_color
+
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.color_border
+	border-color: $color
+
+.main_color_bg
+	background-color: $main_color
+.bg_light
+	background-color: $bg_light
+.bg_dark
+	background-color: $main_color
+	color: #fff
+	.s_descr:after
+		background-color: #fff
+	a
+		color: #fff
+
+// LOGO
+svg
+	height: 80px
+	width: 80px
+	z-index: 100
+	position: relative
+path
+	fill: $bg_light
+circle
+	fill: $bg_light
+
+// TOP MENU
+.top_menu
+	a:hover
+		color: $color
+		background-color: rgba(255,255,255,.1)
+		transition: all 0.3s 0.1s ease
+	a:not(:hover)
+		transition: all 0.3s 0.1s ease
+	a
+		+kerning(2)
+// NAME BLOCK
+.top_text
+	h1
+		//color: $bg_light
+	p
+		+kerning(3)
+
+// ABOUT SECTION
+#about
+	.s_descr
+		+kerning(5)
+		&:after
+			background-color: $main_color
+	.section_content
+		p:nth-child(even)
+			color: $color
+		.about_name
+			+kerning(2)
+
+	.s_about li
+		color: $text-color
+
+// RESUME SECTION
+#resume
+	.section_content
+		h3
+			color: $main_color
+			+kerning(2)
+			font-size: 16px
+			font-weight: 600
+		.resume_item
+			.year
+				background-color: $color
+				color: #fff
+			.resume_description
+				+kerning(1)
+
+// PORTFOLIO SECTION
+#portfolio
+	.section_content
+		li
+			+kerning(2)
+			color: $text_color
+			&.active
+				color: #fff
+				border-bottom: 1px solid $color
+		.item_cont
+			a
+				border: $color 1px solid
+				color: $color
+// CONTACTS SECTION
+#contacts
+	.contact_box
+		i
+			color: $color
+	form
+		.help-block
+			color: $color
+		input:focus,textarea:focus
+			border: 1px solid $color
+		input,textarea
+			+kerning(2)
+		button
+			background-color: $color
+			border: none
+			color: #fff
+			+kerning(2)
+
+		.form-group
+			+kerning(2)
+			color: $text_color
+// FOOTER
+.main_footer
+	color: $text_color
+	+kerning(0)
+	a
+		color: $color
+
+// ALL SECTIONS
+section
+	h3
+		+kerning(3)
+		color: $text_color
+	.s_descr
+		&:after
+			background-color: $main_color

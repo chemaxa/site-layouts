@@ -1,0 +1,158 @@
+/* line 12, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+body {
+  color: #222;
+  letter-spacing: 1px; }
+
+/* line 16, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+a {
+  color: #8238A7; }
+
+/* line 19, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+p {
+  color: #888; }
+
+/* line 22, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+.color_element {
+  color: #8238A7; }
+
+/* line 24, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+.color_bg {
+  background-color: #8238A7; }
+
+/* line 26, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+.color_border {
+  border-color: #8238A7; }
+
+/* line 29, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+.main_color_bg {
+  background-color: #222; }
+
+/* line 31, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+.bg_light {
+  background-color: #FAFAFA; }
+
+/* line 33, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+.bg_dark {
+  background-color: #222;
+  color: #fff; }
+  /* line 36, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+  .bg_dark .s_descr:after {
+    background-color: #fff; }
+  /* line 38, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+  .bg_dark a {
+    color: #fff; }
+
+/* line 41, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+svg {
+  height: 80px;
+  width: 80px;
+  z-index: 100;
+  position: relative; }
+
+/* line 46, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+path {
+  fill: #FAFAFA; }
+
+/* line 48, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+circle {
+  fill: #FAFAFA; }
+
+/* line 52, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+.top_menu a:hover {
+  color: #8238A7;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s 0.1s ease; }
+/* line 56, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+.top_menu a:not(:hover) {
+  transition: all 0.3s 0.1s ease; }
+/* line 58, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+.top_menu a {
+  letter-spacing: 2px; }
+
+/* line 62, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+.top_text p {
+  letter-spacing: 3px; }
+
+/* line 66, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#about .s_descr {
+  letter-spacing: 5px; }
+  /* line 68, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+  #about .s_descr:after {
+    background-color: #222; }
+/* line 71, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#about .section_content p:nth-child(even) {
+  color: #8238A7; }
+/* line 73, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#about .section_content .about_name {
+  letter-spacing: 2px; }
+/* line 76, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#about .s_about li {
+  color: #888; }
+
+/* line 81, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#resume .section_content h3 {
+  color: #222;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 600; }
+/* line 87, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#resume .section_content .resume_item .year {
+  background-color: #8238A7;
+  color: #fff; }
+/* line 90, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#resume .section_content .resume_item .resume_description {
+  letter-spacing: 1px; }
+
+/* line 95, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#portfolio .section_content li {
+  letter-spacing: 2px;
+  color: #888; }
+  /* line 98, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+  #portfolio .section_content li.active {
+    color: #fff;
+    border-bottom: 1px solid #8238A7; }
+/* line 102, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#portfolio .section_content .item_cont a {
+  border: #8238A7 1px solid;
+  color: #8238A7; }
+
+/* line 107, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#contacts .contact_box i {
+  color: #8238A7; }
+/* line 110, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#contacts form .help-block {
+  color: #8238A7; }
+/* line 112, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#contacts form input:focus, #contacts form textarea:focus {
+  border: 1px solid #8238A7; }
+/* line 114, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#contacts form input, #contacts form textarea {
+  letter-spacing: 2px; }
+/* line 116, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#contacts form button {
+  background-color: #8238A7;
+  border: none;
+  color: #fff;
+  letter-spacing: 2px; }
+/* line 122, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+#contacts form .form-group {
+  letter-spacing: 2px;
+  color: #888; }
+
+/* line 125, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+.main_footer {
+  color: #888;
+  letter-spacing: 0px; }
+  /* line 128, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+  .main_footer a {
+    color: #8238A7; }
+
+/* line 132, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+section h3 {
+  letter-spacing: 3px;
+  color: #888; }
+/* line 136, C:/GitHub/site-layouts/wp_lp_layout/_html/css/sass/skins/purple.sass */
+section .s_descr:after {
+  background-color: #222; }
+
+/*# sourceMappingURL=purple.css.map */
