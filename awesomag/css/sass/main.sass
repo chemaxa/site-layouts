@@ -1,9 +1,10 @@
 @import "bourbon/bourbon"
-$text-color: #333
+$text-color: #717171
 $red-color: #9b1818
 $blue-color: #003469
 $dark-color: #000
 $green-color: #67bc5c
+$grey-color: #dddddd
 
 body
 	font-family: "RobotoRegular", sans-serif
@@ -25,3 +26,104 @@ body textarea:focus:required:invalid
 body input:required:valid,
 body textarea:required:valid
 	color: green
+
+header
+	margin-top: 10px
+	.top_header_menu
+		ul,li
+			display: inline-block
+			margin: 0
+			padding: 0
+			list-style-type: none
+			color: $text-color
+			margin-right: 10px
+			
+			
+	.login
+		float: right
+		a
+			color: $text-color
+			margin-right: 10px
+			
+	hr
+		color: $grey-color
+		margin-top: 5px
+
+	.top_banner
+		float: right
+		margin: 15px 0px
+	.logo
+		margin: 31px 0px 
+
+	//navbar
+	.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus, .navbar-default .navbar-nav .active a:hover
+		background-color: #d45757
+		color: #fff
+		padding: 15px 10px
+	.navbar-default .navbar-nav li a
+		color: $text-color
+		padding: 15px 10px
+	nav.navbar.navbar-default
+		border: none
+		background-color: $grey-color
+	
+	.navbar-form
+		margin: 0
+		padding: 0
+		min-width: 200px
+		border: none
+		input
+			background-color: #cecece
+			color: #fff
+			text-indent: 10px
+			border: none
+			outline: none
+			padding: 12px 0
+			margin: 0
+			box-sizing: border-box
+			-moz-box-sizing: border-box
+			-webkit-box-sizing: border-box
+
+		::-webkit-input-placeholder 
+			color: #fff
+		::-moz-placeholder
+			color: #fff
+		:-moz-placeholder
+			color: #fff
+		:-ms-input-placeholder
+			color: #fff
+			
+			
+
+		button
+			margin-left: -30px
+			border: none
+			background-color: transparent
+			height: 50px
+			padding: 0
+			width: 25px
+
+	.navbar-collapse 	
+		padding: 0 
+		border: none
+
+
+// CAROUSEL
+#carousel-example-generic
+	height: 300px
+	img
+		height: 300px
+		width: 400px
+		margin: auto
+	.carousel-control
+		left: 90%
+		top: 90%
+		width: 1%
+		background: none
+		.glyphicon-chevron-left
+			left: -20px
+	
+	
+		
+	
+	
