@@ -131,7 +131,6 @@ header
 	.item
 		background-color: $grey-color
 		.carousel-caption
-	
 			position: absolute
 			text-align: left
 			margin: 0
@@ -145,7 +144,7 @@ header
 				padding: 5px
 				margin: 0
 				text-transform: uppercase
-			h2
+			h3
 				background-color: #5aacce
 				color: #fff
 				padding: 5px
@@ -156,6 +155,8 @@ header
 				color: #000
 				background-color: #fff
 				padding: 5px
+				text-decoration: none
+				text-shadow: none
 	
 // SECTION CONTENT
 .main_content
@@ -165,14 +166,16 @@ header
 			color: $red-color
 		.btn
 			border: none
-			border-radius: none
-		.glyphicon 
+			border-radius: 0
+		i,.number_of_comments,.date
 			background-color: #fff
 			color: #bbbbbb
-			
-
+		.number_of_comments,.date
+			display: inline-block
+		.number_of_comments			
+			margin-left: 20px
 	.thumbnail	
-		position: absolute
+		//position: absolute
 		border: none
 		>span
 			color: #fff
@@ -182,7 +185,10 @@ header
 			left: 3px
 			position: relative
 			text-transform: uppercase
-
+		img
+			width: 100%
+			height: 170px
+			
 		
 	
 	
