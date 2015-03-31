@@ -19,9 +19,9 @@ body
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-	color: red
-    box-shadow: $red-color 0 0 0 2px
-    border-color: $red-color
+	color: $text-color
+    
+    
 
 body input:required:valid,
 body textarea:required:valid
@@ -217,6 +217,7 @@ header
 	p,span
 		margin: 0
 		font-size: 12px
+		color: $text-color
 .media:last-child
 	margin-bottom: 40px
 
@@ -224,15 +225,34 @@ header
 // FOOTER
 footer
 	.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover,a.list-group-item:focus, a.list-group-item:hover,.list-group-item, a.list-group-item
-		color: #000
+		color: $text-color
 		background-color: #fff
 		border: 0
 		outline: 0
 		margin: 0
 		padding: 0
-	.fa
+	.social_wrap a
 		margin-left: 15px
+		color: $text-color
 		&:first-child
 			margin-left: 0
+	
+		
 	h4
 		color: $red-color
+		text-transform: uppercase
+
+	.newsletter_wrap
+		span
+			color: $text-color
+		input
+			margin-top: 10px
+			background-color: $grey-color
+			border: 0
+			text-indent: 10px
+			color: $text-color
+			outline: 0
+		button
+			border: none
+			outline: 0
+			margin-left: -32px

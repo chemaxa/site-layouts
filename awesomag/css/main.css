@@ -12,9 +12,7 @@ body {
 
 /* line 21, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 body input:focus:required:invalid, body textarea:focus:required:invalid {
-  color: red;
-  color-box-shadow: #ce5a5a 0 0 0 2px;
-  color-border-color: #ce5a5a; }
+  color: #717171; }
 
 /* line 27, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 body input:required:valid, body textarea:required:valid {
@@ -228,26 +226,45 @@ header {
 /* line 212, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .media-body p, .media-body span {
   margin: 0;
-  font-size: 12px; }
+  font-size: 12px;
+  color: #717171; }
 
-/* line 215, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 216, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .media:last-child {
   margin-bottom: 40px; }
 
-/* line 220, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 221, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 footer .list-group-item.active, footer .list-group-item.active:focus, footer .list-group-item.active:hover, footer a.list-group-item:focus, footer a.list-group-item:hover, footer .list-group-item, footer a.list-group-item {
-  color: #000;
+  color: #717171;
   background-color: #fff;
   border: 0;
   outline: 0;
   margin: 0;
   padding: 0; }
-/* line 227, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-footer .fa {
-  margin-left: 15px; }
-  /* line 229, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  footer .fa:first-child {
+/* line 228, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+footer .social_wrap a {
+  margin-left: 15px;
+  color: #717171; }
+  /* line 231, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  footer .social_wrap a:first-child {
     margin-left: 0; }
-/* line 231, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 235, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 footer h4 {
-  color: #ce5a5a; }
+  color: #ce5a5a;
+  text-transform: uppercase; }
+/* line 240, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+footer .newsletter_wrap span {
+  color: #717171; }
+/* line 242, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+footer .newsletter_wrap input {
+  margin-top: 10px;
+  background-color: #dddddd;
+  border: 0;
+  text-indent: 10px;
+  color: #717171;
+  outline: 0; }
+/* line 249, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+footer .newsletter_wrap button {
+  border: none;
+  outline: 0;
+  margin-left: -32px; }
