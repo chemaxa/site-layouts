@@ -42,16 +42,21 @@ header
 			padding: 0
 			list-style-type: none
 			color: $text-color
-			margin-right: 10px
-	
+		a
+			font-size: 12px
+			
+			
 	hr
 		margin-top: 5px
 	.login
 		float: right
+		font-size: 12px
 	a
 		color: $text-color
 		margin-right: 10px
-			
+		text-transform: uppercase
+		
+		
 	
 
 	.top_banner
@@ -170,6 +175,7 @@ header
 .main_content
 	margin-top: 40px
 	.caption
+		padding: 0
 		h3
 			color: $red-color
 		.btn
@@ -185,6 +191,10 @@ header
 	.thumbnail	
 		//position: absolute
 		border: 0
+		padding: 0
+		margin-right: 30px
+		&:last-child
+			margin-right: 0
 		>span
 			color: #fff
 			background-color: #000
@@ -224,6 +234,10 @@ header
 
 // FOOTER
 footer
+	margin-bottom: 120px
+	p
+		color: $text-color
+		font-size: 12px
 	.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover,a.list-group-item:focus, a.list-group-item:hover,.list-group-item, a.list-group-item
 		color: $text-color
 		background-color: #fff
@@ -231,6 +245,7 @@ footer
 		outline: 0
 		margin: 0
 		padding: 0
+		font-size: 12px
 	.social_wrap a
 		margin-left: 15px
 		color: $text-color
@@ -241,10 +256,15 @@ footer
 	h4
 		color: $red-color
 		text-transform: uppercase
+		font-size: 12px
+		font-weight: bold
 
 	.newsletter_wrap
+		form
+			width: 200px
 		span
 			color: $text-color
+			font-size: 12px
 		input
 			margin-top: 10px
 			background-color: $grey-color
@@ -252,7 +272,11 @@ footer
 			text-indent: 10px
 			color: $text-color
 			outline: 0
+			width: 170px
 		button
 			border: none
 			outline: 0
-			margin-left: -32px
+			margin-left: -5px
+	.categories_wrap,.online_wrap,.newsletter_wrap
+		margin-right: 100px
+		
