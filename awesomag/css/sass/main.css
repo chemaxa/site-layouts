@@ -21,9 +21,16 @@ body input:required:valid, body textarea:required:valid {
   color: green; }
 
 /* line 30, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+hr {
+  background-color: #dddddd;
+  margin: 0;
+  border: 0;
+  height: 1px; }
+
+/* line 36, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 header {
   margin-top: 10px; }
-  /* line 33, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 39, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .top_header_menu ul, header .top_header_menu li {
     display: inline-block;
     margin: 0;
@@ -31,46 +38,45 @@ header {
     list-style-type: none;
     color: #717171;
     margin-right: 10px; }
-  /* line 42, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 47, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  header hr {
+    margin-top: 5px; }
+  /* line 49, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .login {
     float: right; }
-  /* line 44, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 51, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header a {
     color: #717171;
     margin-right: 10px; }
-  /* line 48, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  header hr {
-    color: #dddddd;
-    margin-top: 5px; }
-  /* line 52, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 57, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .top_banner {
     float: right;
     margin: 15px 0px; }
-  /* line 55, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 60, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .logo {
     margin: 31px 0px; }
-  /* line 58, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 63, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .navbar-default .navbar-nav .active a, header .navbar-default .navbar-nav .active a:focus, header .navbar-default .navbar-nav .active a:hover {
     background-color: #d45757;
     color: #fff;
     padding: 15px 10px; }
-  /* line 62, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 67, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .navbar-default .navbar-nav li a {
     color: #717171;
     padding: 15px 10px; }
-  /* line 65, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 70, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header nav.navbar.navbar-default {
     background-color: #dddddd;
     text-transform: uppercase;
     border-radius: 0;
     border: 0; }
-  /* line 71, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 76, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .navbar-form {
     margin: 0;
     padding: 0;
     min-width: 200px;
     border: 0; }
-    /* line 76, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 81, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     header .navbar-form input {
       background-color: #cecece;
       color: #fff;
@@ -83,19 +89,19 @@ header {
       box-sizing: border-box;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box; }
-    /* line 90, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 95, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     header .navbar-form ::-webkit-input-placeholder {
       color: #fff; }
-    /* line 92, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 97, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     header .navbar-form ::-moz-placeholder {
       color: #fff; }
-    /* line 94, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 99, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     header .navbar-form :-moz-placeholder {
       color: #fff; }
-    /* line 96, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 101, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     header .navbar-form :-ms-input-placeholder {
       color: #fff; }
-    /* line 101, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 106, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     header .navbar-form button {
       margin-left: -4px;
       margin-right: 0px;
@@ -105,33 +111,33 @@ header {
       padding: 0;
       width: 25px;
       outline: 0; }
-  /* line 111, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 116, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .navbar-collapse {
     padding: 0;
     border: 0; }
 
-/* line 116, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 121, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 #carousel-example-generic {
   height: 300px; }
-  /* line 118, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 123, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   #carousel-example-generic img {
     height: 300px;
     width: auto;
     display: block;
     margin: auto; }
-  /* line 123, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 128, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   #carousel-example-generic .carousel-control {
     left: 95%;
     top: 80%;
     width: 1%;
     background: none; }
-    /* line 128, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 133, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     #carousel-example-generic .carousel-control .glyphicon-chevron-left {
       left: -20px; }
-  /* line 131, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 136, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   #carousel-example-generic .item {
     background-color: #dddddd; }
-    /* line 133, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 138, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     #carousel-example-generic .item .carousel-caption {
       position: absolute;
       text-align: left;
@@ -140,21 +146,21 @@ header {
       left: 10px;
       bottom: 10px;
       width: 350px; }
-      /* line 141, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+      /* line 146, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
       #carousel-example-generic .item .carousel-caption span {
         color: #fff;
         background-color: #000;
         padding: 5px;
         margin: 0;
         text-transform: uppercase; }
-      /* line 147, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+      /* line 152, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
       #carousel-example-generic .item .carousel-caption h3 {
         background-color: #5aacce;
         color: #fff;
         padding: 5px;
         margin: 0;
         text-transform: uppercase; }
-      /* line 153, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+      /* line 158, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
       #carousel-example-generic .item .carousel-caption p {
         margin: 0;
         color: #000;
@@ -163,30 +169,30 @@ header {
         text-decoration: none;
         text-shadow: none; }
 
-/* line 162, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 167, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .main_content {
   margin-top: 40px; }
-  /* line 165, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 170, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   .main_content .caption h3 {
     color: #ce5a5a; }
-  /* line 167, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 172, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   .main_content .caption .btn {
     border: 0;
     border-radius: 0; }
-  /* line 170, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 175, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   .main_content .caption i, .main_content .caption .number_of_comments, .main_content .caption .date {
     background-color: #fff;
     color: #bbbbbb; }
-  /* line 173, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 178, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   .main_content .caption .number_of_comments, .main_content .caption .date {
     display: inline-block; }
-  /* line 175, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 180, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   .main_content .caption .number_of_comments {
     margin-left: 20px; }
-  /* line 177, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 182, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   .main_content .thumbnail {
     border: 0; }
-    /* line 179, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 184, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     .main_content .thumbnail > span {
       color: #fff;
       background-color: #000;
@@ -195,12 +201,12 @@ header {
       left: 3px;
       position: relative;
       text-transform: uppercase; }
-    /* line 187, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 192, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     .main_content .thumbnail img {
       width: 100%;
       height: 170px; }
 
-/* line 191, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 196, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .featured_header {
   height: 30px;
   color: #000;
@@ -210,21 +216,21 @@ header {
   padding: 5px 10px;
   margin-bottom: 20px; }
 
-/* line 200, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 205, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .media-object {
   height: 100px;
   width: 100px; }
 
-/* line 204, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 209, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .media-body h4 {
   color: #ce5a5a;
   font-weight: bold; }
-/* line 207, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 212, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .media-body p, .media-body span {
   margin: 0;
   font-size: 12px; }
 
-/* line 210, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 215, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .media:last-child {
   margin-bottom: 40px; }
 
