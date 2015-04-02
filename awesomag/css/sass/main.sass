@@ -35,7 +35,7 @@ hr
 
 header
 	margin-top: 10px
-	.top_header_menu
+	.top-header-menu
 		ul,li
 			display: inline-block
 			margin: 0
@@ -59,7 +59,7 @@ header
 		
 	
 
-	.top_banner
+	.top-banner
 		float: right
 		margin: 15px 0px
 	.logo
@@ -173,7 +173,7 @@ header
 	
 
 // SECTION CONTENT
-.main_content
+.main-content
 	margin-top: 40px
 	.caption
 		padding: 0
@@ -182,12 +182,12 @@ header
 		.btn
 			border: 0
 			border-radius: 0
-		i,.number_of_comments,.date
+		i,.number-of-comments,.date
 			background-color: #fff
 			color: #bbbbbb
-		.number_of_comments,.date
+		.number-of-comments,.date
 			display: inline-block
-		.number_of_comments			
+		.number-of-comments			
 			margin-left: 20px
 	.thumbnail	
 		//position: absolute
@@ -209,7 +209,7 @@ header
 			height: 170px
 			
 // FEATURED SECTION
-.featured_header
+.featured-header
 	height: 30px
 	color: #000
 	background-color: $grey-color
@@ -247,7 +247,7 @@ footer
 		margin: 0
 		padding: 0
 		font-size: 12px
-	.social_wrap a
+	.social-wrap a
 		margin-left: 15px
 		color: $text-color
 		&:first-child
@@ -260,7 +260,7 @@ footer
 		font-size: 12px
 		font-weight: bold
 
-	.newsletter_wrap
+	.newsletter-wrap
 		form
 			width: 200px
 		span
@@ -278,7 +278,7 @@ footer
 			border: none
 			outline: 0
 			margin-left: -5px
-	.categories_wrap,.online_wrap,.newsletter_wrap
+	.categories-wrap,.online-wrap,.newsletter-wrap
 		margin-right: 100px
 		
 
@@ -287,37 +287,124 @@ footer
 main
 	h1
 		font-size: 30px
-		margin-top: 0
-	.date, .number_of_comments
+		margin: 0
+	.date, .number-of-comments
 		display: inline-block
 		margin: 15px 0
 		color: $text-color
-	.number_of_comments
+	.number-of-comments
 		margin-left: 20px
 	.content
 		p
 			font-size: 12px
-	.img_item	
+	.img-item	
 		text-align: center
 		margin-bottom: 10px
-	.img_caption
+	.img-caption
 		color: $text-color
-	.social_wrap, .tags_wrap
+	
+	.social-wrap, .tags-wrap
 		display: inline-block
-		
-		h3
-			font-size: 12px
-			color: $red-color
-			text-transform: uppercase
+		margin-bottom: 40px
+
 		.fa
 			font-size: 21px
 		a
 			color: $text-color
 			margin-right: 40px
+			&:last-child
+				margin-right: 0px
 		span
 			font-size: 11px
 			color: $text-color
 			vertical-align: top	
+			a
+				vertical-align: top	
+				margin: 0
+	.social-wrap
+		margin-right: 30px
+	.tags-wrap
+		float: right
+		width: 50%
+		&:after
+			visibility: hidden
+        	display: block
+        	content: ""
+        	clear: both
+        	height: 0
+			
 	hr
 		margin-top: 5px
 		margin-bottom: 12px
+	.comments-wrap, .social-wrap, .tags-wrap
+		h3
+			font-size: 12px
+			color: $red-color
+			text-transform: uppercase
+			font-weight: bold
+			margin: 0
+		.media-body
+			h4,span,a
+				vertical-align: baseline
+			h4
+				color: #000
+				font-weight: normal
+				font-size: 14px
+				display: inline
+				margin: 0
+				
+			span
+				margin: 0 10px
+				font-size: 12px
+				
+			a
+				font-size: 12px
+				text-decoration: underline
+			>.media
+				margin-bottom: 0px
+		
+		.media-object
+			width: 50px
+			height: 50px
+	.comment-form
+		margin-top: 40px
+		pre
+			border: 0
+			background-color: #fff
+			margin: 15px 0
+			padding: 0
+			font-family: "RobotoRegular", sans-serif
+			text-align: left
+		input,textarea
+			display: block
+			outline: none
+			border: 0
+			box-shadow: none
+			background-color: $grey-color
+			border-radius: 0
+			width: 220px
+			&:focus
+				box-shadow: none
+				border: 0
+		textarea
+			width: 100%
+		.red
+			color: $red-color
+		span
+			font-size: 12px
+		label
+			text-align: left
+			padding: 0
+			font-size: 12px
+			text-decoration: none
+		button
+			border: 0
+			outline: none
+			border-radius: 0
+			background-color: #5aacce
+			color: #fff
+			text-transform: uppercase
+			width: 120px
+			height: 40px
+			padding: 0
+			font-size: 12px

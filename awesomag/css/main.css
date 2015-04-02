@@ -29,14 +29,14 @@ hr {
 header {
   margin-top: 10px; }
   /* line 39, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  header .top_header_menu ul, header .top_header_menu li {
+  header .top-header-menu ul, header .top-header-menu li {
     display: inline-block;
     margin: 0;
     padding: 0;
     list-style-type: none;
     color: #717171; }
   /* line 45, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  header .top_header_menu a {
+  header .top-header-menu a {
     font-size: 12px; }
   /* line 49, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header hr {
@@ -51,7 +51,7 @@ header {
     margin-right: 10px;
     text-transform: uppercase; }
   /* line 62, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  header .top_banner {
+  header .top-banner {
     float: right;
     margin: 15px 0px; }
   /* line 65, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
@@ -173,38 +173,38 @@ header {
         text-shadow: none; }
 
 /* line 173, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-.main_content {
+.main-content {
   margin-top: 40px; }
   /* line 175, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  .main_content .caption {
+  .main-content .caption {
     padding: 0; }
     /* line 177, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-    .main_content .caption h3 {
+    .main-content .caption h3 {
       color: #ce5a5a; }
     /* line 179, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-    .main_content .caption .btn {
+    .main-content .caption .btn {
       border: 0;
       border-radius: 0; }
     /* line 182, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-    .main_content .caption i, .main_content .caption .number_of_comments, .main_content .caption .date {
+    .main-content .caption i, .main-content .caption .number-of-comments, .main-content .caption .date {
       background-color: #fff;
       color: #bbbbbb; }
     /* line 185, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-    .main_content .caption .number_of_comments, .main_content .caption .date {
+    .main-content .caption .number-of-comments, .main-content .caption .date {
       display: inline-block; }
     /* line 187, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-    .main_content .caption .number_of_comments {
+    .main-content .caption .number-of-comments {
       margin-left: 20px; }
   /* line 189, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  .main_content .thumbnail {
+  .main-content .thumbnail {
     border: 0;
     padding: 0;
     margin-right: 30px; }
     /* line 193, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-    .main_content .thumbnail:last-child {
+    .main-content .thumbnail:last-child {
       margin-right: 0; }
     /* line 195, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-    .main_content .thumbnail > span {
+    .main-content .thumbnail > span {
       color: #fff;
       background-color: #000;
       padding: 5px;
@@ -213,12 +213,12 @@ header {
       position: relative;
       text-transform: uppercase; }
     /* line 203, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-    .main_content .thumbnail img {
+    .main-content .thumbnail img {
       width: 100%;
       height: 170px; }
 
 /* line 207, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-.featured_header {
+.featured-header {
   height: 30px;
   color: #000;
   background-color: #dddddd;
@@ -263,11 +263,11 @@ footer {
     padding: 0;
     font-size: 12px; }
   /* line 244, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  footer .social_wrap a {
+  footer .social-wrap a {
     margin-left: 15px;
     color: #717171; }
     /* line 247, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-    footer .social_wrap a:first-child {
+    footer .social-wrap a:first-child {
       margin-left: 0; }
   /* line 251, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   footer h4 {
@@ -276,14 +276,14 @@ footer {
     font-size: 12px;
     font-weight: bold; }
   /* line 258, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  footer .newsletter_wrap form {
+  footer .newsletter-wrap form {
     width: 200px; }
   /* line 260, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  footer .newsletter_wrap span {
+  footer .newsletter-wrap span {
     color: #717171;
     font-size: 12px; }
   /* line 263, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  footer .newsletter_wrap input {
+  footer .newsletter-wrap input {
     margin-top: 10px;
     background-color: #dddddd;
     border: 0;
@@ -292,57 +292,157 @@ footer {
     outline: 0;
     width: 170px; }
   /* line 271, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  footer .newsletter_wrap button {
+  footer .newsletter-wrap button {
     border: none;
     outline: 0;
     margin-left: -5px; }
   /* line 275, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  footer .categories_wrap, footer .online_wrap, footer .newsletter_wrap {
+  footer .categories-wrap, footer .online-wrap, footer .newsletter-wrap {
     margin-right: 100px; }
 
 /* line 281, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main h1 {
   font-size: 30px;
-  margin-top: 0; }
+  margin: 0; }
 /* line 284, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-main .date, main .number_of_comments {
+main .date, main .number-of-comments {
   display: inline-block;
   margin: 15px 0;
   color: #717171; }
 /* line 288, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-main .number_of_comments {
+main .number-of-comments {
   margin-left: 20px; }
 /* line 291, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .content p {
   font-size: 12px; }
 /* line 293, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-main .img_item {
+main .img-item {
   text-align: center;
   margin-bottom: 10px; }
 /* line 296, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-main .img_caption {
+main .img-caption {
   color: #717171; }
-/* line 298, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-main .social_wrap, main .tags_wrap {
-  display: inline-block; }
-  /* line 301, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  main .social_wrap h3, main .tags_wrap h3 {
-    font-size: 12px;
-    color: #ce5a5a;
-    text-transform: uppercase; }
-  /* line 305, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  main .social_wrap .fa, main .tags_wrap .fa {
+/* line 299, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+main .social-wrap, main .tags-wrap {
+  display: inline-block;
+  margin-bottom: 40px; }
+  /* line 303, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  main .social-wrap .fa, main .tags-wrap .fa {
     font-size: 21px; }
-  /* line 307, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  main .social_wrap a, main .tags_wrap a {
+  /* line 305, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  main .social-wrap a, main .tags-wrap a {
     color: #717171;
     margin-right: 40px; }
+    /* line 308, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    main .social-wrap a:last-child, main .tags-wrap a:last-child {
+      margin-right: 0px; }
   /* line 310, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  main .social_wrap span, main .tags_wrap span {
+  main .social-wrap span, main .tags-wrap span {
     font-size: 11px;
     color: #717171;
     vertical-align: top; }
-/* line 314, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 314, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    main .social-wrap span a, main .tags-wrap span a {
+      vertical-align: top;
+      margin: 0; }
+/* line 317, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+main .social-wrap {
+  margin-right: 30px; }
+/* line 319, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+main .tags-wrap {
+  float: right;
+  width: 50%; }
+  /* line 322, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  main .tags-wrap:after {
+    visibility: hidden;
+    visibility-display: block;
+    visibility-content: "";
+    visibility-clear: both;
+    visibility-height: 0; }
+/* line 329, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main hr {
   margin-top: 5px;
   margin-bottom: 12px; }
+/* line 333, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+main .comments-wrap h3, main .social-wrap h3, main .tags-wrap h3 {
+  font-size: 12px;
+  color: #ce5a5a;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0; }
+/* line 340, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+main .comments-wrap .media-body h4, main .comments-wrap .media-body span, main .comments-wrap .media-body a, main .social-wrap .media-body h4, main .social-wrap .media-body span, main .social-wrap .media-body a, main .tags-wrap .media-body h4, main .tags-wrap .media-body span, main .tags-wrap .media-body a {
+  vertical-align: baseline; }
+/* line 342, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+main .comments-wrap .media-body h4, main .social-wrap .media-body h4, main .tags-wrap .media-body h4 {
+  color: #000;
+  font-weight: normal;
+  font-size: 14px;
+  display: inline;
+  margin: 0; }
+/* line 349, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+main .comments-wrap .media-body span, main .social-wrap .media-body span, main .tags-wrap .media-body span {
+  margin: 0 10px;
+  font-size: 12px; }
+/* line 353, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+main .comments-wrap .media-body a, main .social-wrap .media-body a, main .tags-wrap .media-body a {
+  font-size: 12px;
+  text-decoration: underline; }
+/* line 356, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+main .comments-wrap .media-body > .media, main .social-wrap .media-body > .media, main .tags-wrap .media-body > .media {
+  margin-bottom: 0px; }
+/* line 359, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+main .comments-wrap .media-object, main .social-wrap .media-object, main .tags-wrap .media-object {
+  width: 50px;
+  height: 50px; }
+/* line 362, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+main .comment-form {
+  margin-top: 40px; }
+  /* line 364, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  main .comment-form pre {
+    border: 0;
+    background-color: #fff;
+    margin: 15px 0;
+    padding: 0;
+    font-family: "RobotoRegular", sans-serif;
+    text-align: left; }
+  /* line 371, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  main .comment-form input, main .comment-form textarea {
+    display: block;
+    outline: none;
+    border: 0;
+    box-shadow: none;
+    background-color: #dddddd;
+    border-radius: 0;
+    width: 220px; }
+    /* line 379, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    main .comment-form input:focus, main .comment-form textarea:focus {
+      box-shadow: none;
+      border: 0; }
+  /* line 382, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  main .comment-form textarea {
+    width: 100%; }
+  /* line 384, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  main .comment-form .red {
+    color: #ce5a5a; }
+  /* line 386, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  main .comment-form span {
+    font-size: 12px; }
+  /* line 388, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  main .comment-form label {
+    text-align: left;
+    padding: 0;
+    font-size: 12px;
+    text-decoration: none; }
+  /* line 393, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  main .comment-form button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    background-color: #5aacce;
+    color: #fff;
+    text-transform: uppercase;
+    width: 120px;
+    height: 40px;
+    padding: 0;
+    font-size: 12px; }
