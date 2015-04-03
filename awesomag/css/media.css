@@ -40,6 +40,22 @@
 		margin-right: 0;
 		width: 100%;
 	}
+	main .tags-wrap {
+		float: left;
+		width: 100%;
+	}
+	main .social-wrap,
+	main .tags-wrap {
+		margin: 10px 0px;
+		display: block;
+	}
+	main .social-wrap a,
+	main .tags-wrap a {
+		margin-right: 10px;
+	}
+	.form-horizontal .form-group {
+		margin: 0;
+	}
 }
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
