@@ -1,8 +1,8 @@
 /* line 9, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 body {
-  font-family: "RobotoRegular", sans-serif;
+  font-family: "Verdana", sans-serif;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 12px;
   font-size-color: #717171;
   min-width: 320px;
   position: relative;
@@ -37,49 +37,52 @@ header {
     color: #717171; }
   /* line 45, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .top-header-menu a {
-    font-size: 12px; }
+    font-size: 10px; }
   /* line 49, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header hr {
     margin-top: 5px; }
   /* line 51, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .login {
     float: right;
-    font-size: 12px; }
+    font-size: 10px; }
   /* line 54, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header a {
     color: #717171;
     margin-right: 10px;
     text-transform: uppercase; }
-  /* line 62, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 59, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .top-banner {
     float: right;
     margin: 15px 0px; }
-  /* line 65, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 62, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .logo {
     margin: 31px 0px; }
-  /* line 68, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 65, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .navbar-default .navbar-nav .active a, header .navbar-default .navbar-nav .active a:focus, header .navbar-default .navbar-nav .active a:hover {
     background-color: #d45757;
     color: #fff;
-    padding: 15px 10px; }
-  /* line 72, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    padding: 15px 10px;
+    min-height: 40px; }
+  /* line 71, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .navbar-default .navbar-nav li a {
     color: #717171;
-    padding: 15px 10px; }
-  /* line 75, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    padding: 15px 10px;
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 14px; }
+  /* line 78, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header nav.navbar.navbar-default {
     background-color: #dddddd;
     text-transform: uppercase;
     border-radius: 0;
     border: 0;
-    margin-bottom: 30px; }
-  /* line 82, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    margin-bottom: 30px;
+    min-height: 40px; }
+  /* line 85, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   header .navbar-form {
     margin: 0;
     padding: 0;
-    min-width: 200px;
     border: 0; }
-    /* line 87, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 89, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     header .navbar-form input {
       background-color: #cecece;
       color: #fff;
@@ -87,26 +90,27 @@ header {
       border: 0;
       outline: none;
       padding: 12px 0;
+      height: 50px;
       margin: 0;
       text-transform: uppercase;
       box-sizing: border-box;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box; }
-    /* line 101, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 103, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     header .navbar-form ::-webkit-input-placeholder {
       color: #fff; }
-    /* line 103, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 105, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     header .navbar-form ::-moz-placeholder {
       color: #fff; }
-    /* line 105, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 107, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     header .navbar-form :-moz-placeholder {
       color: #fff; }
-    /* line 107, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 109, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     header .navbar-form :-ms-input-placeholder {
       color: #fff; }
     /* line 112, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     header .navbar-form button {
-      margin-left: -4px;
+      margin-left: -6px;
       margin-right: 0px;
       border: 0;
       background-color: #cecece;
@@ -122,89 +126,116 @@ header {
 /* line 127, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 #carousel-example-generic {
   height: 300px; }
-  /* line 129, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 130, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   #carousel-example-generic img {
     height: 300px;
-    width: auto;
+    width: 100%;
     display: block;
     margin: auto; }
-  /* line 134, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 135, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   #carousel-example-generic .carousel-control {
     left: 95%;
     top: 80%;
     width: 1%;
     background: none; }
-    /* line 139, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 140, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     #carousel-example-generic .carousel-control .glyphicon-chevron-left {
       left: -20px; }
-  /* line 142, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 145, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   #carousel-example-generic .item {
     background-color: #dddddd; }
-    /* line 144, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 147, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     #carousel-example-generic .item .carousel-caption {
       position: absolute;
       text-align: left;
-      margin: 0;
+      margin: 20px;
       padding: 0;
       left: 10px;
       bottom: 10px;
       width: 350px; }
-      /* line 152, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+      /* line 155, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
       #carousel-example-generic .item .carousel-caption span {
         color: #fff;
         background-color: #000;
-        padding: 5px;
+        padding: 6px;
         margin: 0;
-        text-transform: uppercase; }
-      /* line 158, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+        text-transform: uppercase;
+        font-size: 11px;
+        line-height: 20px; }
+      /* line 163, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
       #carousel-example-generic .item .carousel-caption h3 {
         background-color: #5aacce;
         color: #fff;
-        padding: 5px;
+        padding: 8px;
         margin: 0;
-        text-transform: uppercase; }
-      /* line 164, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+        text-transform: uppercase;
+        font-family: "OpenSansLight", sans-serif;
+        font-size: 20px;
+        line-height: 24px; }
+      /* line 172, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
       #carousel-example-generic .item .carousel-caption p {
+        font-family: "OpenSansLight", sans-serif;
+        font-size: 14px;
+        line-height: 19px;
         margin: 0;
         color: #000;
         background-color: #fff;
-        padding: 5px;
+        padding: 8px;
         text-decoration: none;
         text-shadow: none; }
 
-/* line 173, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 184, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .main-content {
   margin-top: 40px; }
-  /* line 175, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 186, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   .main-content .caption {
     padding: 0; }
-    /* line 177, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 188, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     .main-content .caption h3 {
-      color: #ce5a5a; }
-    /* line 179, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+      color: #ce5a5a;
+      font-family: "OpenSansSemibold", sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 0; }
+    /* line 194, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     .main-content .caption .btn {
       border: 0;
-      border-radius: 0; }
-    /* line 182, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+      border-radius: 0;
+      font-family: "OpenSansRegular", sans-serif;
+      font-size: 12px;
+      line-height: 18px;
+      background-color: #5aacce; }
+    /* line 201, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     .main-content .caption i, .main-content .caption .number-of-comments, .main-content .caption .date {
       background-color: #fff;
       color: #bbbbbb; }
-    /* line 185, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 204, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     .main-content .caption .number-of-comments, .main-content .caption .date {
-      display: inline-block; }
-    /* line 187, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+      display: inline-block;
+      font-size: 11px;
+      line-height: 20px;
+      margin: 12px 0px; }
+    /* line 209, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     .main-content .caption .number-of-comments {
       margin-left: 20px; }
-  /* line 189, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 211, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    .main-content .caption p {
+      font-family: "OpenSansRegular", sans-serif;
+      font-size: 13px;
+      line-height: 18px; }
+  /* line 215, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   .main-content .thumbnail {
     border: 0;
     padding: 0;
-    margin-right: 30px; }
-    /* line 193, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    margin-right: 30px;
+    margin-bottom: 30px; }
+    /* line 220, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     .main-content .thumbnail:last-child {
       margin-right: 0; }
-    /* line 195, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 222, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     .main-content .thumbnail > span {
+      font-size: 11px;
+      line-height: 20px;
       color: #fff;
       background-color: #000;
       padding: 5px;
@@ -212,48 +243,56 @@ header {
       left: 3px;
       position: relative;
       text-transform: uppercase; }
-    /* line 203, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 232, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     .main-content .thumbnail img {
       width: 100%;
       height: 170px; }
 
-/* line 207, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 236, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .featured-header {
   height: 30px;
   color: #000;
   background-color: #dddddd;
   text-transform: uppercase;
-  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
   padding: 5px 10px;
   margin-bottom: 20px; }
 
-/* line 216, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 246, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .media-object {
   height: 100px;
   width: 100px; }
 
-/* line 220, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 250, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .media-body h4 {
   color: #ce5a5a;
-  font-weight: bold; }
-/* line 223, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  font-weight: bold;
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 14px;
+  line-height: 20px; }
+/* line 256, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .media-body p, .media-body span {
   margin: 0;
-  font-size: 12px;
+  font-size: 11px;
+  line-height: 15px;
   color: #717171; }
+/* line 261, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+.media-body span {
+  line-height: 20px; }
 
-/* line 227, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 264, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 .media:last-child {
   margin-bottom: 40px; }
 
-/* line 231, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 268, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 footer {
   margin-bottom: 120px; }
-  /* line 233, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 270, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   footer p {
     color: #717171;
     font-size: 12px; }
-  /* line 236, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 273, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   footer .list-group-item.active, footer .list-group-item.active:focus, footer .list-group-item.active:hover, footer a.list-group-item:focus, footer a.list-group-item:hover, footer .list-group-item, footer a.list-group-item {
     color: #717171;
     background-color: #fff;
@@ -262,27 +301,28 @@ footer {
     margin: 0;
     padding: 0;
     font-size: 12px; }
-  /* line 244, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 281, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   footer .social-wrap a {
     margin-left: 15px;
     color: #717171; }
-    /* line 247, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 284, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     footer .social-wrap a:first-child {
       margin-left: 0; }
-  /* line 251, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 288, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   footer h4 {
     color: #ce5a5a;
     text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold; }
-  /* line 258, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    font-size: 10px;
+    line-height: 24px;
+    font-family: "Verdana", sans-serif; }
+  /* line 296, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   footer .newsletter-wrap form {
     width: 200px; }
-  /* line 260, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 298, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   footer .newsletter-wrap span {
     color: #717171;
     font-size: 12px; }
-  /* line 263, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 301, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   footer .newsletter-wrap input {
     margin-top: 10px;
     background-color: #dddddd;
@@ -291,114 +331,129 @@ footer {
     color: #717171;
     outline: 0;
     width: 170px; }
-  /* line 271, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 309, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   footer .newsletter-wrap button {
     border: none;
     outline: 0;
     margin-left: -5px; }
-  /* line 275, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 313, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   footer .categories-wrap, footer .online-wrap, footer .newsletter-wrap {
     margin-right: 100px; }
 
-/* line 281, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 319, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main h1 {
   font-size: 30px;
-  margin: 0; }
-/* line 284, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  margin: 0;
+  font-family: "OpenSansRegular", sans-serif;
+  line-height: 24px; }
+/* line 324, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .date, main .number-of-comments {
   display: inline-block;
   margin: 15px 0;
-  color: #717171; }
-/* line 288, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  color: #717171;
+  font-size: 11px;
+  line-height: 20px; }
+/* line 330, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .number-of-comments {
   margin-left: 20px; }
-/* line 291, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 333, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .content p {
-  font-size: 12px; }
-/* line 293, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  font-size: 12px;
+  line-height: 17px; }
+/* line 336, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .img-item {
   text-align: center;
   margin-bottom: 10px; }
-/* line 296, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 339, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .img-caption {
-  color: #717171; }
-/* line 299, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  color: #717171;
+  font-style: italic; }
+/* line 344, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .social-wrap, main .tags-wrap {
   display: inline-block;
   margin-bottom: 40px; }
-  /* line 303, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 348, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   main .social-wrap .fa, main .tags-wrap .fa {
     font-size: 21px; }
-  /* line 305, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 350, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   main .social-wrap a, main .tags-wrap a {
     color: #717171;
     margin-right: 40px; }
-    /* line 308, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 353, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     main .social-wrap a:last-child, main .tags-wrap a:last-child {
       margin-right: 0px; }
-  /* line 310, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 355, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   main .social-wrap span, main .tags-wrap span {
     font-size: 11px;
     color: #717171;
     vertical-align: top; }
-    /* line 314, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 359, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     main .social-wrap span a, main .tags-wrap span a {
       vertical-align: top;
       margin: 0; }
-/* line 317, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 362, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .social-wrap {
   margin-right: 30px; }
-/* line 319, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 364, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .tags-wrap {
   float: right;
   width: 50%; }
-  /* line 322, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 367, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   main .tags-wrap:after {
     visibility: hidden;
     visibility-display: block;
     visibility-content: "";
     visibility-clear: both;
     visibility-height: 0; }
-/* line 329, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 374, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main hr {
   margin-top: 5px;
   margin-bottom: 12px; }
-/* line 333, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 378, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .comments-wrap h3, main .social-wrap h3, main .tags-wrap h3 {
   font-size: 12px;
   color: #ce5a5a;
   text-transform: uppercase;
-  font-weight: bold;
-  margin: 0; }
-/* line 340, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  margin: 0;
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 12px;
+  line-height: 17px; }
+/* line 387, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .comments-wrap .media-body h4, main .comments-wrap .media-body span, main .comments-wrap .media-body a, main .social-wrap .media-body h4, main .social-wrap .media-body span, main .social-wrap .media-body a, main .tags-wrap .media-body h4, main .tags-wrap .media-body span, main .tags-wrap .media-body a {
   vertical-align: baseline; }
-/* line 342, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 389, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .comments-wrap .media-body h4, main .social-wrap .media-body h4, main .tags-wrap .media-body h4 {
+  line-height: 17px;
   color: #000;
   font-weight: normal;
   font-size: 14px;
   display: inline;
   margin: 0; }
-/* line 349, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 397, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .comments-wrap .media-body span, main .social-wrap .media-body span, main .tags-wrap .media-body span {
   margin: 0 10px;
-  font-size: 12px; }
-/* line 353, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  font-size: 10px;
+  line-height: 24px; }
+/* line 401, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .comments-wrap .media-body a, main .social-wrap .media-body a, main .tags-wrap .media-body a {
-  font-size: 12px;
+  font-size: 10px;
+  line-height: 24px;
   text-decoration: underline; }
-/* line 356, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 405, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .comments-wrap .media-body > .media, main .social-wrap .media-body > .media, main .tags-wrap .media-body > .media {
-  margin-bottom: 0px; }
-/* line 359, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  margin-bottom: 30px; }
+/* line 408, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .comments-wrap .media-object, main .social-wrap .media-object, main .tags-wrap .media-object {
   width: 50px;
   height: 50px; }
-/* line 362, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+/* line 411, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
 main .comment-form {
-  margin-top: 40px; }
-  /* line 364, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  margin: 40px 0px; }
+  /* line 414, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  main .comment-form .form-group {
+    padding-left: 15px;
+    margin-bottom: 10px; }
+  /* line 417, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   main .comment-form pre {
     border: 0;
     background-color: #fff;
@@ -406,8 +461,9 @@ main .comment-form {
     padding: 0;
     font-family: "RobotoRegular", sans-serif;
     text-align: left; }
-  /* line 371, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 424, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   main .comment-form input, main .comment-form textarea {
+    text-indent: 5px;
     display: block;
     outline: none;
     border: 0;
@@ -415,26 +471,23 @@ main .comment-form {
     background-color: #dddddd;
     border-radius: 0;
     width: 220px; }
-    /* line 379, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+    /* line 433, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
     main .comment-form input:focus, main .comment-form textarea:focus {
       box-shadow: none;
       border: 0; }
-  /* line 382, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 436, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   main .comment-form textarea {
     width: 100%; }
-  /* line 384, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 438, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   main .comment-form .red {
     color: #ce5a5a; }
-  /* line 386, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  main .comment-form span {
-    font-size: 12px; }
-  /* line 388, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
-  main .comment-form label {
+  /* line 440, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  main .comment-form span, main .comment-form label {
+    line-height: 17px;
     text-align: left;
     padding: 0;
-    font-size: 12px;
     text-decoration: none; }
-  /* line 393, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+  /* line 445, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
   main .comment-form button {
     border: 0;
     outline: none;
@@ -446,3 +499,39 @@ main .comment-form {
     height: 40px;
     padding: 0;
     font-size: 12px; }
+
+/* line 458, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+.sidebar h3 {
+  font-size: 12px;
+  line-height: 17px;
+  color: #ce5a5a;
+  text-transform: uppercase;
+  font-family: "OpenSansRegular", sans-serif;
+  margin: 0; }
+/* line 465, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+.sidebar hr {
+  margin-top: 5px;
+  margin-bottom: 15px; }
+/* line 468, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+.sidebar h4 {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "OpenSansRegular", sans-serif; }
+/* line 473, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+.sidebar .media:last-child {
+  margin-bottom: 30px; }
+/* line 476, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+.sidebar .advertisement img {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 20px; }
+/* line 480, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+.sidebar .advertisement .media-right, .sidebar .advertisement .media-left {
+  padding: 0; }
+/* line 482, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+.sidebar .advertisement .media-right {
+  text-align: right; }
+/* line 486, C:/GitHub/site-layouts/awesomag/css/sass/main.sass */
+.sidebar #vk_groups, .sidebar #vk_groups iframe {
+  width: 100% !important; }

@@ -237,7 +237,7 @@
 
 								</div>
 								<div class="form-group">
-									<label for="website">Website</label><span class="red"> *</span>
+									<label for="website">Website</label>
 
 									<input type="url" id="website" required>
 
@@ -245,7 +245,7 @@
 
 								<div class="form-group">
 
-									<label>Comment</label>
+									<label>Comment</label><span class="red"> *</span>
 									<textarea rows="3"></textarea>
 
 								</div>
@@ -318,6 +318,20 @@
 								<img src="images/slide1.jpg" alt="ALT">
 							</a>
 						</div>
+					</div>
+					<div class="social-groups">
+						<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+
+						<!-- VK Widget -->
+						<div id="vk_groups"></div>
+						<script type="text/javascript">
+							VK.Widgets.Group("vk_groups", {
+								mode: 2,
+								wide: 1,
+								width: "220",
+								height: "400"
+							}, 20003922);
+						</script>
 					</div>
 				</aside>
 			</div>

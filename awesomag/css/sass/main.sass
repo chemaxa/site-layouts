@@ -7,9 +7,9 @@ $green-color: #67bc5c
 $grey-color: #dddddd
 
 body
-	font-family: "RobotoRegular", sans-serif
+	font-family: "Verdana", sans-serif
 	font-weight: normal
-	font-size: 16px
+	font-size: 12px
     color: $text-color
 	min-width: 320px
 	position: relative
@@ -43,22 +43,19 @@ header
 			list-style-type: none
 			color: $text-color
 		a
-			font-size: 12px
+			font-size: 10px
 			
 			
 	hr
 		margin-top: 5px
 	.login
 		float: right
-		font-size: 12px
+		font-size: 10px
 	a
 		color: $text-color
 		margin-right: 10px
 		text-transform: uppercase
-		
-		
 	
-
 	.top-banner
 		float: right
 		margin: 15px 0px
@@ -70,20 +67,25 @@ header
 		background-color: #d45757
 		color: #fff
 		padding: 15px 10px
+		min-height: 40px
+		
 	.navbar-default .navbar-nav li a
 		color: $text-color
 		padding: 15px 10px
+		font-family: "OpenSansRegular", sans-serif
+		font-size: 14px
+
+		
 	nav.navbar.navbar-default
 		background-color: $grey-color
 		text-transform: uppercase
 		border-radius: 0
 		border: 0
 		margin-bottom: 30px
-
+		min-height: 40px
 	.navbar-form
 		margin: 0
 		padding: 0
-		min-width: 200px
 		border: 0
 		input
 			background-color: #cecece
@@ -92,7 +94,7 @@ header
 			border: 0
 			outline: none
 			padding: 12px 0
-			
+			height: 50px
 			margin: 0
 			text-transform: uppercase
 			box-sizing: border-box
@@ -108,10 +110,8 @@ header
 		:-ms-input-placeholder
 			color: #fff
 			
-			
-
 		button
-			margin-left: -4px
+			margin-left: -6px
 			margin-right: 0px
 			border: 0
 			background-color: #cecece
@@ -128,9 +128,10 @@ header
 // CAROUSEL
 #carousel-example-generic
 	height: 300px
+	
 	img
 		height: 300px
-		width: auto
+		width: 100%
 		display: block
 		margin: auto
 	.carousel-control
@@ -141,12 +142,14 @@ header
 		.glyphicon-chevron-left
 			left: -20px
 	
+		.glyphicon .glyphicon-chevron-right
+			
 	.item
 		background-color: $grey-color
 		.carousel-caption
 			position: absolute
 			text-align: left
-			margin: 0
+			margin: 20px
 			padding: 0
 			left: 10px
 			bottom: 10px
@@ -154,20 +157,28 @@ header
 			span
 				color: #fff
 				background-color: #000
-				padding: 5px
+				padding: 6px
 				margin: 0
 				text-transform: uppercase
+				font-size: 11px
+				line-height: 20px
 			h3
 				background-color: #5aacce
 				color: #fff
-				padding: 5px
+				padding: 8px
 				margin: 0
 				text-transform: uppercase
+				font-family: "OpenSansLight", sans-serif
+				font-size: 20px
+				line-height: 24px
 			p
+				font-family: "OpenSansLight", sans-serif
+				font-size: 14px
+				line-height: 19px
 				margin: 0
 				color: #000
 				background-color: #fff
-				padding: 5px
+				padding: 8px
 				text-decoration: none
 				text-shadow: none
 	
@@ -179,24 +190,42 @@ header
 		padding: 0
 		h3
 			color: $red-color
+			font-family: "OpenSansSemibold", sans-serif
+			font-size: 14px
+			line-height: 20px
+			margin-bottom: 0
 		.btn
 			border: 0
 			border-radius: 0
+			font-family: "OpenSansRegular", sans-serif
+			font-size: 12px
+			line-height: 18px
+			background-color: #5aacce
 		i,.number-of-comments,.date
 			background-color: #fff
 			color: #bbbbbb
 		.number-of-comments,.date
 			display: inline-block
+			font-size: 11px
+			line-height: 20px
+			margin: 12px 0px
 		.number-of-comments			
 			margin-left: 20px
+		p
+			font-family: "OpenSansRegular", sans-serif
+			font-size: 13px
+			line-height: 18px
 	.thumbnail	
 		//position: absolute
 		border: 0
 		padding: 0
 		margin-right: 30px
+		margin-bottom: 30px
 		&:last-child
 			margin-right: 0
 		>span
+			font-size: 11px
+			line-height: 20px
 			color: #fff
 			background-color: #000
 			padding: 5px
@@ -214,7 +243,8 @@ header
 	color: #000
 	background-color: $grey-color
 	text-transform: uppercase
-	font-weight: bold
+	font-size: 16px
+	line-height: 20px
 	padding: 5px 10px
 	margin-bottom: 20px
 	
@@ -225,10 +255,17 @@ header
 	h4
 		color: $red-color
 		font-weight: bold
+		font-family: "OpenSansRegular", sans-serif
+		font-size: 14px
+		line-height: 20px
 	p,span
 		margin: 0
-		font-size: 12px
+		font-size: 11px
+		line-height: 15px
 		color: $text-color
+	span
+		line-height: 20px
+
 .media:last-child
 	margin-bottom: 40px
 
@@ -257,9 +294,10 @@ footer
 	h4
 		color: $red-color
 		text-transform: uppercase
-		font-size: 12px
-		font-weight: bold
-
+		font-size: 10px
+		line-height: 24px
+		font-family: "Verdana", sans-serif
+		
 	.newsletter-wrap
 		form
 			width: 200px
@@ -288,20 +326,27 @@ main
 	h1
 		font-size: 30px
 		margin: 0
+		font-family: "OpenSansRegular", sans-serif
+		line-height: 24px
 	.date, .number-of-comments
 		display: inline-block
 		margin: 15px 0
 		color: $text-color
+		font-size: 11px
+		line-height: 20px
 	.number-of-comments
 		margin-left: 20px
 	.content
 		p
 			font-size: 12px
+			line-height: 17px
 	.img-item	
 		text-align: center
 		margin-bottom: 10px
 	.img-caption
+		
 		color: $text-color
+		font-style: italic
 	
 	.social-wrap, .tags-wrap
 		display: inline-block
@@ -341,12 +386,15 @@ main
 			font-size: 12px
 			color: $red-color
 			text-transform: uppercase
-			font-weight: bold
 			margin: 0
+			font-family: "OpenSansRegular", sans-serif
+			font-size: 12px
+			line-height: 17px
 		.media-body
 			h4,span,a
 				vertical-align: baseline
 			h4
+				line-height: 17px
 				color: #000
 				font-weight: normal
 				font-size: 14px
@@ -355,19 +403,24 @@ main
 				
 			span
 				margin: 0 10px
-				font-size: 12px
-				
+				font-size: 10px
+				line-height: 24px
 			a
-				font-size: 12px
+				font-size: 10px
+				line-height: 24px
 				text-decoration: underline
 			>.media
-				margin-bottom: 0px
+				margin-bottom: 30px
 		
 		.media-object
 			width: 50px
 			height: 50px
 	.comment-form
-		margin-top: 40px
+		margin: 40px 0px
+		
+		.form-group
+			padding-left: 15px
+			margin-bottom: 10px
 		pre
 			border: 0
 			background-color: #fff
@@ -376,6 +429,7 @@ main
 			font-family: "RobotoRegular", sans-serif
 			text-align: left
 		input,textarea
+			text-indent: 5px
 			display: block
 			outline: none
 			border: 0
@@ -390,12 +444,10 @@ main
 			width: 100%
 		.red
 			color: $red-color
-		span
-			font-size: 12px
-		label
+		span,label
+			line-height: 17px
 			text-align: left
 			padding: 0
-			font-size: 12px
 			text-decoration: none
 		button
 			border: 0
@@ -408,3 +460,37 @@ main
 			height: 40px
 			padding: 0
 			font-size: 12px
+
+// Sidebar
+.sidebar
+	h3
+		font-size: 12px
+		line-height: 17px
+		color: $red-color
+		text-transform: uppercase
+		font-family: "OpenSansRegular", sans-serif
+		margin: 0
+	hr
+		margin-top: 5px
+		margin-bottom: 15px
+	h4
+		color: #000
+		font-size: 14px
+		line-height: 20px
+		font-family: "OpenSansRegular", sans-serif
+	.media:last-child
+		margin-bottom: 30px
+	.advertisement
+		img
+			width: 140px
+			height: 140px
+			//display: inline-block
+			margin-bottom: 20px
+		.media-right,.media-left
+			padding: 0
+		.media-right
+			text-align: right
+			
+	
+	#vk_groups,#vk_groups iframe 
+		width: 100% !important
