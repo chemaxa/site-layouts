@@ -2,8 +2,6 @@
 $text-color: #717171
 $red-color: #ce5a5a
 $blue-color: #003469
-$dark-color: #000
-$green-color: #67bc5c
 $grey-color: #dddddd
 
 body
@@ -16,6 +14,7 @@ body
 	line-height: 1.6
 	-webkit-font-smoothing: antialised
     overflow-x: hidden
+	
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -480,12 +479,13 @@ main
 		font-family: "OpenSansRegular", sans-serif
 	.media:last-child
 		margin-bottom: 30px
-	.advertisement
+	.advertisement-top
 		img
-			width: 140px
-			height: 140px
+			width: 120px
+			height: 120px
 			//display: inline-block
 			margin-bottom: 20px
+			margin-right: 20px
 		.media-right,.media-left
 			padding: 0
 		.media-right
@@ -494,3 +494,32 @@ main
 	
 	#vk_groups,#vk_groups iframe 
 		width: 100% !important
+
+	.tabs-group
+		margin-top: 30px
+		.tab
+			font-size: 12px
+			line-height: 17px
+			font-family: "OpenSansRegular", sans-serif
+			text-transform: uppercase
+			margin-right: 10px
+			cursor: pointer
+		.active
+			color: $red-color
+		.tab-item
+    		display: none
+		.tab-item:first-child 
+    		display: block
+		.comments-wrap .media-object
+			width: 50px
+			height: 50px
+		.media-body	
+			h4
+				margin: 0
+		
+	.advertisement-bottom
+		.top-banner,.bottom-banner
+			img
+				width: 100%
+				margin-bottom: 20px
+			

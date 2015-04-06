@@ -46,4 +46,11 @@ $(document).ready(function () {
 		$(this).parent().addClass('active');
 	});
 
+	// TABS SIDEBAR
+	$(".tabs-group .tab").click(function () {
+		$(".tabs-group .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".tabs-group .tab-item").hide().eq($(this).index()).fadeIn();
+	}).eq(0).addClass("active");
+
+
 });
