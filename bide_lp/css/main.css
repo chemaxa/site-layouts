@@ -1,0 +1,8 @@
+body {
+  font-family: "RobotoRegular", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialised;
+  -webkit-font-smoothing-overflow-x: hidden;
+}
