@@ -4,23 +4,24 @@ $gray-color: #e8e8e8
 $table-gray: #d7d7d7
 $blue-catalog-color: #003c6c
 $light-blue-catalog-color: #005ca5
-$ble-text: #004276
+$blue-text: #004276
 $gray-text: #88878c
 $red-text: #cc0000
 
+
 body
-	font-family: "RobotoRegular", sans-serif
+	font-family: "Roboto", sans-serif
 	font-weight: normal
 	font-size: 18px
-	line-height: 1.6
-	-webkit-font-smoothing: antialised
-    overflow-x: hidden
+	line-height: 1.428571429
+	overflow-x: hidden
+	color: $blue-text	
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: red
-    box-shadow: $red-color 0 0 0 2px
-    border-color: $red-color
+	box-shadow: $red-color 0 0 0 2px
+  border-color: $red-color
 
 body input:required:valid,
 body textarea:required:valid
@@ -30,22 +31,39 @@ h1
     color: $red-text
     font-size: 50px
     font-weight: bold
-    font-family: "RobotoBold", sans-serif
 
+button
+	height: 45px
+	vertical-align: middle
+	font-size: 30px
+	line-height: 20px
+	color: #fff
+
+	background-color: $red-text
+	text-align: center				
+	border-radius: 5px
+	outline: 0
+	border: 0
+
+.text-center
+	text-align: center
+.text-left
+	text-align: left
+.text-bold
+	font-weight: 600	
 
 /*Page header*/
 /*Menu*/
 .header_menu_wrapper
 	background: url(../img/blue_bg.jpg) 
 .header_menu
-	font-family: "RobotoBold", sans-serif
+	font-weight: 600
 	margin-left: -15px //fixing btp gutter
-	height: 70px
 
 	ul
 		margin: 0
 		padding: 0
-		padding-top: 15px
+		padding-top: 25px
 		text-align: justify
 		list-style-type: none
 		&:after
@@ -58,40 +76,310 @@ h1
 		padding: 0
 		display: inline-block
 		vertical-align: middle
-		:last-child
-			margin-right: -15px //bt padding
+		&:last-child
+			margin-right: -15px //btp padding
 		a
 			color: #fff
 
 
 /*Heading*/		
-.heading
-	background-color: $red-color
-	.logo
-		margin-left: -15px
-		margin-top:  15px
-		margin-bottom: 15px
-	.title
-		margin-top: 28px
-		font-family: "RobotoBold", sans-serif
-		font-size: 30px
-		color: #fff
-		line-height: 22px
-	.description
-		font-size: 24px
-		color: #fff
-	.phone
-		font-size: 24px
-		color: #fff
-		margin-right: -15px // bt padding
-.top_parallax 
-	img
-		display: block
-		margin: 0 auto		
+header.page_header
+	.heading
+		background-color: $red-color
+		.logo
+			margin-left: -15px
+			margin-top:  15px
+			margin-bottom: 15px
+		.title
+			margin-left: 20px
+			margin-top: 28px
+			font-family: "Roboto", sans-serif
+			font-weight: 600
+			font-size: 30px
+			color: #fff
+			line-height: 22px
+		.description
+			margin-left: 20px
+			font-size: 24px
+			color: #fff
+		.phone
+			font-size: 24px
+			color: #fff
+			margin-right: -15px // bt padding
+	.top_parallax 
+		background: url(../img/cube_bg.jpg)
+		img
+			display: block
+			margin: 0 auto		
 
 /*Sections*/		
 /*Cover*/
 section.cover
 	background: url(../img/noise_bg.jpg) 
+	padding-top: 20px
+	padding-bottom: 100px
 	h1
 		text-align: center
+		margin: 40px 0
+
+	.compare
+		margin: 0 auto
+		text-align: center
+		width: 100%
+		border-collapse:collapse
+		margin-top: 80px
+		color: #000
+		caption
+			margin-bottom: 45px
+			white-space: nowrap
+			font-size: 50px
+			font-family: "Roboto", sans-serif
+			font-weight: 300
+			color: $red-text
+		thead
+			background: url(../img/blue_bg.jpg)
+			color: #fff
+			font-size: 24px
+			th
+				padding: 40px
+				&:first-child
+					text-align: left
+		tbody
+			td
+				padding: 2px 40px 
+				font-size: 18px
+				&:first-child
+					text-align: left
+			tr
+				background-color: #FFF
+				border-bottom: 1px dotted #000
+				&:last-child
+					border-bottom: 0
+			tr:nth-child(even)
+				background-color: $table-gray
+
+/*Catalog*/
+section.catalog
+	background: url(../img/blue_bg.jpg)
+	padding-bottom: 105px
+
+	.section_title
+		padding: 80px 0
+		font-size: 50px
+		line-height: 20px
+		font-weight: 600
+		color: #fff
+		text-align: center
+	.product
+		color: #fff
+		background-color: $light-blue-catalog-color
+		padding: 36px
+		border-radius: 15px
+		height: 950px // For same heights
+		position: relative
+		.product_image
+			img
+				display: block
+				border-radius: 15px
+				height: 340px
+				width: 295px
+		.product_title
+			font-size: 24px
+			line-height: 24px
+			font-weight: 600
+			margin: 40px 0 25px 
+		.product_description
+			font-size: 14px
+			line-height: 16px
+			text-align: justify
+			overflow: hidden
+			
+		.product_cost		
+			position: absolute	
+			left: 36px
+			bottom: 100px
+			font-size: 45px
+			font-weight: 600
+			font-style: italic
+			span
+				font-style: italic
+				font-weight: 300
+				font-size: 30px
+		.product_buy_button
+			position: absolute
+			bottom: 45px
+			left: 36px
+			font-size: 26px
+			line-height: 20px
+			color: #fff
+			display: block
+			width: 295px
+			padding: 15px 0
+			background-color: $red-text
+			text-align: center				
+			border-radius: 5px
+
+/*Question form*/
+section.question_form
+	background: url(../img/water.jpg)
+	padding: 60px 0 50px
+	form
+		text-align: center
+		background: url(../img/blue_bg.jpg)
+		color: #000
+		padding-top: 20px
+		box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.75)
+		.title
+			color: #fff
+			text-align: center
+			font-size: 30px
+			font-weight: 600
+			text-transform: uppercase
+
+		.name,.phone
+			border-radius: 5px		
+			height: 45px
+			font-size: 20px
+			margin-top: 20px
+			margin-bottom: 30px
+			margin-right: 40px
+			text-align: center
+			border: 0
+			outline: 0
+			width: 340px
+
+		button
+			width: 320px
+			margin-top: -7px
+/*About*/			
+section.about
+	background: url(../img/cube_bg.jpg)
+	.about_title
+		text-transform: uppercase
+		font-size: 50px
+		color: $red-text
+		padding: 55px 0 30px
+		font-weight: 600
+		text-align: center
+	.content
+		margin-bottom: 90px
+		font-size: 18px
+		line-height: 20px
+		.left_col,.right_col
+			vertical-align: top
+			display: inline-block
+			width: 49% // 2% for spaces
+		.right_col
+			ul
+				list-style-type: disc
+
+/*Reviews*/				
+section.reviews
+	background: url(../img/blue_bg.jpg)
+	color: #fff
+	padding-bottom: 80px
+	.reviews_title
+		font-size: 50px
+		padding: 60px 0
+		text-align: center
+		font-weight: 600
+		font-style: italic
+	.slide		
+		display: inline-block
+		width: 520px
+		vertical-align: top
+		margin-left: 30px
+		.badge
+			font-style: italic
+			font-size: 18px
+			line-height: 18px
+			color: $blue-text
+			background-color: #fff
+			border-radius: 5px
+			padding: 25px 20px
+			position: relative
+			max-height: 170px
+			box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.75)
+			&:after
+				content: ''
+				background: url(../img/bubble.png) no-repeat
+				position: absolute
+				bottom: -18px
+				left: 121px
+				width: 18px
+				height: 18px
+		.author
+			margin-left: 110px
+			margin-top: 25px				
+			.name
+				font-weight: 600
+				font-size: 18px
+				font-style: italic
+			.city
+				font-style: italic
+				font-size: 14px
+/*City form*/				
+section.city_form
+	background-color: #000
+	color: #fff
+	.bottom_parallax
+		img
+			display: block
+			margin: 0 auto
+	.text
+		margin-top: 25px
+	.form_title
+		font-style: italic
+		font-weight: 600
+		font-size: 36px
+		text-align: center
+		margin-top: 16px
+		margin-bottom: 20px
+	form
+		input
+			display: block
+			width: 100%
+			border-radius: 5px		
+			height: 45px
+			font-size: 20px
+			text-align: center
+			border: 0
+			outline: 0
+			margin-bottom: 50px
+		button
+			width: 205px
+
+/*Contacts*/			
+section.contacts
+	background: url(../img/cube_bg.jpg)
+	text-align: center
+	padding-bottom: 25px
+	font-size: 32px
+	color: $gray-text
+	.contacts_title
+		text-align: left
+		font-size: 31px
+		margin: 55px 0
+	.name
+		color: $blue-text
+		font-weight: 600
+		line-height: 1
+	.second_name
+		color: $blue-text
+		font-size: 24px
+	.address		
+		margin: 25px 0
+		line-height: 1
+	.phone
+		line-height: 1
+		margin-bottom: 25px
+		font-size: 36px
+		color: $red-text
+
+footer.page_footer
+	color: #fff
+	font-size: 18px
+	font-weight: 300
+	font-style: italic
+	padding: 40px 0
+	background: url(../img/blue_bg.jpg)
