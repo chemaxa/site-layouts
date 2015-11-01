@@ -51,17 +51,24 @@ button {
 }
 
 /*Page header*/
-/*Menu*/
-.header_menu_wrapper {
-  background: url(../img/blue_bg.jpg);
+header.page_header {
+  /*Menu*/
+  /*Heading*/
 }
 
-.header_menu {
+header.page_header .header_menu_wrapper {
+  background: url(../img/blue_bg.jpg);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+header.page_header .header_menu {
   font-weight: 600;
   margin-left: -15px;
 }
 
-.header_menu ul {
+header.page_header .header_menu ul {
   margin: 0;
   padding: 0;
   padding-top: 25px;
@@ -69,30 +76,32 @@ button {
   list-style-type: none;
 }
 
-.header_menu ul:after {
+header.page_header .header_menu ul:after {
   content: '';
   display: inline-block;
   width: 100%;
   height: 1px;
 }
 
-.header_menu li {
+header.page_header .header_menu li {
   margin: 0;
   padding: 0;
   display: inline-block;
   vertical-align: middle;
 }
 
-.header_menu li:last-child {
+header.page_header .header_menu li:last-child {
   margin-right: -15px;
 }
 
-.header_menu li a {
+header.page_header .header_menu li a {
   color: #fff;
 }
 
-/*Heading*/
 header.page_header .heading {
+  position: relative;
+  z-index: 1;
+  padding-top: 70px;
   background-color: #cc0000;
 }
 
