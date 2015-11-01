@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/main.css">
+    <!-- jQuery 2.1.4 -->
+    <script src="/js/libs/jquery-2.1.4.min.js"></script>
     <title>Bide Yo-Yo</title>
 </head>
 
@@ -45,8 +48,9 @@
                 </div>
             </div>
         </div>
-        <div class="top_parallax">
-            <img src="/img/Photo.jpg" alt="">
+        <div class="top_parallax_wrapper">
+            <div class="top_parallax">
+                <!-- <img src="/img/Photo.jpg" alt=""> --></div>
         </div>
     </header>
     <section class="cover" id="cover">
@@ -176,7 +180,9 @@
                     <div class="section_title">Каталог</div>
                     <div class="col-md-4">
                         <div class="product">
-                            <div class="product_image"><img src="img/YB-2015A.jpg" alt=""></div>
+                            <div class="product_image">
+                                <a href="img/YB-2015A.jpg" class="fancybox"><img src="img/YB-2015A.jpg" alt=""></a>
+                            </div>
                             <div class="product_title">Базовая
                                 <br>YB-2015A
                             </div>
@@ -189,7 +195,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="product">
-                            <div class="product_image"><img src="img/YB-3000А.jpg" height="600" width="568" alt=""></div>
+                            <div class="product_image">
+                                <a href="img/YB-3000А.jpg" class="fancybox"><img src="img/YB-3000А.jpg" height="600" width="568" alt=""></a>
+                            </div>
                             <div class="product_title">Люкс
                                 <br>YB-3000A Long
                             </div>
@@ -202,7 +210,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="product">
-                            <div class="product_image"><img src="img/YB-770.jpg" alt=""></div>
+                            <div class="product_image">
+                                <a href="img/YB-770.jpg" class="fancybox"><img src="img/YB-770.jpg" alt=""></a>
+                            </div>
                             <div class="product_title">Премиум
                                 <br>YB-770
                             </div>
@@ -223,8 +233,8 @@
                 <div class="col-md-12">
                     <form action="">
                         <div class="title">Есть вопросы?</div>
-                        <input type="text" placeholder="Имя" class="name">
-                        <input type="text" placeholder="Номер телефона" class="phone">
+                        <input type="text" class="name" placeholder="Имя" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Имя'">
+                        <input type="text" class="phone" placeholder="Номер телефона" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Номер телефона'">
                         <button>Оставить заявку</button>
                     </form>
                 </div>
@@ -331,16 +341,16 @@
                 </div>
                 <form action="">
                     <div class="col-md-3">
-                        <input type="text" class="name" placeholder="Имя">
+                        <input type="text" class="name" placeholder="Имя" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Имя'">
                     </div>
                     <div class="col-md-3">
-                        <input type="text" class="phone" placeholder="Номер телефона">
+                        <input type="text" class="phone" placeholder="Номер телефона" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Номер телефона'">
                     </div>
                     <div class="col-md-2">
-                        <input type="text" class="number" placeholder="№ чека">
+                        <input type="text" class="number" placeholder="№ чека" onfocus="this.placeholder = ''" onblur="this.placeholder = '№ чека'">
                     </div>
                     <div class="col-md-2">
-                        <input type="text" class="date" placeholder="Дата">
+                        <input type="text" class="date" placeholder="Дата" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Дата'">
                     </div>
                     <div class="col-md-2">
                         <button>Отправить</button>
@@ -376,7 +386,8 @@
             </div>
         </div>
     </footer>
-    <script src="/js/libs/jquery-2.1.4.min.js"></script>
+    <script src="/js/libs/jquery.stellar.min.js"></script>
+    <script src="/js/libs/jquery.fancybox.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 

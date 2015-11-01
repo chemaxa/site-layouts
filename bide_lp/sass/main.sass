@@ -112,11 +112,18 @@ header.page_header
 			font-size: 24px
 			color: #fff
 			margin-right: -15px // bt padding
-	.top_parallax 
+	.top_parallax_wrapper
 		background: url(../img/cube_bg.jpg)
-		img
-			display: block
-			margin: 0 auto		
+		//height: 700px
+	.top_parallax 
+		height: 700px
+		background: url(../img/Photo.jpg)
+		background-attachment: fixed
+		background-position: 50% 0
+		background-repeat: no-repeat
+    position: relative
+		
+
 
 /*Sections*/		
 /*Cover*/
@@ -189,6 +196,9 @@ section.catalog
 				border-radius: 15px
 				height: 340px
 				width: 295px
+				opacity: 0.9
+				&:hover
+					opacity: 1
 		.product_title
 			font-size: 24px
 			line-height: 24px

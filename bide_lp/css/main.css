@@ -133,13 +133,17 @@ header.page_header .heading .phone {
   margin-right: -15px;
 }
 
-header.page_header .top_parallax {
+header.page_header .top_parallax_wrapper {
   background: url(../img/cube_bg.jpg);
 }
 
-header.page_header .top_parallax img {
-  display: block;
-  margin: 0 auto;
+header.page_header .top_parallax {
+  height: 700px;
+  background: url(../img/Photo.jpg);
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-repeat-position: relative;
 }
 
 /*Sections*/
@@ -238,6 +242,11 @@ section.catalog .product .product_image img {
   border-radius: 15px;
   height: 340px;
   width: 295px;
+  opacity: 0.9;
+}
+
+section.catalog .product .product_image img:hover {
+  opacity: 1;
 }
 
 section.catalog .product .product_title {
