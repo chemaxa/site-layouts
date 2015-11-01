@@ -38,13 +38,13 @@ button
 	font-size: 30px
 	line-height: 20px
 	color: #fff
-
 	background-color: $red-text
 	text-align: center				
 	border-radius: 5px
 	outline: 0
 	border: 0
-
+	&:hover
+		background-color: #CE5757
 .text-center
 	text-align: center
 .text-left
@@ -116,12 +116,12 @@ header.page_header
 		background: url(../img/cube_bg.jpg)
 		//height: 700px
 	.top_parallax 
-		height: 700px
-		background: url(../img/Photo.jpg)
-		background-attachment: fixed
+		height: 695px
+		background: url(../img/Photo.jpg) no-repeat 50% 0
+/* 		background-attachment: fixed
 		background-position: 50% 0
 		background-repeat: no-repeat
-    position: relative
+    position: relative */
 		
 
 
@@ -221,6 +221,7 @@ section.catalog
 				font-style: italic
 				font-weight: 300
 				font-size: 30px
+
 		.product_buy_button
 			position: absolute
 			bottom: 45px
@@ -234,7 +235,10 @@ section.catalog
 			background-color: $red-text
 			text-align: center				
 			border-radius: 5px
-
+			text-decoration: none
+			&:hover
+				text-decoration: none
+				background-color: #CE5757
 /*Question form*/
 section.question_form
 	background: url(../img/water.jpg)
@@ -302,9 +306,9 @@ section.reviews
 		font-style: italic
 	.slide		
 		display: inline-block
-		width: 520px
+		width: 515px
 		vertical-align: top
-		margin-left: 30px
+		//margin-left: 30px
 		.badge
 			font-style: italic
 			font-size: 18px
@@ -314,6 +318,7 @@ section.reviews
 			border-radius: 5px
 			padding: 25px 20px
 			position: relative
+			z-index: 10
 			max-height: 170px
 			box-shadow: 5px 6px 5px 0px rgba(0,0,0,0.75)
 			&:after
@@ -324,6 +329,7 @@ section.reviews
 				left: 121px
 				width: 18px
 				height: 18px
+				z-index: 10
 		.author
 			margin-left: 110px
 			margin-top: 25px				
@@ -334,14 +340,27 @@ section.reviews
 			.city
 				font-style: italic
 				font-size: 14px
+	.bx-wrapper .bx-viewport
+		background: url(../img/blue_bg.jpg)
+		border: 0
+		box-shadow: none
+	.bx-wrapper .bx-prev		
+		left: -85px
+	.bx-wrapper .bx-next
+		right: -71px
+	.bx-wrapper .bx-controls-direction a		
+		top: 30%
+
 /*City form*/				
 section.city_form
 	background-color: #000
 	color: #fff
-	.bottom_parallax
-		img
-			display: block
-			margin: 0 auto
+	.bottom_parallax_wrapper
+		background-color: #000
+		//height: 700px
+	.bottom_parallax 
+		height: 690px
+		background: url(../img/city_photo.jpg) no-repeat 50% 0
 	.text
 		margin-top: 25px
 	.form_title
@@ -364,6 +383,7 @@ section.city_form
 			margin-bottom: 50px
 		button
 			width: 205px
+			margin-bottom: 20px
 
 /*Contacts*/			
 section.contacts

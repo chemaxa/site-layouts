@@ -15,11 +15,21 @@ $(function() {
     });
 
     // Parallax
-    $('.top_parallax_wrapper').stellar({
+    /*$('.top_parallax_wrapper').stellar({
         horizontalOffset: 40,
         verticalOffset: 150
-    });
+    });*/
 
     //Fancybox
     $(".fancybox").fancybox();
+
+    // Slider
+    $("#slider").bxSlider({
+        minSlides: 2,
+        maxSlides: 2,
+        slideWidth: 515,
+        slideMargin: 30,
+        pager: false
+
+    });
 });

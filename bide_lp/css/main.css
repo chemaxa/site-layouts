@@ -38,6 +38,10 @@ button {
   border: 0;
 }
 
+button:hover {
+  background-color: #CE5757;
+}
+
 .text-center {
   text-align: center;
 }
@@ -138,14 +142,14 @@ header.page_header .top_parallax_wrapper {
 }
 
 header.page_header .top_parallax {
-  height: 700px;
-  background: url(../img/Photo.jpg);
-  background-attachment: fixed;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-repeat-position: relative;
+  height: 695px;
+  background: url(../img/Photo.jpg) no-repeat 50% 0;
 }
 
+/* 		background-attachment: fixed
+		background-position: 50% 0
+		background-repeat: no-repeat
+    position: relative */
 /*Sections*/
 /*Cover*/
 section.cover {
@@ -291,6 +295,12 @@ section.catalog .product .product_buy_button {
   background-color: #cc0000;
   text-align: center;
   border-radius: 5px;
+  text-decoration: none;
+}
+
+section.catalog .product .product_buy_button:hover {
+  text-decoration: none;
+  background-color: #CE5757;
 }
 
 /*Question form*/
@@ -380,9 +390,8 @@ section.reviews .reviews_title {
 
 section.reviews .slide {
   display: inline-block;
-  width: 520px;
+  width: 515px;
   vertical-align: top;
-  margin-left: 30px;
 }
 
 section.reviews .slide .badge {
@@ -394,6 +403,7 @@ section.reviews .slide .badge {
   border-radius: 5px;
   padding: 25px 20px;
   position: relative;
+  z-index: 10;
   max-height: 170px;
   box-shadow: 5px 6px 5px 0px rgba(0, 0, 0, 0.75);
 }
@@ -406,6 +416,7 @@ section.reviews .slide .badge:after {
   left: 121px;
   width: 18px;
   height: 18px;
+  z-index: 10;
 }
 
 section.reviews .slide .author {
@@ -424,15 +435,37 @@ section.reviews .slide .author .city {
   font-size: 14px;
 }
 
+section.reviews .bx-wrapper .bx-viewport {
+  background: url(../img/blue_bg.jpg);
+  border: 0;
+  box-shadow: none;
+}
+
+section.reviews .bx-wrapper .bx-prev {
+  left: -85px;
+}
+
+section.reviews .bx-wrapper .bx-next {
+  right: -71px;
+}
+
+section.reviews .bx-wrapper .bx-controls-direction a {
+  top: 30%;
+}
+
 /*City form*/
 section.city_form {
   background-color: #000;
   color: #fff;
 }
 
-section.city_form .bottom_parallax img {
-  display: block;
-  margin: 0 auto;
+section.city_form .bottom_parallax_wrapper {
+  background-color: #000;
+}
+
+section.city_form .bottom_parallax {
+  height: 690px;
+  background: url(../img/city_photo.jpg) no-repeat 50% 0;
 }
 
 section.city_form .text {
@@ -462,6 +495,7 @@ section.city_form form input {
 
 section.city_form form button {
   width: 205px;
+  margin-bottom: 20px;
 }
 
 /*Contacts*/

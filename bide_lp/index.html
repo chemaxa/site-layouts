@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="css/libs/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/libs/jquery.bxslider.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- jQuery 2.1.4 -->
-    <script src="/js/libs/jquery-2.1.4.min.js"></script>
+    <script src="js/libs/jquery-2.1.4.min.js"></script>
     <title>Bide Yo-Yo</title>
 </head>
 
@@ -37,7 +38,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-1">
-                        <div class="logo"><img src="/img/kryshka_logo.png" alt=""></div>
+                        <div class="logo"><img src="img/kryshka_logo.png" alt=""></div>
                     </div>
                     <div class="col-md-11">
                         <div class="title">Электронные крышки-биде YoYo
@@ -311,18 +312,48 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="reviews_title">Отзывы наших клиентов</div>
-                    <div class="slide">
-                        <div class="badge">Сейчас эмоции поутихли, но в первые дни детей невозможно было вытащить из туалета, они развлекались с нашей крышкой. А вообще, вещь необходимая в каждом доме</div>
-                        <div class="author">
-                            <div class="name">Даша</div>
-                            <div class="city">Зеленогорск</div>
+                    <div id="slider">
+                        <div class="slide">
+                            <div class="badge">Сейчас эмоции поутихли, но в первые дни детей невозможно было вытащить из туалета, они развлекались с нашей крышкой. А вообще, вещь необходимая в каждом доме</div>
+                            <div class="author">
+                                <div class="name">Даша</div>
+                                <div class="city">Зеленогорск</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slide">
-                        <div class="badge">Я крышку покупал родителям, они очень довольны. Маме 76, а отцу 80 лет. Особенно нравится отцу, он делает контрастный режим и у него унимаются боли. Обязательно куплю себе и детям. Дочке скоро рожать.</div>
-                        <div class="author">
-                            <div class="name">Анатолий</div>
-                            <div class="city">Москва</div>
+                        <div class="slide">
+                            <div class="badge">Я крышку покупал родителям, они очень довольны. Маме 76, а отцу 80 лет. Особенно нравится отцу, он делает контрастный режим и у него унимаются боли. Обязательно куплю себе и детям. Дочке скоро рожать.</div>
+                            <div class="author">
+                                <div class="name">Анатолий</div>
+                                <div class="city">Москва</div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="badge">Сейчас эмоции поутихли, но в первые дни детей невозможно было вытащить из туалета, они развлекались с нашей крышкой. А вообще, вещь необходимая в каждом доме</div>
+                            <div class="author">
+                                <div class="name">Даша</div>
+                                <div class="city">Зеленогорск</div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="badge">Я крышку покупал родителям, они очень довольны. Маме 76, а отцу 80 лет. Особенно нравится отцу, он делает контрастный режим и у него унимаются боли. Обязательно куплю себе и детям. Дочке скоро рожать.</div>
+                            <div class="author">
+                                <div class="name">Анатолий</div>
+                                <div class="city">Москва</div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="badge">Сейчас эмоции поутихли, но в первые дни детей невозможно было вытащить из туалета, они развлекались с нашей крышкой. А вообще, вещь необходимая в каждом доме</div>
+                            <div class="author">
+                                <div class="name">Даша</div>
+                                <div class="city">Зеленогорск</div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="badge">Я крышку покупал родителям, они очень довольны. Маме 76, а отцу 80 лет. Особенно нравится отцу, он делает контрастный режим и у него унимаются боли. Обязательно куплю себе и детям. Дочке скоро рожать.</div>
+                            <div class="author">
+                                <div class="name">Анатолий</div>
+                                <div class="city">Москва</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -330,8 +361,10 @@
         </div>
     </section>
     <section class="city_form" id="city">
-        <div class="bottom_parallax">
-            <img src="/img/city_photo.jpg" alt="">
+        <div class="bottom_parallax_wrapper">
+            <div class="bottom_parallax">
+                <!-- <img src="/img/city_photo.jpg" alt=""> -->
+            </div>
         </div>
         <div class="container">
             <div class="row">
@@ -386,9 +419,10 @@
             </div>
         </div>
     </footer>
-    <script src="/js/libs/jquery.stellar.min.js"></script>
-    <script src="/js/libs/jquery.fancybox.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="js/libs/jquery.bxslider.min.js"></script>
+    <script src="js/libs/jquery.stellar.min.js"></script>
+    <script src="js/libs/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
