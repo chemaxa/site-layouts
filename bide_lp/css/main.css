@@ -141,15 +141,13 @@ header.page_header .top_parallax_wrapper {
   background: url(../img/cube_bg.jpg);
 }
 
-header.page_header .top_parallax {
-  height: 695px;
-  background: url(../img/Photo.jpg) no-repeat 50% 0;
+header.page_header .top_parallax_wrapper .top_parallax img {
+  display: block;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-/* 		background-attachment: fixed
-		background-position: 50% 0
-		background-repeat: no-repeat
-    position: relative */
 /*Sections*/
 /*Cover*/
 section.cover {

@@ -32,4 +32,16 @@ $(function() {
         pager: false
 
     });
+
+    // MP3
+
+    $("#jquery_jplayer_1").jPlayer({
+        ready: function() {
+            $(this).jPlayer("setMedia", {
+                mp3: "mp3/horn.mp3"
+            });
+        },
+        swfPath: "/js/libs",
+        supplied: "mp3"
+    });
 });
