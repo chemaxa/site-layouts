@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>M2M</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/jcf.js"></script>
+    <script src="js/libs/jcf.radio.js"></script>
+    <script src="js/libs/picturefill.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
+    <link rel="stylesheet" href="css/jcf.css">
+    <link rel="stylesheet" href="css/socicons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body class="page">
+    <a name="top"></a>
+    <header class="page__header ">
+        <div class="container hidden-xs hidden-sm">
+            <div class="banner_headline">
+                <a href="#">
+                    <img src="http://lorempixel.com/1160/110/" alt="" class="img-responsive img_centered">
+                </a>
+            </div>
+        </div>
+        <nav class="menu menu_main">
+            <div class="container">
+                <a href="/" class="logo logo_header"><img src="img/logo.png" alt="" class="logo__image"></a>
+                <div class="site-title site-title_header inlined">
+                    новости беспроводных М2М технологий
+                </div>
+                <ul class="menu__list menu__list_main hidden-xs hidden-sm">
+                    <li class="menu__item menu__item_main">
+                        <a href="#" class="menu__link menu__link_main">Партнеры</a>
+                    </li>
+                    <li class="menu__item menu__item_main">
+                        <a href="#" class="menu__link menu__link_main">Консалтинг и аналитика</a>
+                    </li>
+                    <li class="menu__item menu__item_main">
+                        <a href="#" class="menu__link menu__link_main">Реклама на сайте</a>
+                    </li>
+                    <li class="menu__item menu__item_main">
+                        <a href="#" class="menu__link menu__link_main">О портале</a>
+                    </li>
+                    <li class="menu__item menu__item_main">
+                        <a href="#" class="menu__link menu__link_main">Контакты</a>
+                    </li>
+                </ul>
+                <div class="search-panel hidden-xs hidden-sm">
+                    <form action="#" class="form form_header">
+                        <input type="text" class="input form_header__input">
+                        <button class="btn btn-default form_header__button"><span class="icon_search glyphicon glyphicon-search"></span></button>
+                    </form>
+                    <span class="icon_search button_search-toggler glyphicon glyphicon-search"></span>
+                </div>
+                <a href="#mmenu" class="button_mmenu glyphicon glyphicon-menu-hamburger hidden-md hidden-lg pull-right"></a>
+            </div>
+        </nav>
+        <nav class="menu menu_dropdown hidden-sm hidden-xs">
+            <div class="container">
+                <div class="menu__list menu__list_dropdown">
+                    <div class="menu__item menu__item_dropdown">
+                        <a href="#" class="menu__link menu__link_dropdown">Транcпортная телематика</a>
+                        <div class="dropdown__container">
+                            <ul class="dropdown__item menu__list menu__list_vertical">
+                                <li class="menu__item_vertical">
+                                    <a href="#" class="menu__link menu__link_vertical">Новости</a>
+                                </li>
+                                <li class="menu__item_vertical">
+                                    <a href="#" class="menu__link menu__link_vertical">Обзоры</a>
+                                </li>
+                                <li class="menu__item_vertical">
+                                    <a href="#" class="menu__link menu__link_vertical">События</a>
+                                </li>
+                                <li class="menu__item_vertical">
+                                    <a href="#" class="menu__link menu__link_vertical">Видео</a>
+                                </li>
+                            </ul>
+                            <div class="dropdown__item dropdown__article">
+                                <a href="#" class="dropdown__link dropdown__image-link">
+                                    <img src="http://lorempixel.com/170/170" class="dropdown__image">
+                                </a>
+                                <a href="#" class="dropdown__link dropdown__title">Lorem ipsum dolor sit amet, consectetur adipisicing </a>
+                            </div>
+                            <div class="dropdown__item dropdown__article">
+                                <a href="#" class="dropdown__link dropdown__image-link">
+                                    <img src="http://lorempixel.com/170/170" class="dropdown__image">
+                                </a>
+                                <a href="#" class="dropdown__link dropdown__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum consequuntur aliquid dignissimos voluptatibus cum ratione omnis repudiandae magni ex consequatur dolor, in numquam id architecto, eaque non, asperiores laborum accusamus.</a>
+                            </div>
+                            <div class="dropdown__item dropdown__article">
+                                <a href="#" class="dropdown__link dropdown__image-link">
+                                    <img src="http://lorempixel.com/170/170" class="dropdown__image">
+                                </a>
+                                <a href="#" class="dropdown__link dropdown__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi deleniti consequuntur repellendus magnam quam fugit ad obcaecati, tempora? Eius, accusamus sint quia cupiditate, laborum natus autem iste. Quis, ex!Заголовок новости</a>
+                            </div>
+                            <div class="dropdown__item dropdown__article">
+                                <a href="#" class="dropdown__link dropdown__image-link">
+                                    <img src="http://lorempixel.com/170/170" class="dropdown__image">
+                                </a>
+                                <a href="#" class="dropdown__link dropdown__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi deleniti  новости</a>
+                            </div>
+                            <div class="dropdown__item dropdown__article">
+                                <a href="#" class="dropdown__link dropdown__image-link">
+                                    <img src="http://lorempixel.com/170/170" class="dropdown__image">
+                                </a>
+                                <a href="#" class="dropdown__link dropdown__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi deleniti  новости</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__item menu__item_dropdown">
+                        <a href="#" class="menu__link menu__link_dropdown">Спутниковый мониторинг</a>
+                    </div>
+                    <div class="menu__item menu__item_dropdown">
+                        <a href="#" class="menu__link menu__link_dropdown">Платежные системы</a>
+                    </div>
+                    <div class="menu__item menu__item_dropdown">
+                        <a href="#" class="menu__link menu__link_dropdown">Вендинг</a>
+                    </div>
+                    <div class="menu__item menu__item_dropdown">
+                        <a href="#" class="menu__link menu__link_dropdown">Энергоучет</a>
+                    </div>
+                    <div class="menu__item menu__item_dropdown">
+                        <a href="#" class="menu__link menu__link_dropdown">Телеметрия</a>
+                    </div>
+                    <div class="menu__item menu__item_dropdown">
+                        <a href="#" class="menu__link menu__link_dropdown">Медицина</a>
+                    </div>
+                    <div class="menu__item menu__item_dropdown">
+                        <a href="#" class="menu__link menu__link_dropdown">Микроэлекторника</a>
+                    </div>
+                    <div class="menu__item menu__item_dropdown">
+                        <a href="#" class="menu__link menu__link_dropdown">IoT</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="page__content ">
+        <div class="container">
+            <section class="newspanel newspanel_first row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="carousel slide carousel_main" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <article class="item active">
+                                <a href="#" class="carousel__image-wrapper">
+                                    <picture>
+                                        <source srcset="http://lorempixel.com/970/425" media="(min-width: 768px)">
+                                        <source srcset="http://lorempixel.com/420/290" media="(max-width: 767px)">
+                                        <img srcset="http://lorempixel.com/970/425" class="carousel__image">
+                                    </picture>
+                                </a>
+                                <div class="carousel__caption">
+                                    <a href="#" class="carousel__category">Интересное / TLS / Интернет вещей / Криптография / Безопасность</a>
+                                    <h1><a href="#" class="h1">Новая технология аутетификации для IoT</a></h1>
+                                </div>
+                                <time class="date carousel__date">21 января 2016</time>
+                            </article>
+                            <!-- <article class="item">
+                                <a href="#" class="carousel__image-wrapper">
+                                    <img src="http://lorempixel.com/720/500" alt="..." class="carousel__image">
+                                </a>
+                                <div class="carousel__caption">
+                                    <a href="#" class="carousel__category">Интересное / TLS / Интернет вещей / Криптография / Безопасность</a>
+                                    <h1><a href="#" class="h1">Старая технология для IoT</a></h1>
+                                </div>
+                                <time class="date carousel__date">25 января 2016</time>
+                            </article> -->
+                        </div>
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs hidden-sm">
+                            <li data-target="#carousel_main" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel_main" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="masonry col-md-3 col-sm-12 col-xs-12 ">
+                    <article class="masonry__item masonry__item_bordered">
+                        <a href="#" class="masonry__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/270/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/270/140" class="masonry__image">
+                            </picture>
+                        </a>
+                        <h5><a href="#" class="masonry__item-title">Gemalto обеспечит NFC-проездными ...</a></h5>
+                        <time class="date masonry__date">21 января 2016</time>
+                    </article>
+                    <article class="masonry__item masonry__item_bordered">
+                        <a href="#" class="masonry__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/270/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/270/140" class="masonry__image">
+                            </picture>
+                        </a>
+                        <h5><a href="#" class="masonry__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a></h5>
+                        <time class="date masonry__date">21 января 2016</time>
+                    </article>
+                </div>
+                <div class="tetris col-md-3 col-sm-12 col-xs-12">
+                    <article class="tetris__item tetris__item_primary">
+                        <a href="#" class="tetris__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/270/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/270/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <h5><a href="#" class="tetris__item-title tetris__item-title_primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a></h5>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__image-wrapper hidden-lg hidden-md">
+                            <picture>
+                                <source srcset="http://lorempixel.com/270/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/270/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__image-wrapper hidden-lg hidden-md">
+                            <picture>
+                                <source srcset="http://lorempixel.com/270/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/270/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                </div>
+            </section>
+            <section class="newspanel newspanel_second row">
+                <div class="col-md-9 col-sm-12 col-xs-12 feed">
+                    <a href="#" class="title feed__title hidden-xs hidden-sm">Новости</a>
+                    <div class="col-md-6 col-sm-12 col-xs-12 feed__item_primary">
+                        <article class="feed__item">
+                            <a href="#" class="feed__image-wrapper_primary">
+                                <picture>
+                                    <source srcset="http://lorempixel.com/420/290" media="(min-width: 768px)">
+                                    <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                    <img srcset="http://lorempixel.com/420/290" class="feed__image">
+                                </picture>
+                            </a>
+                            <a href="#" class="feed__category hidden-xs hidden-sm">БПЛА / Роснефть / Сибирь / Беспилотники</a>
+                            <a href="#" class="feed__item-title feed__item-title_primary ">«Роснефть» проконтролирует месторождения «беспилотниками»</a>
+                            <div class="feed__item-text_primary hidden-xs hidden-sm">«Роснефть» приступила к испытаниям «беспилотников» на месторождениях Мамонтовского района компании «РН-Юганскнефтегаз» — своего крупнейшего дочернего предприятия</div>
+                            <time class="date feed__date hidden-xs hidden-sm">21 января 2016</time>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 feed__list-wrapper">
+                        <ul class="feed__list">
+                            <li class="feed__list-item">
+                                <article class="feed__item">
+                                    <a href="#" class="feed__image-wrapper">
+                                        <img src="http://lorempixel.com/140/140" class="feed__image" alt="">
+                                    </a>
+                                    <a href="#" class="feed__item-title">«Роснефть» приступила к испытаниям «беспилотников» на месторождениях Мамонтовского района компании «РН-Юганскнефтегаз» — своего крупнейшего дочернего предприятия</a>
+                                    <time class="date feed__date hidden-xs hidden-sm">21 января 2016</time>
+                                </article>
+                            </li>
+                            <li class="feed__list-item">
+                                <article class="feed__item">
+                                    <a href="#" class="feed__image-wrapper">
+                                        <img src="http://lorempixel.com/140/140" class="feed__image" alt="">
+                                    </a>
+                                    <a href="#" class="feed__item-title">«Роснефть» приступила к испытаниям «беспилотников» </a>
+                                    <time class="date feed__date hidden-xs hidden-sm">21 января 2016</time>
+                                </article>
+                            </li>
+                            <li class="feed__list-item">
+                                <article class="feed__item">
+                                    <a href="#" class="feed__image-wrapper">
+                                        <img src="http://lorempixel.com/140/140" class="feed__image" alt="">
+                                    </a>
+                                    <a href="#" class="feed__item-title">«Роснефть» приступила к испытаниям «беспилотников» </a>
+                                    <time class="date feed__date hidden-xs hidden-sm">21 января 2016</time>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 hidden-xs hidden-sm">
+                    <form action="#" class="form form_bordered clearfix">
+                        <div class="form__title">
+                            Поиск по тегам
+                        </div>
+                        <div class="input__wrapper_icon">
+                            <input type="text" class="input__text input__text_icon" placeholder="Что искать?">
+                            <button class="input_icon__button_icon">
+                                <span class="glyphicon glyphicon-menu-right"></span>
+                            </button>
+                        </div>
+                        <a href="#" class="pull-right link__form link_last link_underline">Все теги</a>
+                    </form>
+                    <div class="banner_sidebar">
+                        <a href="#">
+                            <img src="img/banner_sidebar.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="banner_middle banner_offseting">
+                <a href="#">
+                    <img src="http://lorempixel.com/1160/110/" alt="" class="img_responsive">
+                </a>
+            </div>
+            <section class="newspanel row">
+                <div class="tetris col-md-3 newspanel__item newspanel__item_border-right">
+                    <a href="#" class="title tetris__title">Инновации</a>
+                    <article class="tetris__item tetris__item_primary">
+                        <a href="#" class="tetris__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/270/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/270/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                </div>
+                <div class="masonry col-md-6 newspanel__item newspanel__item_border-right clearfix">
+                    <a href="#" class="title masonry__title">Свежие обзоры</a>
+                    <article class="masonry__item masonry__item_large ">
+                        <a href="#" class="masonry__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/390/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/390/140" class="masonry__image">
+                            </picture>
+                        </a>
+                        <h5><a href="#" class="masonry__item-title">Gemalto обеспечит NFC-проездными ...</a></h5>
+                        <time class="date masonry__date">21 января 2016</time>
+                    </article>
+                    <article class="masonry__item masonry__item_small">
+                        <a href="#" class="masonry__image-wrapper">
+                            <img src="http://lorempixel.com/140/140" alt="" class="masonry__image">
+                        </a>
+                        <h5><a href="#" class="masonry__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a></h5>
+                        <time class="date masonry__date">21 января 2016</time>
+                    </article>
+                    <article class="masonry__item masonry__item_small">
+                        <a href="#" class="masonry__image-wrapper">
+                            <img src="http://lorempixel.com/140/140" alt="" class="masonry__image">
+                        </a>
+                        <h5><a href="#" class="masonry__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a></h5>
+                        <time class="date masonry__date">21 января 2016</time>
+                    </article>
+                    <article class="masonry__item masonry__item_large ">
+                        <a href="#" class="masonry__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/390/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/390/140" class="masonry__image">
+                            </picture>
+                        </a>
+                        <h5><a href="#" class="masonry__item-title">Gemalto обеспечит NFC-проездными ...</a></h5>
+                        <time class="date masonry__date">21 января 2016</time>
+                    </article>
+                </div>
+                <div class="tetris tetris_preview newspanel__item col-md-3">
+                    <a href="#" class="title tetris__title">Интервью</a>
+                    <article class="tetris__item tetris__item_preview">
+                        <header class="tetris__item-author">Иванов И.И.</header>
+                        <a href="#" class="tetris__image-wrapper tetris__image-wrapper_preview">
+                            <img src="img/icon_male.png" class="tetris__image_preview img_responsive" alt="">
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_preview">Доклады «Импортозамещения 2015»</a>
+                    </article>
+                    <article class="tetris__item tetris__item_preview">
+                        <header class="tetris__item-author">Иванов И.И.</header>
+                        <a href="#" class="tetris__image-wrapper tetris__image-wrapper_preview">
+                            <img src="http://lorempixel.com/60/60" class="tetris__image_preview img_responsive" alt="">
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_preview">Доклады «Импортозамещения 2015»</a>
+                    </article>
+                    <article class="tetris__item tetris__item_preview">
+                        <header class="tetris__item-author">Иванов И.И.</header>
+                        <a href="#" class="tetris__image-wrapper tetris__image-wrapper_preview">
+                            <img src="img/icon_female.png" class="tetris__image_preview img_responsive" alt="">
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_preview">Доклады «Импортозамещения 2015»</a>
+                    </article>
+                </div>
+            </section>
+            <div class="banner_middle ">
+                <a href="#">
+                    <img src="http://lorempixel.com/1160/110/" alt="" class="img_responsive">
+                </a>
+            </div>
+            <section class="newspanel row">
+                <div class="calendar__list newspanel__item newspanel__item_border-right col-md-3 ">
+                    <div class="calendar">
+                        CALENDAR
+                    </div>
+                    <div class="event">
+                        <time class="event__date">24 января 2016</time>
+                        <header class="event__title">IV Международная конференция «Умное страхование»</header>
+                    </div>
+                    <div class="event">
+                        <time class="event__date">24 января 2016</time>
+                        <header class="event__title">IV Международная конференция «Умное страхование»</header>
+                    </div>
+                    <div class="event">
+                        <time class="event__date">24 января 2016</time>
+                        <header class="event__title">IV Международная конференция «Умное страхование»</header>
+                    </div>
+                </div>
+                <div class="feed newspanel__item newspanel__item_border-right col-md-6">
+                    <header class="title feed__title">События</header>
+                    <ul class="feed__list feed__list_twined ">
+                        <li class="feed__list-item">
+                            <article class="feed__item feed__item_twined">
+                                <a href="#" class="feed__image-wrapper">
+                                    <picture>
+                                        <source srcset="http://lorempixel.com/270/140" media="(min-width: 768px)">
+                                        <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                        <img srcset="http://lorempixel.com/270/140" class="feed__image">
+                                    </picture>
+                                </a>
+                                <time class="date feed__date feed__date_twined">21 января 2016</time>
+                                <a href="#" class="feed__item-title feed__item-title_twined">Startup Tour 2016 Сколково</a>
+                                <span class="feed__item-text">«Роснефть» приступила к испытаниям «беспилотников» на месторождениях Мамонтовского района компании «РН-Юганскнефтегаз» — своего крупнейшего дочернего предприятия</span>
+                            </article>
+                        </li>
+                        <li class="feed__list-item">
+                            <article class="feed__item feed__item_twined">
+                                <a href="#" class="feed__image-wrapper">
+                                    <picture>
+                                        <source srcset="http://lorempixel.com/270/140" media="(min-width: 768px)">
+                                        <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                        <img srcset="http://lorempixel.com/270/140" class="feed__image">
+                                    </picture>
+                                </a>
+                                <time class="date feed__date feed__date_twined">21 января 2016</time>
+                                <a href="#" class="feed__item-title feed__item-title_twined">Startup Tour 2016 Сколково</a>
+                                <span class="feed__item-text">«Роснефть» приступила к испытаниям «беспилотников» </span>
+                            </article>
+                        </li>
+                        <li class="feed__list-item">
+                            <article class="feed__item feed__item_twined">
+                                <a href="#" class="feed__image-wrapper">
+                                    <picture>
+                                        <source srcset="http://lorempixel.com/270/140" media="(min-width: 768px)">
+                                        <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                        <img srcset="http://lorempixel.com/270/140" class="feed__image">
+                                    </picture>
+                                </a>
+                                <time class="date feed__date feed__date_twined">21 января 2016</time>
+                                <a href="#" class="feed__item-title feed__item-title_twined">Startup Tour 2016 Сколково</a>
+                                <span class="feed__item-text">«Роснефть» приступила к испытаниям «беспилотников» </span>
+                            </article>
+                        </li>
+                    </ul>
+                    <div class="banner_feed visible-xs visible-ms col-xs-6 col-sm-6">
+                        <a href="#">
+                            <img src="img/banner_sidebar.jpg" alt="" class="img_responsive">
+                        </a>
+                    </div>
+                    <div class="visible-xs visible-ms col-xs-6 col-sm-6">
+                        <ul class="feed__list feed__list_advertising ">
+                            <li class="feed__list-item">
+                                <article class="feed__item">
+                                    <time class="date ">21 января 2016</time>
+                                    <a href="#" class="feed__item-title">Startup Tour 2016 Сколково</a>
+                                    <span class="feed__item-text">«Роснефть» приступила к испытаниям «беспилотников» </span>
+                                </article>
+                            </li>
+                            <li class="feed__list-item">
+                                <article class="feed__item">
+                                    <time class="date ">21 января 2016</time>
+                                    <a href="#" class="feed__item-title">Startup Tour 2016 Сколково</a>
+                                    <span class="feed__item-text">«Роснефть» приступила к испытаниям «беспилотников» </span>
+                                </article>
+                            </li>
+                            <li class="feed__list-item">
+                                <article class="feed__item">
+                                    <time class="date  ">21 января 2016</time>
+                                    <a href="#" class="feed__item-title">Startup Tour 2016 Сколково</a>
+                                    <span class="feed__item-text">«Роснефть» приступила к испытаниям «беспилотников» </span>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 newspanel__item hidden-sm hidden-xs">
+                    <div class="banner_sidebar">
+                        <a href="#">
+                            <img src="img/banner_sidebar.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="newspanel row">
+                <div class="masonry col-md-3 col-sm-12 col-xs-12 ">
+                    <header class="title masonry__title">В сюжете</header>
+                    <article class="masonry__item">
+                        <a href="#" class="masonry__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/270/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/270/140" class="masonry__image">
+                            </picture>
+                        </a>
+                        <h5><a href="#" class="masonry__item-title">Gemalto обеспечит NFC-проездными ...</a></h5>
+                    </article>
+                    <article class="masonry__item">
+                        <a href="#" class="masonry__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/270/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/270/140" class="masonry__image">
+                            </picture>
+                        </a>
+                        <h5><a href="#" class="masonry__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a></h5>
+                    </article>
+                </div>
+                <div class="col-md-9 col-sm-12 feed">
+                    <a href="#" class="title feed__title">Видео</a>
+                    <div class="col-md-6 feed__item_primary">
+                        <article class="feed__item">
+                            <a href="#" class="feed__image-wrapper_primary">
+                                <picture>
+                                    <source srcset="http://lorempixel.com/420/290" media="(min-width: 768px)">
+                                    <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                    <img srcset="http://lorempixel.com/420/290" class="feed__image">
+                                </picture>
+                            </a>
+                            <a href="#" class="feed__item-title feed__item-title_primary feed__item-title_primary-video">Табло для пассажиров на остановках заработают в Санкт-Петербурге первого ноября</a>
+                        </article>
+                    </div>
+                    <div class="col-md-6 feed__list-wrapper">
+                        <ul class="feed__list">
+                            <li class="feed__list-item">
+                                <article class="feed__item feed__item_video">
+                                    <a href="#" class="feed__image-wrapper">
+                                        <img src="http://lorempixel.com/140/140" class="feed__image" alt="">
+                                    </a>
+                                    <a href="#" class="feed__item-title">«Роснефть» приступила к испытаниям «беспилотников» на месторождениях Мамонтовского района компании «РН-Юганскнефтегаз» — своего крупнейшего дочернего предприятия</a>
+                                </article>
+                            </li>
+                            <li class="feed__list-item">
+                                <article class="feed__item feed__item_video">
+                                    <a href="#" class="feed__image-wrapper">
+                                        <img src="http://lorempixel.com/140/140" class="feed__image" alt="">
+                                    </a>
+                                    <a href="#" class="feed__item-title">«Роснефть» приступила к испытаниям «беспилотников» </a>
+                                </article>
+                            </li>
+                            <li class="feed__list-item">
+                                <article class="feed__item feed__item_video">
+                                    <a href="#" class="feed__image-wrapper">
+                                        <img src="http://lorempixel.com/140/140" class="feed__image" alt="">
+                                    </a>
+                                    <a href="#" class="feed__item-title">«Роснефть» приступила к испытаниям «беспилотников» </a>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="newspanel row">
+                <div class="tetris newspanel__item newspanel__item_border-right col-md-4">
+                    <a href="#" class="title tetris__title">Инновации</a>
+                    <article class="tetris__item tetris__item_primary">
+                        <a href="#" class="tetris__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/390/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/390/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                        <span class="tetris__item-category">Интересное / Интернет вещей / IoT</span>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ad, cum dicta? Autem at vel mollitia.!</a>
+                        <span class="tetris__item-category">Интересное / Интернет вещей / IoT</span>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quos vitae obcaecati, quasi reprehenderit nostrum, sequi quaerat repellendus dignissimos iure autem a elit...</a>
+                        <span class="tetris__item-category">Интересное / Интернет вещей / IoT</span>
+                    </article>
+                </div>
+                <div class="tetris tetris_preview newspanel__item newspanel__item_border-right col-md-4">
+                    <a href="#" class="title tetris__title">Мнения экспертов</a>
+                    <article class="tetris__item tetris__item_preview">
+                        <header class="tetris__item-author">Иванов И.И.</header>
+                        <a href="#" class="tetris__image-wrapper tetris__image-wrapper_preview">
+                            <img src="img/icon_male.png" class="tetris__image_preview img_responsive" alt="">
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_preview">Сотовый оператор открывает интернет-портал по продаже специализированного </a>
+                    </article>
+                    <article class="tetris__item tetris__item_preview">
+                        <header class="tetris__item-author">Иванов И.И.</header>
+                        <a href="#" class="tetris__image-wrapper tetris__image-wrapper_preview">
+                            <img src="http://lorempixel.com/80/80" class="tetris__image_preview img_responsive" alt="">
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_preview">Доклады «Импортозамещения 2015»</a>
+                    </article>
+                    <article class="tetris__item tetris__item_preview">
+                        <header class="tetris__item-author">Иванов И.И.</header>
+                        <a href="#" class="tetris__image-wrapper tetris__image-wrapper_preview">
+                            <img src="img/icon_female.png" class="tetris__image_preview img_responsive" alt="">
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_preview">​В Южной Африке к 2020 году более 1,5 млн единиц транспорта будет оснащено </a>
+                    </article>
+                </div>
+                <div class="tetris newspanel__item  col-md-4">
+                    <a href="#" class="title tetris__title">Стартапы</a>
+                    <article class="tetris__item tetris__item_primary">
+                        <a href="#" class="tetris__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/390/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/390/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. molestiae nulla aliquid eaque voluptatibus laborum illum vitae!elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                </div>
+            </section>
+            <section class="newspanel newspanel_xs row">
+                <div class="newspanel__item_border-right col-md-4 col-xs-12 col-sm-12">
+                    <div class="tetris tetris_telematik ">
+                        <a href="#" class="title tetris__title title_telematik">Телематика</a>
+                        <article class="tetris__item tetris__item_primary">
+                            <a href="#" class="tetris__image-wrapper">
+                                <picture>
+                                    <source srcset="http://lorempixel.com/390/140" media="(min-width: 768px)">
+                                    <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                    <img srcset="http://lorempixel.com/390/140" class="tetris__image">
+                                </picture>
+                            </a>
+                            <a href="#" class="tetris__item-title tetris__item-title_primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                        </article>
+                        <article class="tetris__item">
+                            <a href="#" class="tetris__item-title tetris__item-title_telematik">Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. molestiae nulla aliquid eaque voluptatibus laborum illum vitae!elit...</a>
+                        </article>
+                        <article class="tetris__item">
+                            <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                        </article>
+                    </div>
+                </div>
+                <div class="tetris tetris_monitoring newspanel__item_border-right col-md-4  col-xs-12 col-sm-12">
+                    <a href="#" class="title tetris__title title_monitoring">Мониторинг</a>
+                    <article class="tetris__item tetris__item_primary">
+                        <a href="#" class="tetris__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/390/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/390/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title tetris__item-title_monitoring">Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. molestiae nulla aliquid eaque voluptatibus laborum illum vitae!elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                </div>
+                <div class="tetris tetris_systems col-md-4  col-xs-12 col-sm-12">
+                    <a href="#" class="title tetris__title title_systems">Системы</a>
+                    <article class="tetris__item tetris__item_primary">
+                        <a href="#" class="tetris__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/390/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/390/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title tetris__item-title_systems">Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. molestiae nulla aliquid eaque voluptatibus laborum illum vitae!elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                </div>
+            </section>
+            <section class="newspanel newspanel_xs row">
+                <div class="tetris tetris_vending newspanel__item_border-right col-md-4">
+                    <a href="#" class="title tetris__title title_vending">Вендинг</a>
+                    <article class="tetris__item tetris__item_primary">
+                        <a href="#" class="tetris__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/390/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/390/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title tetris__item-title_vending">Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. molestiae nulla aliquid eaque voluptatibus laborum illum vitae!elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                </div>
+                <div class="tetris tetris_energy newspanel__item_border-right col-md-4">
+                    <a href="#" class="title tetris__title title_energy">Энергоучет</a>
+                    <article class="tetris__item tetris__item_primary">
+                        <a href="#" class="tetris__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/390/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/390/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title tetris__item-title_energy">Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. molestiae nulla aliquid eaque voluptatibus laborum illum vitae!elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                </div>
+                <div class="tetris tetris_telemetry col-md-4">
+                    <a href="#" class="title tetris__title title_telemetry">Телеметрия</a>
+                    <article class="tetris__item tetris__item_primary">
+                        <a href="#" class="tetris__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/390/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/390/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title tetris__item-title_telemetry">Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. molestiae nulla aliquid eaque voluptatibus laborum illum vitae!elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                </div>
+            </section>
+            <section class="newspanel newspanel_xs row">
+                <div class="tetris tetris_medicine newspanel__item_border-right col-md-4 col-xs-12 col-sm-12">
+                    <a href="#" class="title tetris__title title_medicine">Медицина</a>
+                    <article class="tetris__item tetris__item_primary">
+                        <a href="#" class="tetris__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/390/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/390/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title tetris__item-title_medicine">Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. molestiae nulla aliquid eaque voluptatibus laborum illum vitae!elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                </div>
+                <div class="tetris tetris_mce newspanel__item_border-right col-md-4 col-xs-12 col-sm-12">
+                    <a href="#" class="title tetris__title title_mce">Микроэлектроника</a>
+                    <article class="tetris__item tetris__item_primary">
+                        <a href="#" class="tetris__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/390/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/390/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title tetris__item-title_mce">Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. molestiae nulla aliquid eaque voluptatibus laborum illum vitae!elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                </div>
+                <div class="tetris tetris_iot col-md-4">
+                    <a href="#" class="title tetris__title title_iot">IoT (Интернет вещей)</a>
+                    <article class="tetris__item tetris__item_primary">
+                        <a href="#" class="tetris__image-wrapper">
+                            <picture>
+                                <source srcset="http://lorempixel.com/390/140" media="(min-width: 768px)">
+                                <source srcset="http://lorempixel.com/140/140" media="(max-width: 767px)">
+                                <img srcset="http://lorempixel.com/390/140" class="tetris__image">
+                            </picture>
+                        </a>
+                        <a href="#" class="tetris__item-title tetris__item-title_primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title tetris__item-title_iot">Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing elit. molestiae nulla aliquid eaque voluptatibus laborum illum vitae!elit...</a>
+                    </article>
+                    <article class="tetris__item">
+                        <a href="#" class="tetris__item-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <section class="partners hidden-sm hidden-xs ">
+            <div class="container">
+                <div class="newspanel row">
+                    <div class="col-md-9 p0">
+                        <div class="partners__title">
+                            <span class="partners__title-text"> Партнеры</span>
+                            <div class="partners__title-border"></div>
+                        </div>
+                        <div class="partners__list">
+                            <div class="partner__item partner__item_primary">
+                                <a href="#" class="partner__item-image-link">
+                                    <img src="http://lorempixel.com/170/65" alt="" class="partner__item-image">
+                                </a>
+                                <header class="partner__item-title">Lorem ipsum dolor sit amet</header>
+                                <span class="partner__category">партнеры-1</span>
+                                <span class="partner__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quaerat vero id, perspiciatis facere quae excepturi, voluptatum, omnis libero tempore ratione magnam, dolore reprehenderit sit? Voluptatibus veniam at excepturi, unde!</span>
+                            </div>
+                            <div class="partner__item">
+                                <a href="#" class="partner__item-image-link">
+                                    <img src="http://lorempixel.com/210/105" alt="" class="partner__item-image">
+                                </a>
+                                <header class="partner__item-title">Lorem ipsum dolor sit amet</header>
+                                <span class="partner__category">партнеры-1</span>
+                                <span class="partner__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quaerat vero id, perspiciatis facere quae excepturi, voluptatum, omnis libero tempore ratione magnam, dolore reprehenderit sit? Voluptatibus veniam at excepturi, unde!</span>
+                            </div>
+                            <div class="partner__item">
+                                <a href="#" class="partner__item-image-link">
+                                    <img src="http://lorempixel.com/130/65" alt="" class="partner__item-image">
+                                </a>
+                                <header class="partner__item-title">Lorem ipsum dolor sit amet</header>
+                                <span class="partner__category">партнеры-1</span>
+                                <span class="partner__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quaerat vero id, perspiciatis facere quae excepturi, voluptatum, omnis libero tempore ratione magnam, dolore reprehenderit sit? Voluptatibus veniam at excepturi, unde!</span>
+                            </div>
+                            <div class="partner__item">
+                                <a href="#" class="partner__item-image-link">
+                                    <img src="http://lorempixel.com/320/45" alt="" class="partner__item-image">
+                                </a>
+                                <header class="partner__item-title">Lorem ipsum dolor sit amet</header>
+                                <span class="partner__category">партнеры-1</span>
+                                <span class="partner__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quaerat vero id, perspiciatis facere quae excepturi, voluptatum, omnis libero tempore ratione magnam, dolore reprehenderit sit? Voluptatibus veniam at excepturi, unde!</span>
+                            </div>
+                            <div class="partner__item">
+                                <a href="#" class="partner__item-image-link">
+                                    <img src="http://lorempixel.com/210/105" alt="" class="partner__item-image">
+                                </a>
+                                <header class="partner__item-title">Lorem ipsum dolor sit amet</header>
+                                <span class="partner__category">партнеры-1</span>
+                                <span class="partner__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quaerat vero id, perspiciatis facere quae excepturi, voluptatum, omnis libero tempore ratione magnam, dolore reprehenderit sit? Voluptatibus veniam at excepturi, unde!</span>
+                            </div>
+                            <div class="partner__item partner__item_primary">
+                                <a href="#" class="partner__item-image-link">
+                                    <img src="http://lorempixel.com/170/65" alt="" class="partner__item-image">
+                                </a>
+                                <header class="partner__item-title">Lorem ipsum dolor sit amet</header>
+                                <span class="partner__category">партнеры-1</span>
+                                <span class="partner__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quaerat vero id, perspiciatis facere quae excepturi, voluptatum, omnis libero tempore ratione magnam, dolore reprehenderit sit? Voluptatibus veniam at excepturi, unde!</span>
+                            </div>
+                            <div class="partner__item">
+                                <a href="#" class="partner__item-image-link">
+                                    <img src="http://lorempixel.com/210/105" alt="" class="partner__item-image">
+                                </a>
+                                <header class="partner__item-title">Lorem ipsum dolor sit amet</header>
+                                <span class="partner__category">партнеры-1</span>
+                                <span class="partner__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quaerat vero id, perspiciatis facere quae excepturi, voluptatum, omnis libero tempore ratione magnam, dolore reprehenderit sit? Voluptatibus veniam at excepturi, unde!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <form class="form form_border-top">
+                            <div class="form__title"><span class="glyphicon glyphicon-chevron-down"></span> Опросы</div>
+                            <div class="form__question">Какой раздел сайта для Вас наиболее интересен?</div>
+                            <div class="form-group">
+                                <label class="blocked form__label">
+                                    <input type="radio" name="site">Инновации</label>
+                                <label class="blocked form__label">
+                                    <input type="radio" name="site">Телематика</label>
+                                <label class="blocked form__label">
+                                    <input type="radio" name="site">Медицина</label>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-default">Голосовать</button>
+                            </div>
+                        </form>
+                        <form class="form form_border-top">
+                            <div class="form__title form__title_bordered">Подписка</div>
+                            <div class="form-group">
+                                <input type="text" class="input__text input_wide blocked" placeholder="Ваш email">
+                            </div>
+                            <a href="#" class="form__link_subscribe">Рубрики подписки(0)</a>
+                            <div class="text-center">
+                                <button class="btn btn-default">Подписаться</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page__footer ">
+        <div class="container">
+            <div class="row hidden-xs hidden-sm">
+                <div class="col-md-3">
+                    <a href="/" class="logo logo_footer"><img src="img/logo.png" alt="" class="logo__image"></a>
+                    <div class="site-title site-title_footer">
+                        Интересные новости мира М2М
+                    </div>
+                    <a href="tel:+88005550000" class="link_phone">
+                        <span class="glyphicon glyphicon-earphone"></span> Тел. 8 (800) 555 00 00
+                    </a>
+                    <a href="mailto:info@m2mrussianews.ru" class="link_email"><span class="glyphicon glyphicon-envelope"></span> E-mail: info@m2mrussianews.ru</a>
+                </div>
+                <div class="col-md-3">
+                    <nav class="menu menu_footer">
+                        <ul class="menu__list menu__list_footer">
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">Транспортная телематика</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">Транспортная телематика</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">вендинг</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">Транспортная телематика</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <nav class="menu menu_footer">
+                        <ul class="menu__list menu__list_footer">
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer" О портале</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">контакты</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">Реклама на сайте</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer"> инвесторам</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <nav class="menu menu_footer">
+                        <ul class="menu__list menu__list_footer">
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">Транспортная телематика</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">Транспортная телематика</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">вендинг</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">Транспортная телематика</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">Транспортная телематика</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">Транспортная телематика</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">вендинг</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a href="#" class="menu__link menu__link_footer">Транспортная телематика</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row buttons_footer">
+                <div class="col-md-8 hidden-sm hidden-xs">
+                    <a href="#" class="button_subscribe"><span class="glyphicon glyphicon-list-alt"></span> Подписаться на новости</a>
+                    <a href="#" class="button_mobile-version"><span class="glyphicon glyphicon-phone"></span> Мобильная версия</a>
+                    <a href="#" class="link_copyright">
+                        2015 © M2M Russia News. Все права защищены. При копировании материалов ссылка на сайт обязательна.
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <a href="#" class="button_desktop-version hidden-md hidden-lg">Полная версия</a>
+                    <div class="pull-right">
+                        <a href="#" class="link_socicon"><span class="socicon socicon-instagram"></span></a>
+                        <a href="#" class="link_socicon"><span class="socicon socicon-facebook"></span></a>
+                        <a href="#" class="link_socicon"><span class="socicon socicon-twitter"></span></a>
+                        <a href="#" class="link_socicon"><span class="socicon socicon-vkontakte"></span></a>
+                        <a href="http://webdom.net" class="link_copyright text-right">Разработка сайта Webdom.net</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <a href="#top" class="button_totop"> <i class="glyphicon glyphicon-chevron-up"></i></a>
+</body>
+
+</html>

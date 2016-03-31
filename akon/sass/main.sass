@@ -1,0 +1,595 @@
+$light-gray: #f4f4f4
+$dark-gray: #696969
+$purple: #ba2c96
+$dark-purple: #800060
+$dark: #313130
+$orange: #fc4c21
+$text-color: #404041
+$dark-border: #1d1d1d
+$middle-gray: #969696
+/*Body*/
+html 
+	box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
+body
+	font-family: 'Open Sans', sans-serif
+	font-size: 13px 
+	color: $text-color
+	line-height: 1.42857
+	font-weight: 400
+	//overflow-x: hidden
+/*Heading*/	
+
+h1
+  font-size: 22px
+
+h2
+  font-size: 17px
+
+h3
+  font-size: 14px
+
+h4
+  font-size: 13px
+
+
+/* Spacing */
+
+ol
+  list-style: decimal
+
+ul
+  list-style: disc
+
+li
+  margin-left: 30px
+
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset
+  margin-bottom: 20px 
+
+/*grid*/
+.col-left,.col-right
+	float: left
+.col-left
+	width: 71%
+.col-right
+	padding-left: 20px
+	width: 29%
+
+@mixin shadow
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.4)
+	-moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.4)
+	box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.4)
+/*Header*/
+header.page_header
+	a
+		color: $purple
+		text-decoration: none
+	.top_line
+		padding: 0 40px 0 28px 
+		background-color: $light-gray
+		.top_menu
+			float: left
+			ul
+				list-style-type: none
+				margin: 0
+				padding: 0
+				li
+					display: inline-block
+					margin: 0
+					padding: 0
+					a
+						display: block
+						padding: 15px 12px
+
+						text-decoration: none
+						color: $text-color
+						&:hover
+							text-decoration: underline
+		.search_box
+			float: right
+			padding: 6px 0
+			position: relative
+			margin-top: 5px
+		.map_icon
+			float: right
+			background: url("../img/sitemap_icon.png") no-repeat
+			width: 20px
+			height: 20px
+			margin-top: 15px
+			margin-right: 5px
+		.search_input
+			height: 23px
+			text-indent: 5px
+			padding-right: 27px
+		.search_icon
+			cursor: pointer
+			position: absolute
+			top: 7px
+			right: 7px
+			background: url("../img/search_icon.png") no-repeat
+			width: 19px
+			height: 19px
+			outline: none
+			border: 0
+	.widget_line
+		padding: 0 40px
+		.logo
+			margin: 20px 0
+			float: left
+		.widgets
+			float: right
+			margin: 40px 0
+			.login_form,.weather,.exchange
+				display: inline-block
+			.login_form
+				background: url(../img/login_icon.png) no-repeat 0px 5px
+				padding-left: 30px
+			.weather
+				width: 120px
+			.exchange
+	.header_menu
+		background: url(../img/bg_noise.jpg)
+		color: $text-color
+		padding: 0 20px 40px
+		.main_menu
+			@include shadow
+			display: table
+			width: 100%
+			border-collapse: collapse
+			padding: 0
+			margin: 0
+			&>li
+				font-size: inherit
+				display: table-cell
+				vertical-align: top
+				margin: 0
+				padding: 0
+				background: #fff 
+				&:first-child
+					&>a
+						margin-left: -20px
+						padding-left: 50px
+						padding-right: 10px
+					&>ul
+						margin-left: -10px
+				&:last-child
+					&>a
+						margin-right: -20px
+				&>a
+					border-left: 1px solid $dark-border
+					border-top: 1px solid #838383
+					border-bottom: 1px solid #838383
+					padding: 15px 0 15px 40px
+					background-color: $dark
+					color: #fff
+					font-size: 14px
+					font-weight: 500
+					display: block
+					position: relative
+					&:hover
+						background-color: $dark-gray
+					&:after
+						display: none
+						position: absolute
+						content: ''
+						border: 7px solid transparent
+						border-top: 7px solid $dark-gray
+						bottom: -14px
+						z-index: 15
+						left: 35%
+
+		.submenu
+			margin: 0
+			padding: 0 0 15px 40px
+			margin-top: 15px
+			list-style-type: none
+			display: block
+
+			&>li
+				padding: 0
+				margin: 0
+				display: block
+				&>a
+					color: $text-color
+					font-size: 13px
+					font-weight: 400
+					&:hover
+						text-decoration: underline
+
+	.top_banner
+		background: url(../img/bg_noise.jpg)
+		padding:  0 20px 40px
+		img
+			display: block
+			width: 100%					
+
+/*Section main content*/
+section.main_content
+	padding: 0 20px 40px
+	background: url(../img/bg_noise.jpg)
+	/*Content*/
+	.content_about
+		background-color: #FFF
+		padding: 40px 25px 
+		@include shadow
+		.title
+			background-color: $purple
+			color: #fff
+			margin-left: -25px
+			display: inline-block
+			padding: 10px 20px 10px 25px
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				right: -50px
+				top: 0px
+				border-top: 50px solid $purple
+				border-right: 50px solid transparent
+		.description
+			font-size: 14px
+	//News Top
+	.news_top
+		@include shadow
+		margin-top: 40px
+		background-color: $dark
+		ul,li
+			list-style-type: none
+			margin: 0
+			padding: 0
+			vertical-align: top
+		.tabs
+			//background-color: $dark
+			color: #fff
+			width: 9%
+			float: left
+			.tab
+				padding: 20px 10px
+				cursor: pointer
+				border-bottom: 1px solid $dark-border
+				border-right: 4px solid $dark-border
+				position: relative
+				&.active 
+					&:after
+						content: ''
+						position: absolute
+						right: -4px
+						top: 40%
+						border: 7px solid transparent
+						border-right: 7px solid #fff
+		.tab_content
+			background-color: #FFF
+			float: left
+			width: 91%
+			a
+				color: $dark-purple
+				&:hover
+					color: $purple
+			.tab_item
+				display: none
+				&:first-child
+					display: block
+				.title
+					padding: 25px 40px 0
+					h2
+						display: inline-block
+						border-bottom: 2px solid $purple
+					.items_list_link
+						float: right
+						margin-top: 10px
+						padding-left: 20px
+						background: url(../img/horn_icon.png) no-repeat 0 0
+
+		.owl-item
+			display: inline-block
+			padding: 0 50px
+			.article				
+				h3
+					margin: 5px 0 10px 
+					a
+						color: $text-color
+						text-decoration: none
+						&:hover
+							color: $purple
+				.date
+					display: inline-block
+					background-color: $purple
+					color: #fff
+					padding: 6px
+					font-size: 12px
+					font-weight: 500
+				.source
+					float: right
+					overflow: hidden
+					max-height: 50px
+					max-width: 200px
+				.detail_link
+					float: right
+
+	//News Main
+	.news_main
+		@extend .news_top
+		.tab_content .tab_item .title	.items_list_link
+			padding-left: 25px
+			background: url(../img/newspaper_icon.png) no-repeat 0 0
+		.news_list
+			margin-top: -20px
+			padding: 0px 40px	30px
+
+		.news_list_item
+			width: 25%
+			float: left
+			vertical-align: top
+			position: relative
+			padding: 0 15px
+			margin-top: 20px
+			border-right: 1px solid $light-gray
+					
+		.item_image
+			display: block
+			max-height: 85px
+			overflow: hidden
+			border: 2px solid #cbcbcb
+			img
+				display: block
+				width: 100%
+		.item_date			
+			position: absolute
+			top: 0
+			right: 15px
+			display: inline-block
+			background-color: $purple
+			color: #fff
+			padding: 6px
+			font-size: 12px
+			font-weight: 500
+		.item_title
+			margin-top: 20px
+			font-weight: 600
+			a
+				color: $text-color
+				text-decoration: none
+				&:hover
+					color: $purple
+		.item_preview
+			
+		.item_more_link
+			float: right
+			
+
+	//Partners section
+	.partners
+		@include shadow
+		margin-top: 40px
+		background-color: #fff
+		padding: 30px 40px
+
+		h2
+			display: inline-block
+			border-bottom: 1px solid $purple
+		.items_list
+			text-align: center
+		.item
+			display: inline-block
+			margin: 0 90px
+	
+	/*Sidebar*/
+	/*Events*/
+	.sidebar_events
+		@include shadow
+		text-align: center
+		background: #fff
+		padding: 20px 40px 40px 40px
+		margin-bottom: 20px
+		h2
+			margin-bottom: 0
+			display: inline-block
+			border-bottom: 1px solid $purple
+	.events_list
+		list-style-type: none
+		text-align: left
+	.event		
+		margin: 0
+		border-bottom: 1px solid $light-gray
+		display: table
+	.event_date_wrap
+		padding: 20px 0
+		display: table-cell
+		vertical-align: middle
+	.event_date
+		background-color: $purple
+		color: #fff
+		padding: 10px 8px	
+
+	.event_title
+		display: table-cell
+		text-decoration: none
+		color: $text-color
+		padding: 20px 10px
+		vertical-align: middle
+
+		&:hover
+			text-decoration: underline
+	.events_cal
+		display: block
+		text-align: left
+		padding-left: 25px
+		color: $dark-purple
+		background: url(../img/calendar_icon.png) no-repeat 0 0
+		&:hover
+			text-decoration: none
+			color: $purple
+	
+	/*Poll*/
+	.sidebar_poll		
+		@extend .sidebar_events
+		margin-top: 40px
+		.poll_question
+			text-align: left
+			margin: 20px 0
+			font-weight: 600
+		.poll_list_answers
+			margin-bottom: 30px
+			padding: 0
+			list-style-type: none
+			text-align: left
+		.poll_answer
+			margin: 0
+			padding: 0
+			input,label
+				cursor: pointer
+		.results
+			float: left
+			color: $purple
+		.submit_poll_answer
+			color: #fff
+			background-color: $purple
+			outline: none
+			border: 0
+			padding: 8px 20px
+			text-align: center
+			float: right
+			cursor: pointer
+
+footer.page_footer
+	background-color: $dark-gray
+	color: #fff
+	padding: 30px 40px 
+	a
+		color: #fff
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+	.news_menu,.press_menu,.akon_menu,.service_menu
+		display: inline-block
+		vertical-align: top
+	.menu_list
+		margin: 0
+		padding: 0
+		list-style-type: none
+	.menu_item
+		float: left
+		width: 50%
+		margin: 0
+		padding: 0
+		font-size: 12px
+	.news_menu
+		width: 17%
+		.title
+			border-bottom: 1px solid $middle-gray
+			padding-bottom: 15px
+	.press_menu
+		@extend .news_menu	
+		margin-left: 10%
+		width: 17%
+		.menu_item
+			float:none
+		.title
+			display: inline-block
+	.akon_menu
+		@extend .news_menu
+		margin-left: 5%
+		width: 21%
+	.service_menu
+		@extend .news_menu
+		margin-left: 7%
+		.menu_item
+			font-size: 14px
+			padding-bottom: 24px
+
+	.contacts_wrapper
+		border-top: 1px solid $middle-gray
+		margin-top: 25px			
+		padding-top: 10px
+
+	.contacts,.socicons,.copyright		
+		display: inline-block
+	.contacts
+		.phone
+			background: url(../img/phone_icon.png) no-repeat 0px 2px
+			padding-left: 20px
+			margin-right: 15px
+		.email
+			background: url(../img/email_icon.png) no-repeat 0px 0px
+			padding-left: 20px
+		.position
+			background: url(../img/geo_icon.png) no-repeat 0px 0px
+			padding-left: 20px
+			margin-top: 5px
+	.socicons
+		vertical-align: bottom
+		text-align: left
+		margin-left: 120px
+		a	
+			padding: 6px 8px
+			background: #eeeeee
+			border-radius: 20px
+			width: 30px
+			height: 30px
+			display: inline-block
+		span
+			color: #696969
+
+	.copyright
+		padding-top: 15px
+		float: right
+		span
+			vertical-align: super
+
+//Banners in sidebar
+.top_sidebar_banner,.middle_sidebar_banner,.bottom_sidebar_banner
+	@include shadow
+	img
+		display: block
+		width: 100%
+.top_sidebar_banner
+	margin-bottom: 40px		
+.middle_sidebar_banner
+	margin: 40px 0
+.bottom_sidebar_banner
+	margin-top: 40px	
+
+/*Services*/
+.clearfix:after
+	content: "."
+	display: block
+	height: 0
+	clear: both
+	visibility: hidden
+	/*Socicons*/  
+[class^="socicon-"], [class*=" socicon-"]
+  font-family: 'socicon'
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.socicon-linkedin:before
+	content: "\6a"
+.socicon-vkontakte:before
+	content: "\3b"
+.socicon-facebook:before
+	content: "\62"
+.socicon-google:before
+	content: "\63"	
+.socicon-twitter:before
+	content: "\61"
+
+@font-face
+  font-family: 'socicon'
+  src: url('../fonts/socicon.eot')
+  src: url('../fonts/socicon.eot?#iefix') format("embedded-opentype"), url('../fonts/socicon.woff') format("woff"), url('../fonts/socicon.ttf') format("truetype"), url('../fonts/socicon.svg#sociconregular') format("svg")
+  font-weight: normal
+  font-style: normal
+  text-transform: initial
+
+

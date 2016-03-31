@@ -1,0 +1,678 @@
+
+$color_text: #121212
+$color_text-muted: #929292
+$color_border: #bebebe
+$color_button: #7a7a7a
+$color_primary: #004d9a
+$color_primary_muted: #f2f2f2
+$color_dropdown: #00366d
+$color_telematik: #00a2ff
+$color_monitoring: #b00095
+$color_systems: #ffc600
+$color_vending: #fe3a76
+$color_energy: #00e905
+$color_telemetry: #ff3b14
+$color_medicine: #00dac8
+$color_mce: #ff7800
+$color_iot: #6a2fff
+
+
+
+/***************************PAGE************************************/
+.page
+	font-family: 'Roboto', sans-serif
+	&__header
+		padding: 2rem 0
+	&__footer
+		background-color: $color_text
+		color: #fff
+		padding: 4rem 0 1.5rem
+.container
+	padding: 0
+/***************************MENU************************************/		
+.menu
+	&_main
+		background-color: $color_dropdown
+		padding: 1rem 0
+		color: #fff
+	&_dropdown
+		background-color: $color_primary
+		color: #fff
+
+	&__list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		&_main
+			display: inline-block
+			padding-top: 0.3rem
+			&:after
+				content: " " 
+				display: table
+				clear: both
+		&_dropdown
+			display: table
+			border-spacing: 0
+			border-collapse: collapse
+			position: relative
+			width: 100%
+		&_vertical
+			padding-right: 1.5rem
+			border-right: 1px solid #6082a4	
+		
+
+	&__item
+		&_main
+			float: left
+			padding: 0 0.65rem
+			&:last-child
+				padding-right: 0
+			&:first-child
+				padding-left: 0
+		&_dropdown
+			display: table-cell
+			padding: 1rem 0
+			&:hover>.dropdown__container
+				display: block
+		&_vertical
+			padding: 1rem
+			border-bottom: 1px solid #6082a4
+			&:last-child
+				border: none
+		&_footer
+			padding: 0.5rem 0
+
+	&__link
+		@extend .blocked
+		color: #fff
+		&:hover
+			color: #fff
+		&_main,&_main:hover
+			font-size: 1.4rem
+			font-weight: bold
+		&_vertical
+		&_dropdown
+			font-weight: lighter
+
+
+		
+/***************************DROPDOWN CONTAINER************************/
+.dropdown
+	&__container
+		text-align: left
+		position: absolute
+		background-color: $color_dropdown 
+		left: 0
+		top: 3.8rem
+		width: 100%
+		padding: 1rem
+		display: none
+		z-index: 999
+		&:hover
+			display: block
+	&__item
+		display: inline-block
+		vertical-align: top
+	&__article
+		padding: 1rem 1.5rem
+		max-width: 21rem
+	&__link,&__link:hover
+		color: #fff 
+		display: block
+		text-align: center
+	&__title
+		padding: 0.5rem
+	&__image-link
+
+	&__image
+		@extend .img_responsive
+/***************************LOGO**************************************/		
+.logo
+	@extend .inlined
+	&_header
+
+	&_footer
+	&__image
+		@extend .img_responsive
+
+/***************************BANNERS************************************/
+.banner
+	&_headline
+		margin:  0 0 2rem 
+	&_sidebar
+		text-align: center
+		margin: 3rem 0
+	&_offseting
+		margin-top: -3rem
+	&_feed
+		padding: 0 1.5rem 0 0
+
+/*****************************PANEL************************************/		
+.newspanel
+	margin: 4rem 0
+	&__item
+		&_border-right
+			border-right: 1px solid $color_border
+
+
+
+/****************************CAROUSEL**********************************/
+.carousel
+	&__caption
+		margin-bottom: 2rem
+	.item
+		background-color: #E1E1E1
+
+	&__category
+		@extend .blocked
+		text-align: right
+		color: #787878
+		margin: 1rem 0 0
+	&__date
+		@extend .blocked
+		position: relative
+		z-index: 1
+		text-align: right
+		
+	h1,.h1
+		margin-top: 1rem
+		font-weight: bold
+
+	.carousel-indicators
+		position: relative
+		left: 0
+		bottom: 0
+		width: auto
+		margin: -1.8rem 0 0
+		padding: 0
+		li
+			background-color: $color_primary
+			margin: 0
+			width: 12px
+			height: 12px
+		.active
+			background-color: #fff
+
+/***************************MASONRY***********************************/
+.masonry
+	&_small
+	&__image-wrapper
+		@extend .img_responsive
+	&__image
+		@extend .img_responsive
+	&__item
+		@extend .inlined
+		margin-bottom: 1.5rem
+		overflow: hidden
+		&_large
+			float: left
+			width: 75%
+			&:nth-child(even)
+				padding-right: 3rem
+			&:nth-child(odd)
+				padding-left: 3rem
+
+		&_small
+			float: left
+			width: 25%
+
+	&__date
+		@extend .blocked
+		text-align: right
+	&__item-title
+		@extend .blocked
+		color: $color_text
+		font-weight: bold
+		margin: 1.5rem 0
+
+
+/****************************TETRIS***********************************/
+.tetris
+	&__title
+		@extend .border_primary
+		font-size: 2rem
+		padding: 2rem 0
+		color: $color_text
+		display: block
+		&:hover
+			color: $color_primary
+	&__tags
+		text-align: right
+		margin: 1.5rem 0
+	&__tag
+		@extend .date
+	&__image-wrapper
+		&_preview
+			@extend .inlined
+			width: 20%			
+	&__item
+		border-bottom: 1px dotted $color_border
+		overflow: hidden
+		&:last-child
+			border: none
+		&_preview
+			padding-bottom: 1.5rem
+			margin-bottom: 1.5rem
+		&-author
+			@extend .date
+			padding-left: calc(20% + 1.5rem)
+
+		&-title
+			&_preview
+				@extend .inlined
+				font-weight: bold
+				padding-left: 1.5rem
+				max-width: 75%
+			&_telematik
+				&:hover
+					color: $color_telematik
+			&_monitoring
+				&:hover
+					color: $color_monitoring
+			&_systems
+				&:hover
+					color: $color_systems
+			&_vending
+				&:hover
+					color: $color_vending
+			&_energy
+				&:hover
+					color: $color_energy
+			&_telemetry
+				&:hover
+					color: $color_telemetry
+			&_medicine
+				&:hover
+					color: $color_medicine
+			&_mce
+				&:hover
+					color: $color_mce
+			&_iot
+				&:hover
+					color: $color_iot				
+
+		&-category
+			@extend .date
+			display: block
+			margin: 1rem 0
+			text-align: right
+	&__image
+		@extend .img_responsive
+		&_preview
+			border-radius: 100%
+			border:1px solid #7a7a7a
+			max-width: 7rem
+			max-height: 7rem
+	&__item-title
+		display: block
+		color: $color_text
+		font-size: 1.3rem
+		margin: 1rem 0
+		&_primary
+			font-weight: bold
+	&_telematik, &_monitoring,&_systems,&_vending,&_energy,&_telemetry,&_medicine,&_mce,&_iot
+		.tetris__item:last-child
+			margin-bottom: 0
+
+/***************************FEED****************************************/			
+.feed
+	&__item
+		@extend .inlined
+		margin-bottom: 2rem
+		padding: 0
+		width: 100%
+		&_twined
+			width: 100%
+		&_video
+			border-bottom: 1px dotted $color_border
+		&_primary
+			padding-left: 0
+	&__item-text
+		color: $color_text
+		display: block
+	&__item-image
+	&__item-title
+		color:$color_text
+		display: block
+		margin: 0 0 1.3rem 
+		&_twined
+			font-weight: bold
+			font-size: 1.4rem
+		&_primary
+			font-weight: bold
+			font-size: 1.6rem
+
+	&__image
+		@extend .img_responsive
+		&-wrapper
+			float: left
+			padding-right: 1.5rem
+			&_primary
+				@extend .blocked
+				margin-bottom: 1.5rem
+
+	&__category
+		@extend .date
+		display: block
+		margin: 1rem 0
+	&__tag
+		@extend .date
+	&__list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		&-wrapper
+			padding-right: 0
+		&-item:last-child
+			.feed__item	
+				border: 0
+		&_twined
+			.feed__list-item:nth-child(even)
+				text-align: right
+				.feed__image-wrapper
+					float: right
+					padding-left: 1.5rem
+					padding-right: 0
+				.date	
+					text-align: right
+				.feed__item-text
+					padding-left: 0%
+					padding-right: 45%
+		&_advertising
+			.feed__list-item:nth-child(n+4)
+				padding-left: 50%
+
+	&__date
+		@extend .blocked
+		text-align: right
+		margin-top: 1.5rem
+		width: 100%
+		&_twined
+			margin-top: 0
+			text-align: left
+/*****************************CALENDAR********************************/
+.calendar
+	width: 100%
+	height: 220px
+	padding: 110px 0
+	text-align: center
+	border: 1px solid $color_border
+.event
+	border-bottom: 1px dotted $color_border
+	margin: 1.5rem 0
+	&:last-child
+		border: none
+	&__title
+		font-weight: lighter
+		padding: 0.8rem 0
+	&__date
+		font-weight: bold
+
+/****************************PARTNERS*********************************/
+.partners
+	background-color: #e7e7e7
+	&__title
+		display: table
+		width: 100%
+		margin-bottom: 1.5rem
+		margin-top: -1rem
+		&-text
+			display: table-cell
+			font-size: 2rem
+			font-weight: bold
+		&-border
+			display: table-cell
+			width: 100%
+			padding-left: 3rem
+			&:before
+				display: block
+				content: " "
+				border-top: 1rem solid $color_primary
+
+	&__list
+		padding: 0
+.partner
+	&__item
+		background-color: #fff
+		float: left
+		margin-right: 3rem
+		padding: 1.5rem 1rem
+		width: 31%
+		margin-bottom: 2rem
+		&:nth-child(3n+3)
+			 margin-right: 0 
+		&-title
+			@extend .blocked
+			font-weight: bold
+		&-image-link
+			@extend .blocked
+			margin-bottom: 1.5rem
+		&-image
+			@extend .img_responsive
+			margin: 0 auto
+		&_primary
+			border-top: 0.5rem solid #ffba00
+			border-bottom: 0.5rem solid #ffba00
+	&__category
+		@extend .date
+		@extend .blocked
+	&__text
+		@extend .blocked
+		margin-top: 1.5rem
+
+/****************************FORM*************************************/
+.form
+	background-color: #FFF
+	padding: 1.3rem
+	margin-bottom: 2rem
+	&_bordered
+		border: 1px solid $color_border
+	&_border-top
+		border-top: 1rem solid $color_primary
+	&_header
+		position: absolute
+		right: -10%
+		top: -0.3rem
+		background-color: transparent
+		margin: 0
+		padding: 0
+		white-space: nowrap
+		z-index: 2
+		display: none
+		&__input
+			background-color: $color_primary
+			color: #fff
+			border: none
+			padding: 0.6rem
+			width: 34rem
+		&__button,&__button:focus,&__button:hover,&__button:active
+			background-color: $color_dropdown
+			border: none
+			outline: none
+	&__title
+		font-size: 1.6rem
+		font-weight: bold
+		margin-bottom: 1.3rem
+	
+	&__label
+		margin: 1rem 0
+	&__link
+		&_subscribe
+			@extend .blocked
+			margin: 1rem 0
+			text-decoration: underline
+
+/****************************INPUTS***********************************/
+.input
+	&__wrapper
+		&_icon
+			position: relative
+	&__text
+		text-indent: 1rem
+		&_icon
+			display: block
+			width: 100%
+	&_icon			
+		&__button_icon
+			position: absolute
+			outline: none
+			background-color: #fff
+			border: none
+			top: 0.3rem
+			right: 0.1rem
+	&_wide
+		width: 100%
+
+/****************************LINKS************************************/
+.link
+	&__form
+		display: block
+		margin: 0.8rem 0 
+	&_underline
+		text-decoration: underline
+	&_last
+		margin-bottom: 0
+	&_phone
+		@extend .blocked
+		color: #fff
+	&_email
+		@extend .blocked
+		margin-top: 1.5rem
+		color: #fff
+	&_socicon
+		color: #fff
+		border: 2px solid #fff
+		padding: 0.7rem 1rem 0.3rem
+		font-size: 1.7rem
+		margin-left: 0.8rem
+
+	&_copyright
+		@extend .blocked
+		color: #fff
+		margin-top: 2rem
+
+
+/****************************BUTTONS**********************************/
+.button
+	&_icon
+		outline: none
+		background-color: #fff
+		border: none
+	&_mmenu
+		color: #fff		
+		font-size: 2rem
+	&_subscribe,&_mobile-version,&_desktop-version
+		color: #fff
+		border: 2px solid #fff
+		padding: 0.7rem 1rem
+	&_desktop-version
+		padding: 0.7rem 	
+	&_subscribe
+		margin-right: 2rem
+	&_totop
+		position: fixed
+		font-size: 2rem
+		right: 3%
+		bottom: 3%
+		vertical-align: bottom
+		color: $color_text
+
+/***************************SERVICES**********************************/
+.pl0	
+	padding-left: 0
+.pr0
+	padding-right: 0	
+.p0
+	padding: 0
+.title
+	border-top: 1rem solid $color_primary
+	padding: 1rem 0 2rem
+	font-size: 2rem
+	font-weight: bold
+	display: block
+	color: $color_text
+	&:hover
+		color: $color_primary
+	&_telematik
+		color: $color_telematik
+		border-top: 1rem solid $color_telematik
+		&:hover
+			color: $color_telematik
+	&_monitoring
+		color: $color_monitoring
+		border-top: 1rem solid $color_monitoring
+		&:hover
+			color: $color_monitoring
+	&_systems
+		color: $color_systems
+		border-top: 1rem solid $color_systems
+		&:hover
+			color: $color_systems
+	&_vending
+		color: $color_vending
+		border-top: 1rem solid $color_vending
+		&:hover
+			color: $color_vending
+	&_energy
+		color: $color_energy
+		border-top: 1rem solid $color_energy
+		&:hover
+			color: $color_energy
+	&_telemetry
+		color: $color_telemetry
+		border-top: 1rem solid $color_telemetry
+		&:hover
+			color: $color_telemetry
+	&_medicine
+		color: $color_medicine
+		border-top: 1rem solid $color_medicine
+		&:hover
+			color: $color_medicine
+	&_mce
+		color: $color_mce
+		border-top: 1rem solid $color_mce
+		&:hover
+			color: $color_mce
+	&_iot
+		color: $color_iot
+		border-top: 1rem solid $color_iot
+		&:hover
+			color: $color_iot
+.date
+	color: $color_text-muted
+.site-title
+	font-weight: lighter
+	&_header
+		border-left: 1px solid #6082a4		
+		padding-left: 1rem
+		max-width: 15rem
+		font-size: 1.2rem
+	&_footer
+		font-size: 1.3rem
+		margin-bottom: 3rem
+
+.buttons_footer	
+	margin-top: 2rem
+.search-panel	
+	display: inline-block
+	padding: 0.3rem 0.8rem
+	border-left: 1px solid #6082a4	
+	margin-left: 0.3rem
+	position: relative
+	z-index: 1
+.img
+	&_responsive
+		display: block
+		max-width: 100%
+		height: auto
+	&_centered
+		margin: 0 auto
+.inlined
+	display: inline-block
+	vertical-align: top
+.blocked
+	display: block	
+.icon
+	&_search
+		font-size: 1.7rem
+		cursor: pointer
